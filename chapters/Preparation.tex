@@ -1,0 +1,67 @@
+\chapter{研究の準備}\label{cha:Preparation}
+本章では、本研究で必要となる前提知識を説明する。
+
+\section{モータ作成}\label{motor}
+\subsection{仕様書}\label{siyo}
+\subsection{シミュレータの役割}\label{simu}
+
+\section{モータ特性表}\label{toku}
+\subsection{特性表の種類}\label{syu}
+\subsection{特性表の要素}\label{ele}
+
+\section{OpenModelica}\label{OM}
+
+\section{modelica}\label{modelica}
+
+
+
+% \section{モータ特性表}\label{win_ap}
+% WindowsAPIとは、Windowsプログラミングを行うためにMicrosoftが提供しているAPIのことである[10]。
+% APIとはApplication Programming Interfaces の略で、プログラムからソフトウェアを操作するためのインターフェイスのことである[11]。
+% WindowsAPIを使用することによって、Windowsアプリを作成するために必要な機能を自ら実装せずにすむので、作業工数を短縮できる[10]。
+% 本研究では、ボタンの自動入力などの機能を実装する際に使用した。表2.1に、今回使用する関数を示す。
+
+% \begin{table}[t]
+% 	\begin{center}
+%   \caption{使用している関数一覧}
+%   \begin{tabular}{|l|c|r||r|} \hline
+%     関数名 & 説明  \\ \hline \hline
+%        GetClientRect & ウィンドウのクライアント領域の座標を取得する。\\ \hline
+%        GetDC &ディスプレイデバイスコンテキストのハンドルを取得。\\ \hline
+%        CreateDIBSection & DIBとDDB用のビットマップを作成する。 \\ \hline
+%        CreateCompatibleDC & メモリデバイスコンテキストのハンドルを取得する。 \\ \hline
+% 	   GetForegroundWindow & フォアグラウンドウィンドウのハンドルを取得する。 \\ \hline
+%        GetWindowText &フォアグラウンドウィンドウの名前を取得する。\\ \hline
+%   \end{tabular}
+%   \end{center}
+% \end{table}
+
+% \section{Visual Studio}\label{visual_studio}
+% Visual Studioとは、MicrosoftがリリースしているWindows環境における統合開発環境のことである[12]。
+% 複数のプログラミング言語での開発が可能な開発環境で、Visual Studioを用いることによって、Windowsのクライアントアプリケーションや、
+% ハンディターミナルなどのアプリケーション、Webアプリケーションを開発できる。
+% 本研究では、テスト支援ツールの概観を作成する際にVisual Studioを用いた。
+
+% \section{Unity}
+% Unityとは、ユニティ・テクノロジーズ社が提供する、ゲーム開発フレームワークである。2D、3D、VRなどのゲーム開発で利用されている[13]。
+% マルチプラットフォームに対応しており、アセットストアが充実しているため、手軽に高クオリティなゲーム制作ができる。
+% 本研究では、作成したテスト支援ツールの適用例で使用するゲームの作成に、このフレームワークを採用する。
+
+% \section{パーティクルフィルター}
+% パーティクルフィルター(Particle Filter)とは、確率分布に基づく時系列データの予測手法である[14]。
+% パーティクルフィルターでは、現状態から起こりうる多数の次状態を、多数のパーティクルを用いて検出する。
+% パーティクルフィルターの基本的な操作手順は、以下の通りである。
+
+% \begin{enumerate}
+%   \item リサンプリング : 前フレームでの尤度に従って、パーティクルを撒き直す(追跡対象の周りにパーティクルをばら撒く)。
+%   \item 推定 : 等速直線運動や適当な乱数を使い、現フレームにおける追跡対象の位置を推定し、パーティクルを少し動かす。
+%   \item 観測 : 現フレームにおける各パーティクルの尤度と重み(正規化)を計算する。つまり、推定の答え合わせをして実際の追跡対象の位置に近いパーティクルの重みを大きくする。
+%   			   重みが大きいパーティクルが集中している領域が追跡対象となる。
+% \end{enumerate}
+% 本研究では、この手法を、キャラクターとオブジェクトの重なり判定に使用する。
+
+% \section{DLL}
+% DLL(ダイナミックリンクライブラリ)とは、動的リンクを使ったライブラリである[15]。
+% 本研究では、DLLを使うことで、C\#のコードからC++で記述した関数を呼び出す。
+
+
