@@ -1,9 +1,9 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  12 JAN 2020 16:31
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  17 JAN 2020 01:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**c:/Users/harak/Desktop/paper/GraduateThesis
-(c:/Users/harak/Desktop/paper/GraduateThesis.tex
+**c:/Users/harak/Desktop/paper/paper/GraduateThesis
+(c:/Users/harak/Desktop/paper/paper/GraduateThesis.tex
 pLaTeX2e <2018-04-01u02>+1 (based on LaTeX2e <2018-04-01> patch level 2)
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/platex/jsclasses/jsbook.cls
@@ -398,9 +398,9 @@ File: ot1txtt.fd 2000/12/15 v3.1
 
  [2] (./chapters/Introduction.tex
 第 \lower 0.1ex\hbox {1} 章
-[1
+) (./chapters/Preparation.tex [1
 
-]) (./chapters/Preparation.tex [2]
+]
 第 \lower 0.1ex\hbox {2} 章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 13.31541pt on input line 4.
@@ -414,48 +414,44 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 13.31541pt on input line 4.
-) (./chapters/Function.tex [3
+) (./chapters/Function.tex [2
 
 ]
 第 \lower 0.1ex\hbox {3} 章
-[4
+) (./chapters/Implementation.tex [3
 
-]) (./chapters/Implementation.tex [5]
+]
 第 \lower 0.1ex\hbox {4} 章
+) (./chapters/Indication.tex [4
+
+]
+第 \lower 0.1ex\hbox {5} 章
+) (./chapters/Discussion.tex [5
+
+]
+第 \lower 0.1ex\hbox {6} 章
 [6
 
-]) (./chapters/Indication.tex [7]
-第 \lower 0.1ex\hbox {5} 章
-[8
-
-]) (./chapters/Discussion.tex [9]
-第 \lower 0.1ex\hbox {6} 章
+] [7] [8]) (./chapters/Conclusion.tex [9]
+第 \lower 0.1ex\hbox {7} 章
 [10
 
-] [11] [12]) (./chapters/Conclusion.tex [13]
-第 \lower 0.1ex\hbox {7} 章
-[14
-
-] [15]) [16]
+] [11]) [12]
 謝辞
-[17
+[13
 
 ]
 参考文献
-[18
+[14
 
-] (./GraduateThesis.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./GraduateThesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4175 strings out of 493270
- 56199 string characters out of 6148034
- 127198 words of memory out of 5000000
- 8036 multiletter control sequences out of 15000+600000
+ 4173 strings out of 493270
+ 56172 string characters out of 6148034
+ 127197 words of memory out of 5000000
+ 8034 multiletter control sequences out of 15000+600000
  26919 words of font info for 100 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 26i,8n,36p,468b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,8n,36p,413b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (21 pages, 51968 bytes).
+Output written on GraduateThesis.dvi (17 pages, 36768 bytes).
