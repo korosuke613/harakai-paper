@@ -11,20 +11,21 @@
 \contentsline {chapter}{\numberline {3}機能}{3}
 \contentsline {section}{\numberline {3.1}対応するモデル}{3}
 \contentsline {subsection}{\numberline {3.1.1}モータ単体のモデル}{3}
-\contentsline {subsection}{\numberline {3.1.2}モータモデルを一つにまとめたモデル}{3}
-\contentsline {section}{\numberline {3.2}特性表生成}{3}
-\contentsline {chapter}{\numberline {4}実装}{4}
-\contentsline {section}{\numberline {4.1}シミュレーション結果解析機能}{4}
-\contentsline {section}{\numberline {4.2}特性表生成機能}{4}
-\contentsline {chapter}{\numberline {5}適用例}{5}
-\contentsline {section}{\numberline {5.1}モータ単体のモデル}{5}
-\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{5}
-\contentsline {chapter}{\numberline {6}考察}{6}
-\contentsline {section}{\numberline {6.1}評価}{7}
-\contentsline {subsection}{\numberline {6.1.1}評価方法}{7}
-\contentsline {subsection}{\numberline {6.1.2}結果}{7}
-\contentsline {section}{\numberline {6.2}関連研究}{7}
+\contentsline {subsection}{\numberline {3.1.2}モータ単体のモデルをサブシステムとするモデル}{4}
+\contentsline {section}{\numberline {3.2}特性表生成}{4}
+\contentsline {subsection}{\numberline {3.2.1}特性表生成機能}{4}
+\contentsline {chapter}{\numberline {4}実装}{6}
+\contentsline {section}{\numberline {4.1}シミュレーション結果解析機能}{6}
+\contentsline {section}{\numberline {4.2}特性表生成機能}{6}
+\contentsline {chapter}{\numberline {5}適用例}{7}
+\contentsline {section}{\numberline {5.1}モータ単体のモデル}{7}
+\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{7}
+\contentsline {chapter}{\numberline {6}考察}{8}
+\contentsline {section}{\numberline {6.1}評価}{8}
+\contentsline {subsection}{\numberline {6.1.1}評価方法}{8}
+\contentsline {subsection}{\numberline {6.1.2}結果}{8}
+\contentsline {section}{\numberline {6.2}関連研究}{8}
 \contentsline {section}{\numberline {6.3}ツールの問題点}{8}
-\contentsline {chapter}{\numberline {7}おわりに}{10}
-\contentsline {countChapter}{謝辞}{13}
-\contentsline {chapter}{参考文献}{14}
+\contentsline {chapter}{\numberline {7}おわりに}{9}
+\contentsline {countChapter}{謝辞}{10}
+\contentsline {chapter}{参考文献}{11}
