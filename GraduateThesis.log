@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  21 JAN 2020 22:01
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  22 JAN 2020 02:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -382,14 +382,14 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 41.
+(Font)              scaled to size 11.09619pt on input line 36.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 41.
+(Font)              scaled to size 11.09619pt on input line 36.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 36.
  (c:/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ))
@@ -397,28 +397,28 @@ File: ot1txtt.fd 2000/12/15 v3.1
 \openout3 = `GraduateThesis.toc'.
 
  [2] (./chapters/Introduction.tex
-第 \lower 0.1ex\hbox {1} 章
+第 \lower 0.01ex\hbox {1} 章
 ) (./chapters/Preparation.tex [1
 
 ]
-第 \lower 0.1ex\hbox {2} 章
+第 \lower 0.01ex\hbox {2} 章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 4.
+(Font)              scaled to size 13.31541pt on input line 9.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 4.
+(Font)              scaled to size 13.31541pt on input line 9.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 4.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 4.
+(Font)              scaled to size 13.31541pt on input line 9.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 4.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 4.
-) (./chapters/Function.tex [2
+(Font)              scaled to size 13.31541pt on input line 9.
+[2
 
-]
-第 \lower 0.1ex\hbox {3} 章
-[3
+]) (./chapters/Function.tex [3]
+第 \lower 0.01ex\hbox {3} 章
+[4
 
 ]
 File: ./Image/touka.png Graphic file (type bmp)
@@ -431,45 +431,51 @@ File: ./Image/submodel_pack.png Graphic file (type bmp)
 <./Image/submodel_pack.png>
 File: ./Image/sub_modelica.png Graphic file (type bmp)
 <./Image/sub_modelica.png>
- [4] [5] [6]
+ [5] [6] [7]
 File: ./Image/simyu_csv.png Graphic file (type bmp)
 <./Image/simyu_csv.png>
 File: ./Image/chara_table.png Graphic file (type bmp)
 <./Image/chara_table.png>
-) (./chapters/Implementation.tex [7
+) (./chapters/Implementation.tex [8
 
-] [8]
-第 \lower 0.1ex\hbox {4} 章
-[9
+] [9]
+第 \lower 0.01ex\hbox {4} 章
+[10
 
-] [10] [11]) (./chapters/Indication.tex [12]
-第 \lower 0.1ex\hbox {5} 章
-) (./chapters/Discussion.tex [13
-
-]
-第 \lower 0.1ex\hbox {6} 章
-) (./chapters/Conclusion.tex [14
+] [11]) (./chapters/Indication.tex [12] [13]
+第 \lower 0.01ex\hbox {5} 章
+) (./chapters/Discussion.tex [14
 
 ]
-第 \lower 0.1ex\hbox {7} 章
-) [15
+第 \lower 0.01ex\hbox {6} 章
+) (./chapters/Conclusion.tex [15
+
+]
+第 \lower 0.01ex\hbox {7} 章
+) [16
 
 ]
 謝辞
-[16
+[17
 
 ]
 参考文献
-[17
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 64.
+(c:/texlive/2018/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 64.
+ [18
 
 ] (./GraduateThesis.aux) ) 
 Here is how much of TeX's memory you used:
- 4218 strings out of 493270
- 57091 string characters out of 6148034
- 127431 words of memory out of 5000000
- 8068 multiletter control sequences out of 15000+600000
+ 4233 strings out of 493270
+ 57342 string characters out of 6148034
+ 127365 words of memory out of 5000000
+ 8081 multiletter control sequences out of 15000+600000
  26919 words of font info for 100 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  26i,9n,36p,360b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (20 pages, 32872 bytes).
+Output written on GraduateThesis.dvi (21 pages, 37280 bytes).

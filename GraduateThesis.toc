@@ -1,42 +1,37 @@
 \contentsline {chapter}{\numberline {1}はじめに}{1}
 \contentsline {chapter}{\numberline {2}研究の準備}{2}
-\contentsline {section}{\numberline {2.1}モータ作成}{2}
-\contentsline {subsection}{\numberline {2.1.1}仕様書}{2}
-\contentsline {subsection}{\numberline {2.1.2}シミュレータの役割}{2}
-\contentsline {section}{\numberline {2.2}モータ特性表}{2}
-\contentsline {subsection}{\numberline {2.2.1}特性表の種類}{2}
-\contentsline {subsection}{\numberline {2.2.2}特性表の要素}{2}
-\contentsline {section}{\numberline {2.3}OpenModelica}{2}
-\contentsline {subsection}{\numberline {2.3.1}modelica}{2}
-\contentsline {subsection}{\numberline {2.3.2}出力}{2}
-\contentsline {chapter}{\numberline {3}機能}{3}
-\contentsline {section}{\numberline {3.1}対応するモデル}{3}
-\contentsline {subsection}{\numberline {3.1.1}モータ単体のModelicaモデル}{3}
-\contentsline {subsection}{\numberline {3.1.2}モータ単体のModelicaモデルをサブシステムとするモデル}{4}
-\contentsline {section}{\numberline {3.2}モータ特性表生成}{7}
-\contentsline {chapter}{\numberline {4}実装}{9}
-\contentsline {section}{\numberline {4.1}特性表生成機能}{9}
-\contentsline {subsection}{\numberline {4.1.1}csvファイルの読み込み}{9}
-\contentsline {subsection}{\numberline {4.1.2}特性表の各要素を算出するために必要なデータを取得}{9}
-\contentsline {subsection}{\numberline {4.1.3}特性表の各要素を算出}{10}
-\contentsline {subsubsection}{電圧}{10}
-\contentsline {subsubsection}{始動電流}{10}
-\contentsline {subsubsection}{停動トルク}{10}
-\contentsline {subsubsection}{最大効率}{11}
-\contentsline {subsubsection}{定格トルク}{11}
-\contentsline {subsubsection}{定格回転数}{11}
-\contentsline {subsubsection}{定格電流}{11}
-\contentsline {subsubsection}{定格出力}{11}
-\contentsline {subsection}{\numberline {4.1.4}特性表を生成}{12}
-\contentsline {chapter}{\numberline {5}適用例}{13}
-\contentsline {section}{\numberline {5.1}モータ単体のモデル}{13}
-\contentsline {section}{\numberline {5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{13}
-\contentsline {chapter}{\numberline {6}考察}{14}
-\contentsline {section}{\numberline {6.1}評価}{14}
-\contentsline {subsection}{\numberline {6.1.1}評価方法}{14}
-\contentsline {subsection}{\numberline {6.1.2}結果}{14}
-\contentsline {section}{\numberline {6.2}関連研究}{14}
-\contentsline {section}{\numberline {6.3}ツールの問題点}{14}
-\contentsline {chapter}{\numberline {7}おわりに}{15}
-\contentsline {countChapter}{謝辞}{16}
-\contentsline {chapter}{参考文献}{17}
+\contentsline {section}{\numberline {2.1}モータ特性表}{2}
+\contentsline {section}{\numberline {2.2}OpenModelica}{2}
+\contentsline {subsection}{\numberline {2.2.1}modelica}{2}
+\contentsline {subsubsection}{Modelica標準ライブラリ（MSL）}{2}
+\contentsline {subsection}{\numberline {2.2.2}出力}{3}
+\contentsline {chapter}{\numberline {3}機能}{4}
+\contentsline {section}{\numberline {3.1}対応するモデル}{4}
+\contentsline {subsection}{\numberline {3.1.1}モータ単体のModelicaモデル}{4}
+\contentsline {subsection}{\numberline {3.1.2}モータ単体のModelicaモデルをサブシステムとするモデル}{5}
+\contentsline {section}{\numberline {3.2}モータ特性表生成}{8}
+\contentsline {chapter}{\numberline {4}実装}{10}
+\contentsline {section}{\numberline {4.1}csvファイルの読み込み}{10}
+\contentsline {section}{\numberline {4.2}特性表の各要素を算出するために必要なデータを取得}{10}
+\contentsline {section}{\numberline {4.3}特性表の各要素を算出}{11}
+\contentsline {subsection}{\numberline {4.3.1}電圧}{11}
+\contentsline {subsection}{\numberline {4.3.2}始動電流}{11}
+\contentsline {subsection}{\numberline {4.3.3}停動トルク}{11}
+\contentsline {subsection}{\numberline {4.3.4}最大効率}{11}
+\contentsline {subsection}{\numberline {4.3.5}定格トルク}{12}
+\contentsline {subsection}{\numberline {4.3.6}定格回転数}{12}
+\contentsline {subsection}{\numberline {4.3.7}定格電流}{12}
+\contentsline {subsection}{\numberline {4.3.8}定格出力}{12}
+\contentsline {section}{\numberline {4.4}特性表を生成}{13}
+\contentsline {chapter}{\numberline {5}適用例}{14}
+\contentsline {section}{\numberline {5.1}モータ単体のモデル}{14}
+\contentsline {section}{\numberline {5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{14}
+\contentsline {chapter}{\numberline {6}考察}{15}
+\contentsline {section}{\numberline {6.1}評価}{15}
+\contentsline {subsection}{\numberline {6.1.1}評価方法}{15}
+\contentsline {subsection}{\numberline {6.1.2}結果}{15}
+\contentsline {section}{\numberline {6.2}関連研究}{15}
+\contentsline {section}{\numberline {6.3}ツールの問題点}{15}
+\contentsline {chapter}{\numberline {7}おわりに}{16}
+\contentsline {countChapter}{謝辞}{17}
+\contentsline {chapter}{参考文献}{18}

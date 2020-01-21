@@ -2,8 +2,8 @@
 
 本章では、本研究で試作したモータ特性表自動生成ツールの機能について説明する。
 
-モータ特性表自動生成ツールは、OpenModelicaで、Modelica言語にて作成したモータのモデルをシミュレーションした時に、
-出力されるcsvファイルを読み込み、実行することによって、モータ特性表を生成する。\\
+Modelica言語で作成したモータのモデルを、OpenModelicaでシミュレーションした時にcsvファイルが出力される。\\
+今回試作したモータ特性表自動生成ツールは、出力されたcsvファイルを読み込み、実行することによって、モータ特性表を生成する。\\
 
 \section{対応するモデル}\label{taioumodel}
 試作したモータ特性表自動生成ツールでは、以下のModelicaモデルのシミュレーション結果に対応する。
@@ -18,7 +18,7 @@
 モータ単体のModelicaモデルとは、電源部品、抵抗部品、インダクター部品、起電力部品、慣性部品、接地部品を持つモデルのことである。\\
 上記6つの部品が必要な理由は、ブラシ付きDCモータの等価回路\cite{等価回路}をModelica言語で表す際に、
 使用する部品\cite{modelicaシステム本}だからである。\\
-各部品で使用するMSLを表\ref{tab:MSL}に、ブラシ付きDCモータの等価回路図を図\ref{fig:touka}に、
+各部品で使用するMSLを表\ref{tab:MSL}に、ブラシ付きDCモータの等価回路を図\ref{fig:touka}に、
 モータ単体のModelicaモデルの例を図\ref{fig:tantai_model}に、
 図\ref{fig:tantai_model}のModelicaコードを図\ref{fig:tantai_modelica}に示す。
 
@@ -58,10 +58,12 @@
 	\label{fig:tantai_modelica}
   \end{figure}
 
+  \vspace{-1zh}
 
-\subsection{モータ単体のModelicaモデルをサブシステムとするモデル}\label{sec:sub2}
+\subsection{モータ単体のModelicaモデルをサブシステムとするモデル} %\label{sec:sub2}
 モータ単体のModelicaモデルをサブシステム\cite{modelicaシステム本}とするモデルとは、
-\ref{sec:sub1}節で説明したモータ単体のModelicaモデルを一つのサブシステムとして書いたモデルのことである。\\
+\ref{sec:sub1}節で説明したモータ単体のModelicaモデルを一つのサブシステムとして扱い、
+他の部品と合わせたモデルのことである。\\
 例として、DCモータのサブシステムを用いたDCモータサーボのモデルを図\ref{fig:submodel}に、図\ref{fig:submodel}の
 Modelicaコードを図\ref{fig:sub_modelica}に示す。
 
