@@ -36,53 +36,83 @@ csvファイルを読み込む。
     \item 電圧
     \item トルク
     \item 角速度
+    \item 抵抗値
 \end{itemize}
 
 取得方法としては、まず、図\ref{fig:simyu_csv}にあるように、OpenModelicaから出力されたcsvファイルの1行目には
-各部品の変数名が記載されているので、取得したいデータを持つ変数名を探し、その変数名がある列番号を取得する。
-そして、各データに対応した配列に、列番号の位置にある値を繰り返し処理で格納する。
+各部品の変数名が記載されているので、取得したいデータを持つ変数名を探し、その変数名がある場所の添字を取得する。
+そして、各データに対応した配列に、同じ添字の位置にある値を繰り返し処理で格納する。
 
 \subsection{特性表の各要素を算出}\label{sub:keisan}
 \ref{sub:syutoku_data}章で取得したデータを用いて、\ref{kenkyu_mokuteki}章で挙げた各要素を算出する。
 
+\subsubsection{始動電流}\label{sub:sub:sidouden}
+始動電流とは、モーターの起動時に流れる大きな電流のことである。
+モーターが起動した後はモーター自体が発電機にもなり、逆起電力を発生するため、
+モーター・コイル部分にかかる電圧が下がり、電流値も下がる。
+したがって、電流値の配列の中で一番大きい値を始動電流とする。
+% https://www.tsugawa.co.jp/glossary/　
 
-% \item 始動電流 mA
-% \item 停動トルク mNm
-% \item 最大効率 \%
-% \item 定格トルク mNm 
-% \item 定格回転数 rpm
-% \item 定格電流 mA
-% \item 定格出力 W
-% \item 定格電圧 V
-% \item 最大回転数 rpm 
+\subsubsection{停動トルク}\label{sub:sub:teidoutoruku}
+停動トルクとは、モーターが出しうる最大トルクで、このトルク以上の負荷がかかれば、モーターは停止する値となる。
+したがって、トルク値の配列の中で一番大きい値を停動トルクとする。
+% https://www.orientalmotor.co.jp/tech/glossary/ta11/
 
-\subsection{始動電流}\label{sub:sidouden}
-始動電流とは
-　
-\subsection{停動トルク}\label{sub:teidoutoruku}
+\subsubsection{最大効率}\label{sub:sub:saidaikouritu}
+効率は以下の式で算出することができる。
 
+\[
+    \mbox{効率} = \frac{\mbox{出力}}{\mbox{入力}}  * 100 
+\]
+\[
+    \mbox{出力} = \mbox{角速度} * \mbox{トルク} 
+\]
+\[  
+    \mbox{入力} = \mbox{電圧} * \mbox{電力} 
+\]
 
-\subsection{最大効率}\label{sub:saidaikouritu}
+各配列を上記の式に当てはめ、繰り返し処理で効率値の配列を作成する。
+最大効率は効率値の配列の中で一番大きい値とする。
 
+% https://www.jp-igarashi.com/product/product_motors/curve.html
 
-\subsection{定格トルク}\label{sub:teikakutoruku}
-
-
-\subsection{定格回転数}\label{sub:teikakukaiten}
-
-
-\subsection{定格電流}\label{sub:teikakuden}
-
-
-\subsection{定格出力}\label{sub:teikakusyutu}
-
-
-\subsection{定格電圧}\label{sub:teikakudennatu}
-
-
-\subsection{最大回転数}\label{sub:saidaikaiten}
+\subsubsection{定格トルク}\label{sub:sub:teikakutoruku}
+最大効率時のトルクを定格トルクという。
+したがって、トルク値の配列の中で、最大効率のある効率値の配列の添字と同じ位置にある値が定格トルクとなる。
 
 
+% http://www.sagamimicro.co.jp/product/aboutusage.html
 
+\subsubsection{定格回転数}\label{sub:sub:teikakukaiten}
+最大効率時の回転数を定格回転数という。
+回転数は以下の式で算出することができる。
+
+\[
+    \mbox{回転数} = \frac{30 * \mbox{角速度}}{\pi}   
+\]
+
+したがって、回転数値の配列の中で、最大効率のある効率値の配列の添字と同じ位置にある値が定格回転数となる。
+
+% https://mathwords.net/kaitensu
+
+\subsubsection{定格電流}\label{sub:sub:teikakuden}
+定格電流とは、モータに定格トルクがかかっているときの電流値である。
+したがって、電流値の配列の中で、定格トルクのあるトルク値の配列の添字と同じ位置にある値が定格電流となる。
+
+% http://fa-faq.mitsubishielectric.co.jp/faq/show/18504?category_id=1937&site_domain=default
+
+\subsubsection{定格出力}\label{sub:sub:teikakusyutu}
+定格出力とは、定格動作点における出力の値である。
+定格出力は以下の式で算出することができる。
+
+\[
+    \mbox{定格出力} = \mbox{定格回転数} * \mbox{定格トルク} *  \frac{2\pi}{60}
+\]
+
+% http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
+
+\subsubsection{定格電圧}\label{sub:sub:teikakudennatu}
+
+% https://www.akaneohm.com/column/ratedvoltage/
 
 \subsection{特性表を生成}\label{sub:seisei_hyou}
