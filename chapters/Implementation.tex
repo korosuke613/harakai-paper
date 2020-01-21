@@ -16,21 +16,73 @@
 特性表生成機能の処理の流れを以下に示す。
 \begin{enumerate}
     \item OpenModelicaから出力されたcsvファイルを読み込む
-    \item 特性表の各要素を計算するために必要なデータを取得する
-    \item 特性表の各要素を計算し求める
+    \item 特性表の各要素を算出するために必要なデータをcsvファイルから取得する
+    \item 特性表の各要素を算出する
     \item 特性表を生成する
 \end{enumerate}
 
 以下、各処理について具体的に説明する。
 
-\subsection{csvファイル読み込み}\label{sub:csvfairu}
+\subsection{csvファイルの読み込み}\label{sub:csvfairu}
 Pythonで実装するため、Pythonの標準ライブラリのcsvモジュールをインポートし、
 csvファイルを読み込む。
 
-\subsection{計算に必要なデータを取得}\label{sub:syutoku_data}
-\ref{sub:csvfairu}章で読み込んだcsvファイルから、特性表の各要素を計算するために必要なデータを
+\subsection{特性表の各要素を算出するために必要なデータを取得}\label{sub:syutoku_data}
+\ref{sub:csvfairu}章で読み込んだcsvファイルから、以下のデータを取得する。
+
+\begin{itemize}
+    \item 時間
+    \item 電流
+    \item 電圧
+    \item トルク
+    \item 角速度
+\end{itemize}
+
+取得方法としては、まず、図\ref{fig:simyu_csv}にあるように、OpenModelicaから出力されたcsvファイルの1行目には
+各部品の変数名が記載されているので、取得したいデータを持つ変数名を探し、その変数名がある列番号を取得する。
+そして、各データに対応した配列に、列番号の位置にある値を繰り返し処理で格納する。
+
+\subsection{特性表の各要素を算出}\label{sub:keisan}
+\ref{sub:syutoku_data}章で取得したデータを用いて、\ref{kenkyu_mokuteki}章で挙げた各要素を算出する。
 
 
-\subsection{特性表の各要素を計算}\label{sub:keisan}
+% \item 始動電流 mA
+% \item 停動トルク mNm
+% \item 最大効率 \%
+% \item 定格トルク mNm 
+% \item 定格回転数 rpm
+% \item 定格電流 mA
+% \item 定格出力 W
+% \item 定格電圧 V
+% \item 最大回転数 rpm 
 
-\subsection{特性表生成}\label{sub:seisei_hyou}
+\subsection{始動電流}\label{sub:sidouden}
+始動電流とは
+　
+\subsection{停動トルク}\label{sub:teidoutoruku}
+
+
+\subsection{最大効率}\label{sub:saidaikouritu}
+
+
+\subsection{定格トルク}\label{sub:teikakutoruku}
+
+
+\subsection{定格回転数}\label{sub:teikakukaiten}
+
+
+\subsection{定格電流}\label{sub:teikakuden}
+
+
+\subsection{定格出力}\label{sub:teikakusyutu}
+
+
+\subsection{定格電圧}\label{sub:teikakudennatu}
+
+
+\subsection{最大回転数}\label{sub:saidaikaiten}
+
+
+
+
+\subsection{特性表を生成}\label{sub:seisei_hyou}
