@@ -16,7 +16,7 @@
 特性表生成機能の処理の流れを以下に示す。
 \begin{enumerate}
     \item OpenModelicaから出力されたcsvファイルを読み込む
-    \item 特性表の各要素を算出するために必要なデータをcsvファイルから取得する
+    \item 特性表の各要素を算出するために必要なデータを、csvファイルから取得する
     \item 特性表の各要素を算出する
     \item 特性表を生成する
 \end{enumerate}
@@ -36,15 +36,17 @@ csvファイルを読み込む。
     \item 電圧
     \item トルク
     \item 角速度
-    \item 抵抗値
 \end{itemize}
 
-取得方法としては、まず、図\ref{fig:simyu_csv}にあるように、OpenModelicaから出力されたcsvファイルの1行目には
-各部品の変数名が記載されているので、取得したいデータを持つ変数名を探し、その変数名がある場所の添字を取得する。
-そして、各データに対応した配列に、同じ添字の位置にある値を繰り返し処理で格納する。
+図\ref{fig:simyu_csv}にあるように、OpenModelicaから出力されたcsvファイルの1行目には、
+各部品の変数名が記載されている。取得したいデータを持つ変数名を探し、その変数名がある場所の添字を取得する。
+そして、各データに対応した配列に、同じ添字の位置にある値を繰り返し処理で格納する方法で値を取得する。
 
 \subsection{特性表の各要素を算出}\label{sub:keisan}
 \ref{sub:syutoku_data}章で取得したデータを用いて、\ref{kenkyu_mokuteki}章で挙げた各要素を算出する。
+
+\subsubsection{電圧}\label{sub:sub:dennatu}
+シミュレーション時に印加した値を取る。
 
 \subsubsection{始動電流}\label{sub:sub:sidouden}
 始動電流とは、モーターの起動時に流れる大きな電流のことである。
@@ -111,8 +113,5 @@ csvファイルを読み込む。
 
 % http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
 
-\subsubsection{定格電圧}\label{sub:sub:teikakudennatu}
-
-% https://www.akaneohm.com/column/ratedvoltage/
-
 \subsection{特性表を生成}\label{sub:seisei_hyou}
+\ref{sub:keisan}で求めた各値を、

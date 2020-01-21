@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  21 JAN 2020 21:02
+This is e-upTeX, Version 3.14159265-p3.8.0-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018/W32TeX) (preloaded format=uplatex 2019.4.16)  21 JAN 2020 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,7 +442,7 @@ File: ./Image/chara_table.png Graphic file (type bmp)
 第 \lower 0.1ex\hbox {4} 章
 [9
 
-] [10]) (./chapters/Indication.tex [11] [12]
+] [10] [11]) (./chapters/Indication.tex [12]
 第 \lower 0.1ex\hbox {5} 章
 ) (./chapters/Discussion.tex [13
 
@@ -465,11 +465,11 @@ File: ./Image/chara_table.png Graphic file (type bmp)
 ] (./GraduateThesis.aux) ) 
 Here is how much of TeX's memory you used:
  4218 strings out of 493270
- 57098 string characters out of 6148034
+ 57091 string characters out of 6148034
  127431 words of memory out of 5000000
  8068 multiletter control sequences out of 15000+600000
  26919 words of font info for 100 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 26i,9n,36p,407b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 26i,9n,36p,360b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (20 pages, 33052 bytes).
+Output written on GraduateThesis.dvi (20 pages, 32872 bytes).
