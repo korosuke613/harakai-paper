@@ -7,25 +7,28 @@
 \contentsline {subsection}{\numberline {2.2.1}特性表の種類}{2}
 \contentsline {subsection}{\numberline {2.2.2}特性表の要素}{2}
 \contentsline {section}{\numberline {2.3}OpenModelica}{2}
-\contentsline {section}{\numberline {2.4}modelica}{2}
+\contentsline {subsection}{\numberline {2.3.1}modelica}{2}
+\contentsline {subsection}{\numberline {2.3.2}出力}{2}
 \contentsline {chapter}{\numberline {3}機能}{3}
 \contentsline {section}{\numberline {3.1}対応するモデル}{3}
-\contentsline {subsection}{\numberline {3.1.1}モータ単体のモデル}{3}
-\contentsline {subsection}{\numberline {3.1.2}モータ単体のモデルをサブシステムとするモデル}{4}
-\contentsline {section}{\numberline {3.2}特性表生成}{4}
-\contentsline {subsection}{\numberline {3.2.1}特性表生成機能}{4}
-\contentsline {chapter}{\numberline {4}実装}{6}
-\contentsline {section}{\numberline {4.1}シミュレーション結果解析機能}{6}
-\contentsline {section}{\numberline {4.2}特性表生成機能}{6}
-\contentsline {chapter}{\numberline {5}適用例}{7}
-\contentsline {section}{\numberline {5.1}モータ単体のモデル}{7}
-\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{7}
-\contentsline {chapter}{\numberline {6}考察}{8}
-\contentsline {section}{\numberline {6.1}評価}{8}
-\contentsline {subsection}{\numberline {6.1.1}評価方法}{8}
-\contentsline {subsection}{\numberline {6.1.2}結果}{8}
-\contentsline {section}{\numberline {6.2}関連研究}{8}
-\contentsline {section}{\numberline {6.3}ツールの問題点}{8}
-\contentsline {chapter}{\numberline {7}おわりに}{9}
-\contentsline {countChapter}{謝辞}{10}
-\contentsline {chapter}{参考文献}{11}
+\contentsline {subsection}{\numberline {3.1.1}モータ単体のModelicaモデル}{3}
+\contentsline {subsection}{\numberline {3.1.2}モータ単体のModelicaモデルをサブシステムとするモデル}{4}
+\contentsline {section}{\numberline {3.2}モータ特性表生成}{7}
+\contentsline {chapter}{\numberline {4}実装}{9}
+\contentsline {section}{\numberline {4.1}特性表生成機能}{9}
+\contentsline {subsection}{\numberline {4.1.1}csvファイル読み込み}{9}
+\contentsline {subsection}{\numberline {4.1.2}計算に必要なデータを取得}{9}
+\contentsline {subsection}{\numberline {4.1.3}特性表の各要素を計算}{10}
+\contentsline {subsection}{\numberline {4.1.4}特性表生成}{10}
+\contentsline {chapter}{\numberline {5}適用例}{11}
+\contentsline {section}{\numberline {5.1}モータ単体のモデル}{11}
+\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{11}
+\contentsline {chapter}{\numberline {6}考察}{12}
+\contentsline {section}{\numberline {6.1}評価}{12}
+\contentsline {subsection}{\numberline {6.1.1}評価方法}{12}
+\contentsline {subsection}{\numberline {6.1.2}結果}{12}
+\contentsline {section}{\numberline {6.2}関連研究}{12}
+\contentsline {section}{\numberline {6.3}ツールの問題点}{12}
+\contentsline {chapter}{\numberline {7}おわりに}{13}
+\contentsline {countChapter}{謝辞}{14}
+\contentsline {chapter}{参考文献}{15}

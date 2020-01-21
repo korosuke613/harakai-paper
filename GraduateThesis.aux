@@ -21,8 +21,10 @@
 \newlabel{ele}{{2.2.2}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {2.3}OpenModelica}{2}}
 \newlabel{OM}{{2.3}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}modelica}{2}}
-\newlabel{modelica}{{2.4}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}modelica}{2}}
+\newlabel{modelica}{{2.3.1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}出力}{2}}
+\newlabel{output}{{2.3.2}{2}}
 \citation{等価回路}
 \citation{modelicaシステム本}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3}機能}{3}}
@@ -31,49 +33,63 @@
 \newlabel{cha:Function}{{3}{3}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}対応するモデル}{3}}
 \newlabel{taioumodel}{{3.1}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}モータ単体のモデル}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}モータ単体のModelicaモデル}{3}}
 \newlabel{sec:sub1}{{3.1.1}{3}}
 \citation{modelicaシステム本}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 等価回路}}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces MSL対応表}}{4}}
+\newlabel{tab:MSL}{{3.1}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces ブラシ付きDCモータの等価回路}}{4}}
 \newlabel{fig:touka}{{3.1}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}モータ単体のモデルをサブシステムとするモデル}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}モータ単体のModelicaモデルをサブシステムとするモデル}{4}}
 \newlabel{sec:sub2}{{3.1.2}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}特性表生成}{4}}
-\newlabel{kenkyu_mokuteki}{{3.2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}特性表生成機能}{4}}
-\newlabel{sec:tokusei}{{3.2.1}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces モータ単体のモデル}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces モータ単体のModelicaモデルの例}}{5}}
 \newlabel{fig:tantai_model}{{3.2}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces モータ単体のモデルのModelicaコード}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 図3.2\@setref@ {}のModelicaコード}}{5}}
 \newlabel{fig:tantai_modelica}{{3.3}{5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}実装}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces DCモータサーボのモデル}}{6}}
+\newlabel{fig:submodel}{{3.4}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces 図3.4\@setref@ {}のModelicaコード}}{6}}
+\newlabel{fig:sub_modelica}{{3.5}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}モータ特性表生成}{7}}
+\newlabel{kenkyu_mokuteki}{{3.2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 図3.2\@setref@ {}のシミュレーション結果のcsvファイルの一部}}{8}}
+\newlabel{fig:simyu_csv}{{3.6}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces 図3.6\@setref@ {}のcsvファイルから作成した特性表}}{8}}
+\newlabel{fig:tokuseihyou}{{3.7}{8}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}実装}{9}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\newlabel{cha:Implementation}{{4}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}シミュレーション結果解析機能}{6}}
-\newlabel{kyap_re}{{4.1}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}特性表生成機能}{6}}
-\newlabel{gazou_input}{{4.2}{6}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}適用例}{7}}
+\newlabel{cha:Implementation}{{4}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}特性表生成機能}{9}}
+\newlabel{tokuseihyou_seisei}{{4.1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}csvファイル読み込み}{9}}
+\newlabel{sub:csvfairu}{{4.1.1}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}計算に必要なデータを取得}{9}}
+\newlabel{sub:syutoku_data}{{4.1.2}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}特性表の各要素を計算}{10}}
+\newlabel{sub:keisan}{{4.1.3}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}特性表生成}{10}}
+\newlabel{sub:seisei_hyou}{{4.1.4}{10}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}適用例}{11}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\newlabel{cha:Indication}{{5}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}モータ単体のモデル}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{7}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}考察}{8}}
+\newlabel{cha:Indication}{{5}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}モータ単体のモデル}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}パッケージ化されたモデル}{11}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}考察}{12}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\newlabel{cha:Discussion}{{6}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}評価}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}評価方法}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}結果}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}関連研究}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}ツールの問題点}{8}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}おわりに}{9}}
+\newlabel{cha:Discussion}{{6}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}評価}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}評価方法}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}結果}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}関連研究}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}ツールの問題点}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}おわりに}{13}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\newlabel{cha:Conclusion}{{7}{9}}
-\@writefile{toc}{\contentsline {countChapter}{謝辞}{10}}
+\newlabel{cha:Conclusion}{{7}{13}}
+\@writefile{toc}{\contentsline {countChapter}{謝辞}{14}}
 \bibcite{等価回路}{1}
 \bibcite{modelicaシステム本}{2}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{11}}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{15}}
