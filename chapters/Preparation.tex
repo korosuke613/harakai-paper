@@ -6,22 +6,11 @@
 % \subsection{仕様書}\label{siyo}
 % \subsection{シミュレータの役割}\label{simu}
 
-\section{モータ特性表}\label{toku}
-モータを選ぶ際に、参考にする資料である。\\
-今回作成する特性表の各要素の必要性はここで書く？
-
-
-
 \section{OpenModelica}\label{OM}
-Modelica言語に対応したOSS
-    \subsection{modelica}\label{modelica}
-微分代数方程式を用いた複合領域の物理システムモデリングのために開発されたオブジェクト指向言語である。\\
-        \subsubsection{Modelica標準ライブラリ（MSL）}\label{MSL}
-        Modelica言語による様々な物理領域のモデルライブラリを開発しており、
-        数学、機械、電気、熱、流体、制御系、状態遷移機械などを含んだフリーのライブラリがリリースされている。
+Modelica言語に対応したOSSである\cite{fritzson2006openmodelica}。
 
-    \subsection{出力}\label{output}
-OpenModelicaでは、シミュレーション結果を以下の3つの形式から選択することができる。
+\subsection{出力}\label{output}
+OpenModelicaでは、シミュレーション結果の保存先を、以下の3つの形式から選択することができる。
 
 \begin{itemize}
     \item matファイル
@@ -29,4 +18,103 @@ OpenModelicaでは、シミュレーション結果を以下の3つの形式か�
     \item csvファイル
 \end{itemize}
 
-また、OpenModelicaでは、シミュレーション結果をグラフで確認することが可能である。
+また、OpenModelicaでは、シミュレーション結果を、グラフとして画面上に描画することが可能である。
+
+\subsection{グラフィカルモデリング}\label{glafical}
+サブセクションで書くなら何か他にも書く。
+
+\section{Modelica言語}\label{modelica}
+微分代数方程式を用いた複合領域の物理システムモデリングのために開発されたオブジェクト指向言語である。\\
+　\subsection{Modelica標準ライブラリ（MSL）}\label{MSL}
+        Modelica言語による様々な物理領域のモデルライブラリを開発しており、
+        数学、機械、電気、熱、流体、制御系、状態遷移機械などを含んだフリーのライブラリがリリースされている。
+
+\section{モータ特性表}\label{mortoku}
+モータを選ぶ際に、参考にする資料である。\\
+今回作成する特性表の各要素の必要性はここで書く？
+
+\subsection{特性表}\label{tokuhyou}
+
+
+\subsection{特性グラフ}\label{tokugura}
+
+
+\section{ブラシ付きDCモータ}\label{}
+ブラシ付きDCモータだけかけばいいのか？モータ全体の話も必要か？
+
+\section{対応するモデル}\label{taioumodel}
+試作するモータ特性表自動生成ツールでは、以下のModelicaモデルのシミュレーション結果に対応する。
+\begin{itemize}
+	\item モータ単体のModelicaモデル　！！！
+	\item モータ単体のModelicaモデルをサブシステムとするモデル
+\end{itemize}
+なお、今回はモータの中でもブラシ付きDCモータに対応する。\\
+以降、上記のモデルについて具体的に説明する。
+
+\subsection{モータ単体のModelicaモデル}\label{sec:sub1}
+！！！　モータ単体の話ではなくブラシ付きDCモータの話になっている。
+モータ単体のModelicaモデルとは、電源部品、抵抗部品、インダクター部品、起電力部品、慣性部品、接地部品を持つモデルのことである。\\
+上記6つの部品が必要な理由は、ブラシ付きDCモータの等価回路\cite{等価回路}をModelica言語で表す際に、使用する部品\cite{modelicaシステム本}だからである。\\
+各部品で使用するMSLを表\ref{tab:MSL}に、ブラシ付きDCモータの等価回路を図\ref{fig:touka}に、モータ単体のModelicaモデルの例を図\ref{fig:tantai_model}に、
+図\ref{fig:tantai_model}のModelicaコードを図\ref{fig:tantai_modelica}に、それぞれ示す。
+
+\begin{table}[t]
+	\centering
+	\caption{MSL対応表}
+	\begin{tabular}{|c|c|} \hline
+	  部品名 & 使用するMSL \\ \hline \hline
+	  電源部品 & Modelica.Electrical.Analog.Sources \\ \hline
+	  抵抗部品 & Modelica.Electrical.Analog.Basic \\ \hline
+	  インダクター部品 & Modelica.Electrical.Analog.Basic \\ \hline
+	  起電力部品 & Modelica.Electrical.Analog.Basic \\ \hline
+	  慣性部品 & Modelica.Mechanics.Rotational.Components \\ \hline
+	  接地部品 & Modelica.Electrical.Analog.Basic \\ \hline
+	\end{tabular}
+	\label{tab:MSL}
+  \end{table}
+　
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=7cm]{./Image/touka.png}
+	\caption{ブラシ付きDCモータの等価回路}
+	\label{fig:touka}
+  \end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=10cm]{./Image/tantai_model.png}
+  \caption{モータ単体のModelicaモデルの例}
+  \label{fig:tantai_model}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=16.5cm,height=8cm]{./Image/tantai_modelica.png}
+	\caption{図\ref{fig:tantai_model}のModelicaコード}
+	\label{fig:tantai_modelica}
+  \end{figure}
+
+  \vspace{-1zh}
+
+\subsection{モータ単体のModelicaモデルをサブシステムとするモデル} %\label{sec:sub2}
+モータ単体のModelicaモデルをサブシステム\cite{modelicaシステム本}とするモデルとは、
+\ref{sec:sub1}節で説明したモータ単体のModelicaモデルを1つのサブシステムとして扱い、他の部品と合わせたモデルのことである。\\
+例として、DCモータのサブシステムを用いたDCモータサーボのモデルを図\ref{fig:submodel}に、図\ref{fig:submodel}のModelicaコードを図\ref{fig:sub_modelica}に、それぞれ示す。
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=16.5cm,height=10cm]{./Image/submodel_pack.png}
+	\caption{DCモータサーボのモデル}
+	\label{fig:submodel}
+  \end{figure}
+
+  \begin{figure}[t]
+	\centering
+	\includegraphics[width=16.5cm,height=10cm]{./Image/sub_modelica.png}
+	\caption{図\ref{fig:submodel}のModelicaコード}
+	\label{fig:sub_modelica}
+  \end{figure}
+
+  \section{Python}\label{python}
+  Python の説明ーーー
+  今回はーーを実装するためにPythonを使用した。
