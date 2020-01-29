@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  29 JAN 2020 13:14
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  29 JAN 2020 19:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,14 +547,14 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 57.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 57.
+(Font)              scaled to size 11.09619pt on input line 61.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 57.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 57.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 57.
+(Font)              scaled to size 11.09619pt on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ))
@@ -587,53 +587,53 @@ File: ./Image/simyu_csv.png Graphic file (type bmp)
  [3]
 File: ./Image/touka.png Graphic file (type bmp)
 <./Image/touka.png>
+ [4]
 File: ./Image/tantai_model.png Graphic file (type bmp)
 <./Image/tantai_model.png>
 File: ./Image/tantai_modelica.png Graphic file (type bmp)
 <./Image/tantai_modelica.png>
 File: ./Image/submodel_pack.png Graphic file (type bmp)
 <./Image/submodel_pack.png>
- [4]
 File: ./Image/sub_modelica.png Graphic file (type bmp)
 <./Image/sub_modelica.png>
- [5]) (./chapters/Function.tex [6] [7]
+ [5]) (./chapters/Function.tex [6] [7] [8]
 第 \lower 0.01ex\hbox {3} 章
-[8
+[9
 
-] [9] [10] [11]
+] [10] [11] [12]
 File: ./Image/succes_comand.png Graphic file (type bmp)
 <./Image/succes_comand.png>
 File: Image/characteristicTable.pdf Graphic file (type pdf)
 <Image/characteristicTable.pdf>
- [12] [13]
+ [13] [14]
 File: ./Image/error_file.png Graphic file (type bmp)
 <./Image/error_file.png>
 File: ./Image/error_comand.png Graphic file (type bmp)
 <./Image/error_comand.png>
-) (./chapters/Implementation.tex [14
+) (./chapters/Implementation.tex [15
 
 ]
 第 \lower 0.01ex\hbox {4} 章
-[15
+[16
 
-] [16] [17]) (./chapters/Indication.tex [18]
+] [17] [18] [19]) (./chapters/Indication.tex [20]
 第 \lower 0.01ex\hbox {5} 章
-) (./chapters/Discussion.tex [19
+) (./chapters/Discussion.tex [21
 
 ]
 第 \lower 0.01ex\hbox {6} 章
-) (./chapters/Conclusion.tex [20
+) (./chapters/Conclusion.tex [22
 
 ]
 第 \lower 0.01ex\hbox {7} 章
-) (./listings-modelica.cfg) [21
+) (./listings-modelica.cfg) [23
 
 ]
 謝辞
 
 Package hyperref Warning: bookmark level for unknown countChapter defaults to 0.
 
-(./GraduateThesis.bbl [22
+(./GraduateThesis.bbl [24
 
 ]
 参考文献
@@ -647,7 +647,7 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 14.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
- [23
+ [25
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
@@ -655,16 +655,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `GraduateThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 9F23FE269C04942CAE4EE68FEF73F977;3224.
+(rerunfilecheck)             Checksum: DAFEDE77996157A0585C361182BE8846;2967.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 9505 strings out of 494731
- 136877 string characters out of 6176320
- 231031 words of memory out of 5000000
- 12845 multiletter control sequences out of 15000+600000
+ 9510 strings out of 494731
+ 136958 string characters out of 6176320
+ 230857 words of memory out of 5000000
+ 12850 multiletter control sequences out of 15000+600000
  26454 words of font info for 99 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
  29i,9n,40p,1019b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (26 pages, 75016 bytes).
+Output written on GraduateThesis.dvi (28 pages, 75772 bytes).
