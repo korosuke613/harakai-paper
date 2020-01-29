@@ -208,6 +208,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
+INPUT ./Image/simyu_csv.png
+INPUT extractbb -B cropbox -O ./Image/simyu_csv.png
 INPUT ./Image/touka.png
 INPUT extractbb -B cropbox -O ./Image/touka.png
 INPUT ./Image/tantai_model.png
@@ -220,8 +222,6 @@ INPUT ./Image/sub_modelica.png
 INPUT extractbb -B cropbox -O ./Image/sub_modelica.png
 INPUT chapters/Function.tex
 INPUT chapters/Function.tex
-INPUT ./Image/simyu_csv.png
-INPUT extractbb -B cropbox -O ./Image/simyu_csv.png
 INPUT ./Image/succes_comand.png
 INPUT extractbb -B cropbox -O ./Image/succes_comand.png
 INPUT Image/characteristicTable.pdf

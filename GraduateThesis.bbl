@@ -6,6 +6,15 @@
 \newblock \url{https://www.nidec.com/jp/technology/scenes/}.
 \newblock Accessed: 2020-1-22.
 
+\bibitem{fritzson2006openmodelica}
+Peter Fritzson, Peter Aronsson, Adrian Pop, Hakan Lundvall, Kaj Nystrom, Levon
+  Saldamli, David Broman, and Anders Sandholm.
+\newblock Openmodelica-a free open-source environment for system modeling,
+  simulation, and teaching.
+\newblock In {\em 2006 IEEE Conference on Computer Aided Control System Design,
+  2006 IEEE International Conference on Control Applications, 2006 IEEE
+  International Symposium on Intelligent Control}, pp. 1588--1595. IEEE, 2006.
+
 \bibitem{等価回路}
 Tech~Web motor.
 \newblock ブラシ付きdcモータの特性.
@@ -17,14 +26,5 @@ Tech~Web motor.
 Peter Fritzson.
 \newblock Modelicaによるシステムシミュレーション入門.
 \newblock TechShare社, 2015.
-
-\bibitem{fritzson2006openmodelica}
-Peter Fritzson, Peter Aronsson, Adrian Pop, Hakan Lundvall, Kaj Nystrom, Levon
-  Saldamli, David Broman, and Anders Sandholm.
-\newblock Openmodelica-a free open-source environment for system modeling,
-  simulation, and teaching.
-\newblock In {\em 2006 IEEE Conference on Computer Aided Control System Design,
-  2006 IEEE International Conference on Control Applications, 2006 IEEE
-  International Symposium on Intelligent Control}, pp. 1588--1595. IEEE, 2006.
 
 \end{thebibliography}

@@ -87,7 +87,7 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 	\item トルク mNm * 効率 \%
 	\item トルク mNm * 出力 W
 \end{itemize}
-以降、各グラフついて述べる。
+以降、各グラフについて述べる。
 \subsubsection{「トルク * 電流」グラフ}\label{sub:sub:torden}
 「トルク * 電流」グラフとは、横軸が「トルク mNm」、縦軸が「電流 mA」で生成するグラフのことである。
 \subsubsection{「トルク * 回転数」グラフ}\label{sub:sub:torkaiten}
@@ -99,7 +99,7 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 % \vspace{-3zh}
 \section{ツールの実行}\label{zikkou}
 % 今回試作したツールの実行方法は、ツールのファイルが存在するディレクトリで、コマンド「python characteristic.py 第1引数 第2引数 第3引数」を実行することである。\\
-今回試作したツールの実行するためのコマンドは、「python characteristic.py 第1引数 第2引数 第3引数」である。\\
+今回試作したツールを実行するためのコマンドは、「python characteristic.py 第1引数 第2引数 第3引数」である。\\
 なお、このコマンドは、ツールの実行ファイルが存在するディレクトリで実行する必要がある。\\
 第1引数には、入力とするcsvファイルのパスを含めたファイル名を指定する。\\
 第2引数には、第1引数で指定したcsvファイルの中の、計算したいモータのモデルに含まれる、慣性部品のオブジェクト名が必要である。\\
@@ -107,19 +107,10 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 第2引数、第3引数で慣性部品と電源部品のオブジェクト名が必要な理由は、モータ特性表を作成するために使用するデータを持つ部品だからである。
 
 % 図\ref{fig:tantai_model}のモデルをシミュレーションした時に、OpenModelicaから出力されるcsvファイルの一部を、図\ref{fig:simyu_csv}に示す。\\
-図\ref{fig:simyu_csv}に示したcsvファイルのファイル名が、「DCmotor\_res.csv」だった場合の実行コマンドを、図\ref{fig:zikkou}に示す。
-
+図\ref{fig:simyu_csv}に示したcsvファイルのファイル名が、「DCmotor\_res.csv」だった場合の実行コマンドを、図\ref{fig:zikkou}に示す。\\
 モータ特性表が作成できた場合は、図\ref{fig:zikkou}に示すように、画面上に「characteristicTable.pdf created」と青色で表示する。\\
 作成できなかった場合については、\ref{error}節で述べる。\\
 図\ref{fig:zikkou}のコマンドでツールを実行し、図\ref{fig:simyu_csv}から作成したモータ特性表を、図\ref{fig:tokuseihyou}に示す。
-
-
-\begin{figure}[t]
-	\centering
-	\includegraphics[width=16.5cm,height=10cm]{./Image/simyu_csv.png}
-	\caption{図\ref{fig:tantai_model}のシミュレーション結果のcsvファイルの一部}
-	\label{fig:simyu_csv}
-\end{figure}
 
 \begin{figure}[t]
 	\centering
@@ -171,6 +162,6 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=12cm,height=1.5cm]{./Image/error_comand.png}
-	\caption{第2、第3引数に誤りがあった場合のエラー文の例}
+	\caption{第2引数、第3引数に誤りがあった場合のエラー文の例}
 	\label{fig:error_comand}
 \end{figure}

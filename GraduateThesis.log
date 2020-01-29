@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  29 JAN 2020 01:47
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  29 JAN 2020 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,14 +547,14 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 58.
+(Font)              scaled to size 11.09619pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 58.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 58.
+(Font)              scaled to size 11.09619pt on input line 57.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 57.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ))
@@ -568,20 +568,23 @@ File: ot1txtt.fd 2000/12/15 v3.1
 ]
 第 \lower 0.01ex\hbox {2} 章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 10.
+(Font)              scaled to size 13.31541pt on input line 6.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 10.
+(Font)              scaled to size 13.31541pt on input line 6.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 10.
+(Font)              scaled to size 13.31541pt on input line 6.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 10.
+(Font)              scaled to size 13.31541pt on input line 6.
 [2
 
 ]
+File: ./Image/simyu_csv.png Graphic file (type bmp)
+<./Image/simyu_csv.png>
+ [3]
 File: ./Image/touka.png Graphic file (type bmp)
 <./Image/touka.png>
 File: ./Image/tantai_model.png Graphic file (type bmp)
@@ -590,19 +593,14 @@ File: ./Image/tantai_modelica.png Graphic file (type bmp)
 <./Image/tantai_modelica.png>
 File: ./Image/submodel_pack.png Graphic file (type bmp)
 <./Image/submodel_pack.png>
- [3]
+ [4]
 File: ./Image/sub_modelica.png Graphic file (type bmp)
 <./Image/sub_modelica.png>
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5] [6]) (./chapters/Function.tex [7]
+ [5]) (./chapters/Function.tex [6] [7]
 第 \lower 0.01ex\hbox {3} 章
 [8
 
 ] [9] [10] [11]
-File: ./Image/simyu_csv.png Graphic file (type bmp)
-<./Image/simyu_csv.png>
 File: ./Image/succes_comand.png Graphic file (type bmp)
 <./Image/succes_comand.png>
 File: Image/characteristicTable.pdf Graphic file (type pdf)
@@ -640,13 +638,13 @@ Package hyperref Warning: bookmark level for unknown countChapter defaults to 0.
 ]
 参考文献
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 26.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 26.
+(Font)              scaled to size 11.09619pt on input line 14.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 26.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 26.
+(Font)              scaled to size 11.09619pt on input line 14.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
  [23
@@ -657,16 +655,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `GraduateThesis.out' has not changed.
-(rerunfilecheck)             Checksum: C37F87D30D711EF4080C166F2CF68235;3294.
+(rerunfilecheck)             Checksum: 9F23FE269C04942CAE4EE68FEF73F977;3224.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 9506 strings out of 494731
- 136887 string characters out of 6176320
- 231126 words of memory out of 5000000
- 12846 multiletter control sequences out of 15000+600000
+ 9505 strings out of 494731
+ 136877 string characters out of 6176320
+ 231031 words of memory out of 5000000
+ 12845 multiletter control sequences out of 15000+600000
  26454 words of font info for 99 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
  29i,9n,40p,1019b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (26 pages, 75884 bytes).
+Output written on GraduateThesis.dvi (26 pages, 75016 bytes).
