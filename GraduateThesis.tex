@@ -17,6 +17,8 @@
 \usepackage{txfonts}            % フォントといえばやっぱりtxfonts、今はnewtxってのもあるらしい
 \usepackage{verbatim}           % コメントアウトしてくれる便利なプリアンブルが使える \begin{comment} ... \end{comment}
 \usepackage{url}
+\usepackage{pdfpages}
+
 \hypersetup{
 setpagesize=false,
  bookmarksnumbered=true,%
@@ -28,7 +30,11 @@ setpagesize=false,
 % \usepackage{easy-todo}
 \usepackage[hdivide={21mm, , 21mm}, vdivide={30mm, , 25mm}]{geometry} % スタイルを少し変えたくても\hoffset, \voffsetは使わないでね
 
-
+% \lstset{language = modelica,
+%         basicstyle=\fontsize{9pt}{10.5pt}\ttfamily,
+%         backgroundcolor={\color[gray]{.90}},
+%         breakindent = 10pt
+%         }
 %%
 % miyazaki-u-paper.sty用設定値
 %
@@ -58,7 +64,7 @@ setpagesize=false,
 \input{chapters/Indication.tex}
 \input{chapters/Discussion.tex}
 \input{chapters/Conclusion.tex}
-
+\input{listings-modelica.cfg}
 %%
 % 謝辞
 %

@@ -1,54 +1,59 @@
 \contentsline {chapter}{\numberline {1}はじめに}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}研究の準備}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}OpenModelica}{2}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}出力}{2}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}グラフィカルモデリング}{2}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Modelica言語}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Modelica標準ライブラリ（MSL）}{3}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}モータ特性表}{3}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}特性表}{3}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}特性グラフ}{3}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}ブラシ付きDCモータ}{3}{section.2.4}
-\contentsline {section}{\numberline {2.5}対応するモデル}{3}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}モータ単体のModelicaモデル}{4}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{4}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Python}{5}{section.2.6}
+\contentsline {section}{\numberline {2.1}ブラシ付きDCモータ}{2}{section.2.1}
+\contentsline {section}{\numberline {2.2}対応するモデル}{2}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}モータ単体のModelicaモデル}{2}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}モータ単体のModelicaモデルをサブシステムとするモデル}{3}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}モデル作成時の制約}{4}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}OpenModelica}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}出力}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}グラフィカルモデリング}{5}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Modelica言語}{6}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Modelica標準ライブラリ（MSL）}{6}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}モータ特性表}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Python}{7}{section.2.6}
 \contentsline {chapter}{\numberline {3}機能}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}ツールの実行方法}{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ファイル操作}{8}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}実行コマンド}{8}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}ツールの機能}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}モータ特性表生成}{8}{subsection.3.2.1}
-\contentsline {subsubsection}{電圧}{10}{section*.2}
-\contentsline {subsubsection}{始動電流}{10}{section*.3}
-\contentsline {subsubsection}{停動トルク}{10}{section*.4}
-\contentsline {subsubsection}{最大効率}{10}{section*.5}
+\contentsline {section}{\numberline {3.1}モータ特性表生成}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}特性表}{8}{subsection.3.1.1}
+\contentsline {subsubsection}{電圧}{9}{section*.2}
+\contentsline {subsubsection}{始動電流}{9}{section*.3}
+\contentsline {subsubsection}{停動トルク}{9}{section*.4}
+\contentsline {subsubsection}{最大効率}{9}{section*.5}
 \contentsline {subsubsection}{定格トルク}{10}{section*.6}
-\contentsline {subsubsection}{定格回転数}{11}{section*.7}
-\contentsline {subsubsection}{定格電流}{11}{section*.8}
-\contentsline {subsubsection}{定格出力}{11}{section*.9}
-\contentsline {chapter}{\numberline {4}実装}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}csvファイルの読み込み}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}特性表の各要素を算出するために必要なデータを取得}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}特性表の各要素を算出}{14}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}電圧}{15}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}始動電流}{15}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}停動トルク}{15}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}最大効率}{15}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}定格トルク}{15}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}定格回転数}{15}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}定格電流}{15}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}定格出力}{15}{subsection.4.3.8}
-\contentsline {section}{\numberline {4.4}特性表を生成}{15}{section.4.4}
-\contentsline {chapter}{\numberline {5}適用例}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}モータ単体のモデル}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{16}{section.5.2}
-\contentsline {chapter}{\numberline {6}考察}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}評価}{17}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}評価方法}{17}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}結果}{17}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}関連研究}{17}{section.6.2}
-\contentsline {section}{\numberline {6.3}ツールの問題点}{17}{section.6.3}
-\contentsline {chapter}{\numberline {7}おわりに}{18}{chapter.7}
-\contentsline {countChapter}{謝辞}{19}{chapter.7}
-\contentsline {chapter}{参考文献}{20}{chapter*.10}
+\contentsline {subsubsection}{定格回転数}{10}{section*.7}
+\contentsline {subsubsection}{定格電流}{10}{section*.8}
+\contentsline {subsubsection}{定格出力}{10}{section*.9}
+\contentsline {subsubsection}{最大回転数}{10}{section*.10}
+\contentsline {subsection}{\numberline {3.1.2}特性グラフ}{10}{subsection.3.1.2}
+\contentsline {subsubsection}{「トルク * 電流」グラフ}{11}{section*.11}
+\contentsline {subsubsection}{「トルク * 回転数」グラフ}{11}{section*.12}
+\contentsline {subsubsection}{「トルク * 効率」グラフ}{11}{section*.13}
+\contentsline {subsubsection}{「トルク * 出力」グラフ}{11}{section*.14}
+\contentsline {section}{\numberline {3.2}ツールの実行}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}エラー表示}{14}{section.3.3}
+\contentsline {chapter}{\numberline {4}実装}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}csvファイルの読み込み}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}特性表の各要素を算出するために必要なデータを取得}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}特性表の各要素を算出}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}電圧}{16}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}始動電流}{16}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}停動トルク}{16}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}最大効率}{17}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}定格トルク}{17}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}定格回転数}{17}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}定格電流}{17}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}定格出力}{17}{subsection.4.3.8}
+\contentsline {subsection}{\numberline {4.3.9}最大回転数}{18}{subsection.4.3.9}
+\contentsline {section}{\numberline {4.4}特性表を生成}{18}{section.4.4}
+\contentsline {chapter}{\numberline {5}適用例}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}モータ単体のモデル}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{19}{section.5.2}
+\contentsline {chapter}{\numberline {6}考察}{20}{chapter.6}
+\contentsline {section}{\numberline {6.1}評価}{20}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}評価方法}{20}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}結果}{20}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}関連研究}{20}{section.6.2}
+\contentsline {section}{\numberline {6.3}ツールの問題点}{20}{section.6.3}
+\contentsline {chapter}{\numberline {7}おわりに}{21}{chapter.7}
+\contentsline {countChapter}{謝辞}{22}{chapter.7}
+\contentsline {chapter}{参考文献}{23}{chapter*.15}

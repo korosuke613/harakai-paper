@@ -52,73 +52,79 @@ csvファイルを読み込む。
 
 \subsection{電圧}\label{sub:keisan_dennatu}
 % シミュレーション時に印加した値を取る。
+今回試作したツールでは、電源部品の電圧値を電圧とする。
 
 \subsection{始動電流}\label{sub:keisan_sidouden}
 % 始動電流とは、モータの起動時に流れる大きな電流のことである。
 % モータが起動した後はモータ自体が発電機にもなり、逆起電力を発生するため、モータ・コイル部分にかかる電圧が下がり、電流値も下がる。
 % したがって、電流値の配列の中で一番大きい値を始動電流とする。
-
+モータが起動した後は、逆起電力を発生させるため、モータ・コイル部分にかかる電圧が下がり、電流値も下がる。\\
+したがって、今回試作したツールでは、電流値の中で一番大きい値を始動電流とする。
 % https://www.tsugawa.co.jp/glossary/　
 
 \subsection{停動トルク}\label{sub:keisan_teidoutoruku}
 % 停動トルクとは、モータが出しうる最大トルクで、このトルク以上の負荷がかかれば、モータは停止する値となる。
 % したがって、トルク値の配列の中で一番大きい値を停動トルクとする。
+したがって、今回試作したツールでは、トルク値の中で一番大きい値を停動トルクとする。
 
 % https://www.orientalmotor.co.jp/tech/glossary/ta11/
 
 \subsection{最大効率}\label{sub:keisan_saidaikouritu}
-% 効率は以下の式で算出することができる。
+効率は以下の式で算出する。
 
-% \[
-%     \mbox{効率} = \frac{\mbox{出力}}{\mbox{入力}}  * 100 
-% \]
-% \[
-%     \mbox{出力} = \mbox{角速度} * \mbox{トルク} 
-% \]
-% \[  
-%     \mbox{入力} = \mbox{電圧} * \mbox{電力} 
-% \]
+\[
+    \mbox{効率} = \frac{\mbox{出力}}{\mbox{入力}}  * 100 
+\]
+\[
+    \mbox{出力} = \mbox{角速度} * \mbox{トルク} 
+\]
+\[  
+    \mbox{入力} = \mbox{電圧} * \mbox{電力} 
+\]
 
-% 各配列を上記の式に当てはめ、繰り返し処理で効率値の配列を作成する。
-% 最大効率は効率値の配列の中で一番大きい値とする。
+今回試作したツールでは、効率値の中で一番大きい値を最大効率とする。
+
 
 % https://www.jp-igarashi.com/product/product_motors/curve.html
 
 \subsection{定格トルク}\label{sub:keisan_teikakutoruku}
 % 最大効率時のトルクを定格トルクという。
-% したがって、トルク値の配列の中で、最大効率のある効率値の配列の添字と同じ位置にある値が定格トルクとなる。
+したがって、トルク値の配列の中で、最大効率のある効率値の配列の添字と同じ位置にある値が定格トルクとなる。
 
 
 % http://www.sagamimicro.co.jp/product/aboutusage.html
 
 \subsection{定格回転数}\label{sub:keisan_teikakukaiten}
 % 最大効率時の回転数を定格回転数という。
-% 回転数は以下の式で算出できる。
+回転数は以下の式で算出できる。
 
-% \[
-%     \mbox{回転数} = \frac{30 * \mbox{角速度}}{\pi}   
-% \]
+\[
+    \mbox{回転数} = \frac{30 * \mbox{角速度}}{\pi}   
+\]
 
-% したがって、一度繰り返し処理で角速度を回転数に変換し、回転数値の配列の中で、最大効率のある効率値の配列の添字と同じ
-% 位置にある値が定格回転数となる。
+したがって、一度繰り返し処理で角速度を回転数に変換し、回転数値の配列の中で、最大効率のある効率値の配列の添字と同じ
+位置にある値が定格回転数となる。
 
 % https://mathwords.net/kaitensu
 
 \subsection{定格電流}\label{sub:keisan_teikakuden}
 % 定格電流とは、モータに定格トルクがかかっているときの電流値である。
-% したがって、電流値の配列の中で、定格トルクのあるトルク値の配列の添字と同じ位置にある値が定格電流となる。
+したがって、電流値の配列の中で、定格トルクのあるトルク値の配列の添字と同じ位置にある値が定格電流となる。
 
 % http://fa-faq.mitsubishielectric.co.jp/faq/show/18504?category_id=1937&site_domain=default
 
 \subsection{定格出力}\label{sub:keisan_teikakusyutu}
 % 定格出力とは、定格動作点における出力の値である。
-% 定格出力は以下の式で算出できる。
+定格出力は以下の式で算出できる。
 
-% \[
-%     \mbox{定格出力} = \mbox{定格回転数} * \mbox{定格トルク} *  \frac{2\pi}{60}
-% \]
+\[
+    \mbox{定格出力} = \mbox{定格回転数} * \mbox{定格トルク} *  \frac{2\pi}{60}
+\]
 % \ref{sub:keisan_teikakukaiten}章で求めた定格回転数と\ref{sub:keisan_teidoutoruku}章で求めた定格トルクを
 % http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
+
+\subsection{最大回転数}\label{sub:keisan_saidaikai}
+今回試作したツールでは、回転数地の配列の中から一番大きい値を
 
 \section{特性表を生成}\label{seisei_hyou}
 \ref{keisan}章で求めた各値と、\ref{kenkyu_mokuteki}章で挙げた各要素を、電圧から順に","で区切りつつ

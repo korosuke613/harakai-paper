@@ -79,6 +79,16 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/txfonts.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT GraduateThesis.aux
@@ -114,6 +124,10 @@ INPUT GraduateThesis.out
 INPUT ./GraduateThesis.out
 INPUT ./GraduateThesis.out
 OUTPUT GraduateThesis.out
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisr-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
@@ -208,8 +222,14 @@ INPUT chapters/Function.tex
 INPUT chapters/Function.tex
 INPUT ./Image/simyu_csv.png
 INPUT extractbb -B cropbox -O ./Image/simyu_csv.png
-INPUT ./Image/chara_table.png
-INPUT extractbb -B cropbox -O ./Image/chara_table.png
+INPUT ./Image/succes_comand.png
+INPUT extractbb -B cropbox -O ./Image/succes_comand.png
+INPUT Image/characteristicTable.pdf
+INPUT extractbb -B cropbox -O Image/characteristicTable.pdf
+INPUT ./Image/error_file.png
+INPUT extractbb -B cropbox -O ./Image/error_file.png
+INPUT ./Image/error_comand.png
+INPUT extractbb -B cropbox -O ./Image/error_comand.png
 INPUT chapters/Implementation.tex
 INPUT chapters/Implementation.tex
 INPUT chapters/Indication.tex
@@ -218,6 +238,8 @@ INPUT chapters/Discussion.tex
 INPUT chapters/Discussion.tex
 INPUT chapters/Conclusion.tex
 INPUT chapters/Conclusion.tex
+INPUT listings-modelica.cfg
+INPUT listings-modelica.cfg
 INPUT GraduateThesis.bbl
 INPUT GraduateThesis.bbl
 INPUT GraduateThesis.aux
