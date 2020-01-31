@@ -226,6 +226,8 @@ INPUT ./Image/succes_comand.png
 INPUT extractbb -B cropbox -O ./Image/succes_comand.png
 INPUT Image/characteristicTable.pdf
 INPUT extractbb -B cropbox -O Image/characteristicTable.pdf
+INPUT ./Image/error_tarinai.png
+INPUT extractbb -B cropbox -O ./Image/error_tarinai.png
 INPUT ./Image/error_file.png
 INPUT extractbb -B cropbox -O ./Image/error_file.png
 INPUT ./Image/error_comand.png

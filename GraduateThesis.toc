@@ -1,62 +1,58 @@
 \contentsline {chapter}{\numberline {1}はじめに}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}研究の準備}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Modelica言語}{2}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Modelica標準ライブラリ（MSL）}{2}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}OpenModelica}{2}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}出力}{2}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}対応するモデル}{3}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}ブラシ付きDCモータのModelicaモデル}{3}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{5}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}モデル作成時の制約}{5}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}ブラシ付きDCモータ}{6}{section.2.4}
+\contentsline {section}{\numberline {2.3}ブラシ付きDCモータ}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}対応するモデル}{4}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}ブラシ付きDCモータのModelicaモデル}{4}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{5}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}モータ特性表}{6}{section.2.5}
 \contentsline {section}{\numberline {2.6}Python}{7}{section.2.6}
-\contentsline {chapter}{\numberline {3}機能}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}モータ特性表生成}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}特性表}{9}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {3}機能}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}モータ特性表生成}{10}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}特性表}{10}{subsection.3.1.1}
 \contentsline {subsubsection}{電圧}{10}{section*.2}
 \contentsline {subsubsection}{始動電流}{10}{section*.3}
-\contentsline {subsubsection}{停動トルク}{10}{section*.4}
-\contentsline {subsubsection}{最大効率}{10}{section*.5}
+\contentsline {subsubsection}{停動トルク}{11}{section*.4}
+\contentsline {subsubsection}{最大効率}{11}{section*.5}
 \contentsline {subsubsection}{定格トルク}{11}{section*.6}
 \contentsline {subsubsection}{定格回転数}{11}{section*.7}
 \contentsline {subsubsection}{定格電流}{11}{section*.8}
 \contentsline {subsubsection}{定格出力}{11}{section*.9}
-\contentsline {subsubsection}{最大回転数}{11}{section*.10}
-\contentsline {subsection}{\numberline {3.1.2}特性グラフ}{11}{subsection.3.1.2}
+\contentsline {subsubsection}{最大回転数}{12}{section*.10}
+\contentsline {subsection}{\numberline {3.1.2}特性グラフ}{12}{subsection.3.1.2}
 \contentsline {subsubsection}{「トルク * 電流」グラフ}{12}{section*.11}
 \contentsline {subsubsection}{「トルク * 回転数」グラフ}{12}{section*.12}
 \contentsline {subsubsection}{「トルク * 効率」グラフ}{12}{section*.13}
 \contentsline {subsubsection}{「トルク * 出力」グラフ}{12}{section*.14}
 \contentsline {section}{\numberline {3.2}ツールの実行}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}エラー表示}{15}{section.3.3}
-\contentsline {chapter}{\numberline {4}実装}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}モータ特性表生成機能}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}実行コマンドの取得}{17}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}csvファイルの読み込み}{17}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}第2引数、第3引数で指定されたモジュールが持つデータを、csvファイルから取得}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}モータ特性表の各要素を算出する}{17}{subsection.4.2.1}
-\contentsline {subsubsection}{電圧}{18}{section*.15}
-\contentsline {subsubsection}{始動電流}{18}{section*.16}
-\contentsline {subsubsection}{停動トルク}{18}{section*.17}
-\contentsline {subsubsection}{最大効率}{18}{section*.18}
-\contentsline {subsubsection}{定格トルク}{18}{section*.19}
-\contentsline {subsubsection}{定格回転数}{18}{section*.20}
-\contentsline {subsubsection}{定格電流}{19}{section*.21}
-\contentsline {subsubsection}{定格出力}{19}{section*.22}
-\contentsline {subsubsection}{最大回転数}{19}{section*.23}
-\contentsline {subsection}{\numberline {4.2.2}特性表を生成}{19}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}ツールの実行機能}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}エラー表示機能}{19}{section.4.4}
-\contentsline {chapter}{\numberline {5}適用例}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}モータ単体のモデル}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}モータ単体のModelicaモデルをサブシステムとするモデル}{21}{section.5.2}
-\contentsline {chapter}{\numberline {6}考察}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}評価}{22}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}評価方法}{22}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}結果}{22}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}関連研究}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}ツールの問題点}{22}{section.6.3}
-\contentsline {chapter}{\numberline {7}おわりに}{23}{chapter.7}
-\contentsline {countChapter}{謝辞}{24}{chapter.7}
-\contentsline {chapter}{参考文献}{25}{chapter*.24}
+\contentsline {section}{\numberline {3.3}エラー表示}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4}実装}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}実行コマンドの引数の取得}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}csvファイルの読み込み}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}第2引数、第3引数で指定されたモジュールが持つデータを、csvファイルから取得}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}モータ特性表の各要素を算出する}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}電圧}{19}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}始動電流}{19}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}停動トルク}{20}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}最大効率}{20}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}定格トルク}{20}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.6}定格回転数}{20}{subsection.4.4.6}
+\contentsline {subsection}{\numberline {4.4.7}定格電流}{20}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}定格出力}{21}{subsection.4.4.8}
+\contentsline {subsection}{\numberline {4.4.9}最大回転数}{21}{subsection.4.4.9}
+\contentsline {section}{\numberline {4.5}特性表を作成}{21}{section.4.5}
+\contentsline {section}{\numberline {4.6}特性グラフを作成}{21}{section.4.6}
+\contentsline {section}{\numberline {4.7}モータ特性表を生成}{21}{section.4.7}
+\contentsline {chapter}{\numberline {5}適用例}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}ブラシ付きDCモータのModelicaモデル}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{22}{section.5.2}
+\contentsline {chapter}{\numberline {6}考察}{23}{chapter.6}
+\contentsline {section}{\numberline {6.1}評価}{23}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}評価方法}{23}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}結果}{23}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}関連研究}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}ツールの問題点}{23}{section.6.3}
+\contentsline {chapter}{\numberline {7}おわりに}{24}{chapter.7}
+\contentsline {countChapter}{謝辞}{25}{chapter.7}
+\contentsline {chapter}{参考文献}{26}{chapter*.15}

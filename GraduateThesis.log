@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  29 JAN 2020 19:15
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  31 JAN 2020 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,10 +351,10 @@ Package pdfpages Warning: I will use a dummy \includepdf command which
 \c@AM@survey=\count128
 \AM@templatesizebox=\box47
 )
-Package hyperref Info: Option `setpagesize' set `false' on input line 29.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 29.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 29.
-Package hyperref Info: Option `colorlinks' set `true' on input line 29.
+Package hyperref Info: Option `setpagesize' set `false' on input line 28.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 28.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count129
@@ -372,51 +372,51 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 ) (./GraduateThesis.aux)
 \openout1 = `GraduateThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 53.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 53.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 52.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 53.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 53.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 53.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 53.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 53.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 53.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 52.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
  (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . . )
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 53.
+(Font)              scaled to size 11.09619pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 53.
+(Font)              scaled to size 11.09619pt on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -424,9 +424,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
  (./GraduateThesis.out) (./GraduateThesis.out)
 \@outlinefile=\write3
 \openout3 = `GraduateThesis.out'.
@@ -475,41 +475,41 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (dvipdfmx) on input line 1
 
 表紙
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 55.
+(Font)              scaled to size 19.17792pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 55.
+(Font)              scaled to size 19.17792pt on input line 54.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 55.
+(Font)              scaled to size 23.0061pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 55.
+(Font)              scaled to size 23.0061pt on input line 54.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 55.
+(Font)              scaled to size 23.0061pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 55.
+(Font)              scaled to size 23.0061pt on input line 54.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 55.
+(Font)              scaled to size 15.9785pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 55.
+(Font)              scaled to size 15.9785pt on input line 54.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 55.
+(Font)              scaled to size 19.17792pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 55.
+(Font)              scaled to size 19.17792pt on input line 54.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 55.
+(Font)              scaled to size 15.9785pt on input line 54.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 55.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 55.
+(Font)              scaled to size 15.9785pt on input line 54.
 [1
 
 
@@ -547,14 +547,14 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 61.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 61.
+(Font)              scaled to size 11.09619pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 61.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 61.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 61.
+(Font)              scaled to size 11.09619pt on input line 57.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 57.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ))
@@ -584,6 +584,9 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 ]
 File: ./Image/simyu_csv.png Graphic file (type bmp)
 <./Image/simyu_csv.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
 File: ./Image/touka.png Graphic file (type bmp)
 <./Image/touka.png>
@@ -596,75 +599,98 @@ File: ./Image/submodel_pack.png Graphic file (type bmp)
 <./Image/submodel_pack.png>
 File: ./Image/sub_modelica.png Graphic file (type bmp)
 <./Image/sub_modelica.png>
- [5]) (./chapters/Function.tex [6] [7] [8]
-第 \lower 0.01ex\hbox {3} 章
-[9
 
-] [10] [11] [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5] [6] [7] [8]) (./chapters/Function.tex [9]
+第 \lower 0.01ex\hbox {3} 章
+[10
+
+] [11] [12]
 File: ./Image/succes_comand.png Graphic file (type bmp)
 <./Image/succes_comand.png>
 File: Image/characteristicTable.pdf Graphic file (type pdf)
 <Image/characteristicTable.pdf>
- [13] [14]
+ [13]
+File: ./Image/error_tarinai.png Graphic file (type bmp)
+<./Image/error_tarinai.png>
 File: ./Image/error_file.png Graphic file (type bmp)
 <./Image/error_file.png>
 File: ./Image/error_comand.png Graphic file (type bmp)
 <./Image/error_comand.png>
-) (./chapters/Implementation.tex [15
-
-]
+) (./chapters/Implementation.tex [14] [15] [16]
 第 \lower 0.01ex\hbox {4} 章
-[16
+[17
 
-] [17] [18] [19]) (./chapters/Indication.tex [20]
+] [18] [19] [20]) (./chapters/Indication.tex [21]
 第 \lower 0.01ex\hbox {5} 章
-) (./chapters/Discussion.tex [21
+) (./chapters/Discussion.tex [22
 
 ]
 第 \lower 0.01ex\hbox {6} 章
-) (./chapters/Conclusion.tex [22
+) (./chapters/Conclusion.tex [23
 
 ]
 第 \lower 0.01ex\hbox {7} 章
-) (./listings-modelica.cfg) [23
+) (./listings-modelica.cfg) [24
 
 ]
 謝辞
 
 Package hyperref Warning: bookmark level for unknown countChapter defaults to 0.
 
-(./GraduateThesis.bbl [24
+(./GraduateThesis.bbl [25
 
 ]
 参考文献
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 14.
+(Font)              scaled to size 11.09619pt on input line 19.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 14.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
- [25
+(Font)              scaled to size 11.09619pt on input line 19.
+
+Underfull \hbox (badness 7362) in paragraph at lines 43--48
+[]\OT1/txr/m/n/12 MekatoroNet.  \JY2/mc/m/n/12 仕様の見方\OT1/txr/m/n/12 .  [][]$\OT1/txtt/m/n/12 http : / / www . mekatoro . net / digianaecatalog /
+ []
+
+[26
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+Underfull \hbox (badness 3492) in paragraph at lines 76--81
+[]\OT1/txr/m/n/12 MekatoroNet.  \JY2/mc/m/n/12 モ ータ特性表\OT1/txr/m/n/12 .  [][]$\OT1/txtt/m/n/12 http : / / www . mekatoro . net / digianaecatalog /
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 90--95
+[]\JY2/mc/m/n/12 相模マイクロ株式会社\OT1/txr/m/n/12 .  \JY2/mc/m/n/12 直流モ ータ特性表 \OT1/txr/m/n/12 dc mo-tor char-ac-ter-is-tics.  [][]$\OT1/txtt/m/n/12 http : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--109
+\OT1/txtt/m/n/12 files / %E5 % AF % 8C % E5 % A3 % ABIE3 % E9 % AB % 98 % E6 % 95 % 88 % E8 % 83 % BD % E9 % A6 % AC % E9 % 81 %
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+ [27]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./GraduateThesis.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `GraduateThesis.out' has not changed.
-(rerunfilecheck)             Checksum: DAFEDE77996157A0585C361182BE8846;2967.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+(rerunfilecheck)             Checksum: 009CABA7AA58E700118645C17CF92FBF;3293.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 9510 strings out of 494731
- 136958 string characters out of 6176320
- 230857 words of memory out of 5000000
- 12850 multiletter control sequences out of 15000+600000
+ 9526 strings out of 494731
+ 137214 string characters out of 6176320
+ 231459 words of memory out of 5000000
+ 12865 multiletter control sequences out of 15000+600000
  26454 words of font info for 99 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 29i,9n,40p,1019b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,9n,40p,1019b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (28 pages, 75772 bytes).
+Output written on GraduateThesis.dvi (30 pages, 95536 bytes).
