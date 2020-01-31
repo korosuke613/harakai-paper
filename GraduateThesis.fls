@@ -91,6 +91,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT lstlang1.sty
+INPUT lstlang1.sty
 INPUT GraduateThesis.aux
 INPUT GraduateThesis.aux
 OUTPUT GraduateThesis.aux
@@ -222,6 +224,11 @@ INPUT ./Image/sub_modelica.png
 INPUT extractbb -B cropbox -O ./Image/sub_modelica.png
 INPUT chapters/Function.tex
 INPUT chapters/Function.tex
+INPUT Image/comand.txt
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
+INPUT Image/comand.txt
 INPUT ./Image/succes_comand.png
 INPUT extractbb -B cropbox -O ./Image/succes_comand.png
 INPUT Image/characteristicTable.pdf

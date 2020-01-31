@@ -7,24 +7,24 @@
 \contentsline {subsection}{\numberline {2.4.1}ブラシ付きDCモータのModelicaモデル}{4}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{5}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}モータ特性表}{6}{section.2.5}
-\contentsline {section}{\numberline {2.6}Python}{7}{section.2.6}
-\contentsline {chapter}{\numberline {3}機能}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}モータ特性表生成}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}特性表}{10}{subsection.3.1.1}
-\contentsline {subsubsection}{電圧}{10}{section*.2}
-\contentsline {subsubsection}{始動電流}{10}{section*.3}
-\contentsline {subsubsection}{停動トルク}{11}{section*.4}
-\contentsline {subsubsection}{最大効率}{11}{section*.5}
-\contentsline {subsubsection}{定格トルク}{11}{section*.6}
-\contentsline {subsubsection}{定格回転数}{11}{section*.7}
-\contentsline {subsubsection}{定格電流}{11}{section*.8}
-\contentsline {subsubsection}{定格出力}{11}{section*.9}
-\contentsline {subsubsection}{最大回転数}{12}{section*.10}
-\contentsline {subsection}{\numberline {3.1.2}特性グラフ}{12}{subsection.3.1.2}
-\contentsline {subsubsection}{「トルク * 電流」グラフ}{12}{section*.11}
-\contentsline {subsubsection}{「トルク * 回転数」グラフ}{12}{section*.12}
-\contentsline {subsubsection}{「トルク * 効率」グラフ}{12}{section*.13}
-\contentsline {subsubsection}{「トルク * 出力」グラフ}{12}{section*.14}
+\contentsline {subsection}{\numberline {2.5.1}特性表}{6}{subsection.2.5.1}
+\contentsline {subsubsection}{電圧}{6}{section*.2}
+\contentsline {subsubsection}{始動電流}{6}{section*.3}
+\contentsline {subsubsection}{停動トルク}{7}{section*.4}
+\contentsline {subsubsection}{最大効率}{7}{section*.5}
+\contentsline {subsubsection}{定格トルク}{7}{section*.6}
+\contentsline {subsubsection}{定格回転数}{8}{section*.7}
+\contentsline {subsubsection}{定格電流}{8}{section*.8}
+\contentsline {subsubsection}{定格出力}{8}{section*.9}
+\contentsline {subsubsection}{最大回転数}{9}{section*.10}
+\contentsline {subsection}{\numberline {2.5.2}特性グラフ}{9}{subsection.2.5.2}
+\contentsline {subsubsection}{「トルク * 電流」グラフ}{9}{section*.11}
+\contentsline {subsubsection}{「トルク * 回転数」グラフ}{10}{section*.12}
+\contentsline {subsubsection}{「トルク * 効率」グラフ}{10}{section*.13}
+\contentsline {subsubsection}{「トルク * 出力」グラフ}{10}{section*.14}
+\contentsline {section}{\numberline {2.6}Python}{10}{section.2.6}
+\contentsline {chapter}{\numberline {3}機能}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}モータ特性表生成}{12}{section.3.1}
 \contentsline {section}{\numberline {3.2}ツールの実行}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}エラー表示}{13}{section.3.3}
 \contentsline {chapter}{\numberline {4}実装}{17}{chapter.4}

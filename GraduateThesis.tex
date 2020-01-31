@@ -29,6 +29,70 @@ setpagesize=false,
 % \usepackage{easy-todo}
 \usepackage[hdivide={21mm, , 21mm}, vdivide={30mm, , 25mm}]{geometry} % スタイルを少し変えたくても\hoffset, \voffsetは使わないでね
 
+
+
+\renewcommand{\lstlistingname}{コード}
+\lstset{
+  language={Java},
+  frame=tlBR,%フレーム線の指定，上右下左の順，大文字は二重線
+%  frameround=tttt,%角の指定，右上|右下|左下|左上の順，tは丸角，fは四角
+  framesep=5pt,%本文からframeまでの間隔
+  framerule=.2pt,%線の太さ
+%  rulecolor={\color[gray]},%線の色
+%  backgroundcolor={\color[gray]{.9}},%背景色の指定
+  basicstyle={\scriptsize\ttfamily \color[gray]{.15}},%書体の指定，この場合は7ptのタイプライタ体
+  identifierstyle={\ttfamily},%識別子の書体
+  keywordstyle={\ttfamily \color[cmyk]{0,1,0,0}},%言語ワードの書体
+  stringstyle={\scriptsize\ttfamily \color[rgb]{0,0,1}},%文字列リテラルの書体
+  commentstyle={\itshape \color[cmyk]{1,0,1,0}},%コメントの書体
+  numberstyle={\scriptsize},%行番号の書式
+  stepnumber=1,%行番号のステップ間隔
+  numbers=left,%行番号の位置
+  numbersep=1em,%本文との間隔
+  breaklines=true,%改行の設定
+  xleftmargin=0zw,
+  xrightmargin=0zw,
+  columns=[l]{fullflexible},
+  lineskip=-0.5zw,
+  morecomment={[s][{\color[cmyk]{1,0,0,0}}]{/**}{*/}},
+  floatplacement=t,
+  classoffset=1,
+  showstringspaces=false,%空行の表示
+%  breakatwhitespace=true,
+%  tabsize=5,
+}
+
+\lstdefinestyle{g4}{
+  language={C},
+  frame=tlBR,%フレーム線の指定，上右下左の順，大文字は二重線
+%  frameround=tttt,%角の指定，右上|右下|左下|左上の順，tは丸角，fは四角
+  framesep=5pt,%本文からframeまでの間隔
+  framerule=.2pt,%線の太さ
+%  rulecolor={\color[gray]},%線の色
+%  backgroundcolor={\color[gray]{.9}},%背景色の指定
+  basicstyle={\scriptsize\ttfamily \color[gray]{.15}},%書体の指定，この場合は7ptのタイプライタ体
+  identifierstyle={\ttfamily},%識別子の書体
+  keywordstyle={\ttfamily \color[cmyk]{0,1,0,0}},%言語ワードの書体
+  stringstyle={\scriptsize\ttfamily \color[rgb]{0,0,1}},%文字列リテラルの書体
+  commentstyle={\itshape \color[cmyk]{1,0,1,0}},%コメントの書体
+  numberstyle={\scriptsize},%行番号の書式
+  stepnumber=1,%行番号のステップ間隔
+  numbers=left,%行番号の位置
+  numbersep=1em,%本文との間隔
+  breaklines=true,%改行の設定
+  xleftmargin=0zw,
+  xrightmargin=0zw,
+  columns=[l]{fullflexible},
+  lineskip=-0.5zw,
+  morecomment={[s][{\color[cmyk]{1,0,0,0}}]{/**}{*/}},
+  floatplacement=t,
+  classoffset=1,
+  showstringspaces=false,%空行の表示
+%  breakatwhitespace=true,
+%  tabsize=5,
+}
+
+
 % \lstset{language = modelica,
 %         basicstyle=\fontsize{9pt}{10.5pt}\ttfamily,
 %         backgroundcolor={\color[gray]{.90}},

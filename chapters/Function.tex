@@ -10,110 +10,38 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 \section{モータ特性表生成}\label{kenkyu_mokuteki}
 % 今回試作したモータ特性表自動生成ツールは、次の9個の要素を持つ特性表と4つのグラフを生成する。
 今回試作したモータ特性表自動生成ツールは、\ref{mortoku}節で挙げた9個の要素を持つ特性表と、4つの特性グラフを作成し、それらを1つのPDFファイルにまとめ、モータ特性表として出力する。
-\subsection{特性表}\label{sub:tokuseihyou}
-特性表を構成する9個の要素が表す内容について述べる。
-% \begin{itemize}
-% 	\item 電圧 V
-% 	\item 始動電流 mA
-% 	\item 停動トルク mNm
-% 	\item 最大効率 \%
-% 	\item 定格トルク mNm 
-% 	\item 定格回転数 rpm
-% 	\item 定格電流 mA
-% 	\item 定格出力 W
-% 	\item 最大回転数 rpm 
-% \end{itemize}
-% 以降、各要素が表す内容について述べる。
-\subsubsection{電圧}\label{sub:sub:dennatu}
-% \subsection{電圧}\label{sub:dennatu}
-電圧とは、シミュレーション時に、回路に印加された電圧値を表す。
-
-単位は、V(ボルト)である。
-\subsubsection{始動電流}\label{sub:sub:sidouden}
-% \subsection{始動電流}\label{sub:sidouden}
-始動電流とは、モータの起動時に流れる電流値を表す。
-
-単位は、mA(ミリアンペア)である。
-% https://www.tsugawa.co.jp/glossary/　
-\subsubsection{停動トルク}\label{sub:sub:teidoutoruku}
-% \subsection{停動トルク}\label{sub:teidoutoruku}
-停動トルクとは、モータが出しうる最大トルクで、このトルク以上の負荷がかかれば、モータが停止する値を表す。
-
-単位は、mNm(ミリニュートンメートル)である。
-% https://www.orientalmotor.co.jp/tech/glossary/ta11/
-\subsubsection{最大効率}\label{sub:sub:saidaikouritu}
-% \subsection{最大効率}\label{sub:saidaikouritu}
-効率とは、入力電力に対する機械出力の比を百分率［\%］で表したものであり、最大効率は、その中で最大値を表す。
-
-単位は、\%(パーセント)である。
-% https://www.jp-igarashi.com/product/product_motors/curve.html
-\subsubsection{定格トルク}\label{sub:sub:teikakutoruku}
-% \subsection{定格トルク}\label{sub:teikakutoruku}
-定格トルクとは、最大効率時のトルク値を表す。
-
-単位は、mNM(ミリニュートンメートル)である。
-% http://www.sagamimicro.co.jp/product/aboutusage.html
-\subsubsection{定格回転数}\label{sub:sub:teikakukaiten}
-% \subsection{定格回転数}\label{sub:teikakukaiten}
-定格回転数とは、最大効率時の回転数値を表す。
-
-単位は、rpm(アールピーエム)である。
-
-% https://mathwords.net/kaitensu
-\subsubsection{定格電流}\label{sub:sub:teikakuden}
-% \subsection{定格電流}\label{sub:teikakuden}
-定格電流とは、最大効率時の電流値を表す。
-
-単位は、mA(ミリアンペア)である。
-% http://fa-faq.mitsubishielectric.co.jp/faq/show/18504?category_id=1937&site_domain=default
-\subsubsection{定格出力}\label{sub:sub:teikakusyutu}
-% \subsection{定格出力}\label{sub:teikakusyutu}
-定格出力とは、最大効率時の出力値を表す。
-
-単位は、W(ワット)である。
-% \ref{sub:sub:teikakukaiten}章で求めた定格回転数と\ref{sub:sub:teidoutoruku}章で求めた定格トルクを
-% http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
-\subsubsection{最大回転数}\label{sub:sub:saidaikai}
-% \subsection{最大回転数}\label{sub:saidaikai}
-最大回転数とは、回転数値の中で最大値を表す。
-
-単位は、rpm(アールピーエム)である。
-\subsection{特性グラフ}\label{sub:tokuseigurahu}
-今回試作したツールでは、以下の4つの特性グラフを作成する。
-% \begin{itemize}
-% 	\item トルク mNM * 電流 mA
-% 	\item トルク mNm * 回転数 rpm
-% 	\item トルク mNm * 効率 \%
-% 	\item トルク mNm * 出力 W
-% \end{itemize}
-% 以降、各グラフについて述べる。
-\subsubsection{「トルク * 電流」グラフ}\label{sub:sub:torden}
-「トルク * 電流」グラフとは、横軸が「トルク mNm」、縦軸が「電流 mA」のグラフである。\\
-このグラフでは、トルクに対する電流の変化量を表している。
-\subsubsection{「トルク * 回転数」グラフ}\label{sub:sub:torkaiten}
-「トルク * 電流」グラフとは、横軸が「トルク mNm」、縦軸が「回転数 rpm」のグラフである。\\
-このグラフでは、トルクに対する回転数の変化量を表している。
-\subsubsection{「トルク * 効率」グラフ}\label{sub:sub:torkouritu}
-「トルク * 電流」グラフとは、横軸が「トルク mNm」、縦軸が「効率 \%」のグラフである。\\
-このグラフでは、トルクに対する効率の変化量を表している。
-\subsubsection{「トルク * 出力」グラフ}\label{sub:sub:torsyutu}
-「トルク * 電流」グラフとは、横軸が「トルク mNm」、縦軸が「出力 W」のグラフである。\\
-このグラフでは、トルクに対する出力の変化量を表している。
 % \vspace{-3zh}
 \section{ツールの実行}\label{zikkou}
 % 今回試作したツールの実行方法は、ツールのファイルが存在するディレクトリで、コマンド「python characteristic.py 第1引数 第2引数 第3引数」を実行することである。\\
-今回試作したツールを実行するためのコマンドは、「python characteristic.py 第1引数 第2引数 第3引数」である。\\
-なお、このコマンドは、ツールの実行ファイルが存在するディレクトリで実行する必要がある。\\
-第1引数には、入力とするcsvファイルのパスを含めたファイル名を指定する。\\
-第2引数には、第1引数で指定したcsvファイルの中の、モータ特性表を自動生成したいモータのモデルに含まれる、慣性部品のオブジェクト名を指定する。\\
-第3引数には、第1引数で指定したcsvファイルの中の、モータ特性表を自動生成したいモータのモデルに含まれる、電源部品のオブジェクト名を指定する。\\
+今回試作したツールを実行するためのコマンドを以下に示す。
+% \begin{figure}[t]
+% 	\lstinputlisting[]{Image/comand.txt}
+% 	\caption{実行コマンド}
+% 	\label{lis:zikkoucomand}
+% \end{figure}
+\begin{figure*}[t]
+	\lstinputlisting[label={code:zikkou}, caption={実行コマンド}]{Image/comand.txt}
+\end{figure*}
+なお、このコマンドは、ツールの実行ファイルが存在するディレクトリで実行する必要がある。
+
+第1引数には、入力とするcsvファイルのパスを含めたファイル名を指定する。
+
+第2引数には、第1引数で指定したcsvファイルの中の、モータ特性表を自動生成したいモータのモデルに含まれる、慣性部品のオブジェクト名を指定する。
+
+第3引数には、第1引数で指定したcsvファイルの中の、モータ特性表を自動生成したいモータのモデルに含まれる、電源部品のオブジェクト名を指定する。
+
 第2引数と、第3引数に慣性部品と電源部品のオブジェクト名を指定する理由については、\ref{syutoku_data}章で述べる。
 
 % 図\ref{fig:tantai_model}のモデルをシミュレーションした時に、OpenModelicaから出力されるcsvファイルの一部を、図\ref{fig:simyu_csv}に示す。\\
 図\ref{fig:simyu_csv}のファイル名が、「DCmotor\_res.csv」であり、慣性部品のオブジェクト名が、「inertia1」であり、
-電源部品のオブジェクト名が、「signalVoltage1」だった場合の実行コマンドを、図\ref{fig:zikkou}に示す。\\
-モータ特性表が自動生成できた場合は、図\ref{fig:zikkou}に示すように、画面上に「characteristicTable.pdf created」と青色で表示する。\\
+電源部品のオブジェクト名が、「signalVoltage1」だった場合の実行コマンドを、図\ref{fig:zikkou}に示す。
+
+モータ特性表が自動生成できた場合は、図\ref{fig:zikkou}に示すように、画面上に「characteristicTable.pdf created」と青色で表示する。
+
+今回試作したツールでは、毎回モータ特性表を「characteristicTable.pdf」で保存するため、同じファイル名がある場合、上書き保存となる。
+
 自動生成できなかった場合については、\ref{error}節で述べる。\\
+
 図\ref{fig:zikkou}のコマンドでツールを実行し、自動生成したモータ特性表を、図\ref{fig:tokuseihyou}に示す。
 \begin{figure}[t]
 	\centering
@@ -147,15 +75,17 @@ Modelica言語で作成したモータのモデルを、OpenModelicaでシミュ
 この場合は、エラー文として「ERROR : 引数の数が間違っています」を、赤色で画面上に表示する。
 この例を、図\ref{fig:error_hikisuu}に示す。
 
-2つ目の原因は、第1引数で指定したcsvファイルのファイル名が間違っている場合である。\\
+2つ目の原因は、第1引数で指定したcsvファイルのファイル名が間違っている場合である。
+
 この場合は、エラー文として「ERROR : 指定したファイル名が間違っています」を、赤色で画面上に表示する。
 この例を、図\ref{fig:error_file}に示す。
 
-3つ目の原因は、第2引数と第3引数のどちらか一方、もしくはその両方に間違いがあった場合である。\\
+3つ目の原因は、第2引数と第3引数のどちらか一方、もしくはその両方に間違いがあった場合である。
+
 この場合は、エラー文として「ERROR : 指定したオブジェクト名が違います」を、赤色で画面上に表示する。
 この例を、図\ref{fig:error_comand}に示す。
 
-上記3つの原因にすべて該当するコマンドの場合は、第1引数から順に処理を行い、エラーがあれば　そこで処理を止めるため、図\ref{fig:error_hikisuu}のエラー文のみ表示する。
+上記3つの原因にすべて該当するコマンドの場合は、第1引数から順に処理を行い、エラーがあればそこで処理を止めるため、図\ref{fig:error_hikisuu}のエラー文のみ表示する。
 
 \begin{figure}[t]
 	\centering
