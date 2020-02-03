@@ -17,7 +17,10 @@
 \usepackage{txfonts}            % フォントといえばやっぱりtxfonts、今はnewtxってのもあるらしい
 \usepackage{verbatim}           % コメントアウトしてくれる便利なプリアンブルが使える \begin{comment} ... \end{comment}
 \usepackage{url}
+\usepackage{enumitem}
 \usepackage{pdfpages}
+% \setlistdepth{6}
+% \renewlist{itemize}{itemize}{10}
 \hypersetup{
 setpagesize=false,
  bookmarksnumbered=true,%
@@ -122,8 +125,9 @@ setpagesize=false,
 % 
 \input{chapters/Introduction.tex}
 \input{chapters/Preparation.tex}
-\input{chapters/Function.tex}
-\input{chapters/Implementation.tex}
+\input{chapters/Tool.tex}
+% \input{chapters/Function.tex}
+% \input{chapters/Implementation.tex}
 \input{chapters/Indication.tex}
 \input{chapters/Discussion.tex}
 \input{chapters/Conclusion.tex}

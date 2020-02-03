@@ -210,37 +210,47 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
+INPUT ./Image/OM_GUI.png
+INPUT extractbb -B cropbox -O ./Image/OM_GUI.png
+INPUT ./Image/name_ob.png
+INPUT extractbb -B cropbox -O ./Image/name_ob.png
 INPUT ./Image/simyu_csv.png
 INPUT extractbb -B cropbox -O ./Image/simyu_csv.png
 INPUT ./Image/touka.png
 INPUT extractbb -B cropbox -O ./Image/touka.png
 INPUT ./Image/tantai_model.png
 INPUT extractbb -B cropbox -O ./Image/tantai_model.png
-INPUT ./Image/tantai_modelica.png
-INPUT extractbb -B cropbox -O ./Image/tantai_modelica.png
 INPUT ./Image/submodel_pack.png
 INPUT extractbb -B cropbox -O ./Image/submodel_pack.png
-INPUT ./Image/sub_modelica.png
-INPUT extractbb -B cropbox -O ./Image/sub_modelica.png
-INPUT chapters/Function.tex
-INPUT chapters/Function.tex
+INPUT chapters/Tool.tex
+INPUT chapters/Tool.tex
+INPUT ./Image/kouzou.png
+INPUT extractbb -B cropbox -O ./Image/kouzou.png
 INPUT Image/comand.txt
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txtt.tfm
 INPUT Image/comand.txt
-INPUT ./Image/succes_comand.png
-INPUT extractbb -B cropbox -O ./Image/succes_comand.png
-INPUT Image/characteristicTable.pdf
-INPUT extractbb -B cropbox -O Image/characteristicTable.pdf
 INPUT ./Image/error_tarinai.png
 INPUT extractbb -B cropbox -O ./Image/error_tarinai.png
 INPUT ./Image/error_file.png
 INPUT extractbb -B cropbox -O ./Image/error_file.png
 INPUT ./Image/error_comand.png
 INPUT extractbb -B cropbox -O ./Image/error_comand.png
-INPUT chapters/Implementation.tex
-INPUT chapters/Implementation.tex
+INPUT Image/name.txt
+INPUT Image/name.txt
+INPUT ./Image/characteristicTable.png
+INPUT extractbb -B cropbox -O ./Image/characteristicTable.png
+INPUT ./Image/current.png
+INPUT extractbb -B cropbox -O ./Image/current.png
+INPUT ./Image/speed.png
+INPUT extractbb -B cropbox -O ./Image/speed.png
+INPUT ./Image/efficiency.png
+INPUT extractbb -B cropbox -O ./Image/efficiency.png
+INPUT ./Image/output.png
+INPUT extractbb -B cropbox -O ./Image/output.png
+INPUT Image/characteristicTable.pdf
+INPUT extractbb -B cropbox -O Image/characteristicTable.pdf
 INPUT chapters/Indication.tex
 INPUT chapters/Indication.tex
 INPUT chapters/Discussion.tex
