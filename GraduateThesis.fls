@@ -253,6 +253,12 @@ INPUT Image/characteristicTable.pdf
 INPUT extractbb -B cropbox -O Image/characteristicTable.pdf
 INPUT chapters/Indication.tex
 INPUT chapters/Indication.tex
+INPUT ./Image/tekiyou_tanntai.png
+INPUT extractbb -B cropbox -O ./Image/tekiyou_tanntai.png
+INPUT ./Image/tekiyou_csv.png
+INPUT extractbb -B cropbox -O ./Image/tekiyou_csv.png
+INPUT ./Image/tekiyou_mortoku.png
+INPUT extractbb -B cropbox -O ./Image/tekiyou_mortoku.png
 INPUT chapters/Discussion.tex
 INPUT chapters/Discussion.tex
 INPUT chapters/Conclusion.tex

@@ -24,13 +24,15 @@
 \BOOKMARK [2][]{subsection.3.3.3}{3.3.3 モータ特性表生成}{section.3.3}% 23
 \BOOKMARK [0][]{chapter.4}{4 適用例}{}% 24
 \BOOKMARK [1][]{section.4.1}{4.1 ブラシ付きDCモータのModelicaモデル}{chapter.4}% 25
-\BOOKMARK [1][]{section.4.2}{4.2 ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{chapter.4}% 26
-\BOOKMARK [0][]{chapter.5}{5 考察}{}% 27
-\BOOKMARK [1][]{section.5.1}{5.1 評価}{chapter.5}% 28
-\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 評価方法}{section.5.1}% 29
-\BOOKMARK [2][]{subsection.5.1.2}{5.1.2 結果}{section.5.1}% 30
-\BOOKMARK [1][]{section.5.2}{5.2 関連研究}{chapter.5}% 31
-\BOOKMARK [1][]{section.5.3}{5.3 ツールの問題点}{chapter.5}% 32
-\BOOKMARK [0][]{chapter.6}{6 おわりに}{}% 33
-\BOOKMARK [0][]{chapter.6}{謝辞}{}% 34
-\BOOKMARK [0][]{chapter*.27}{参考文献}{}% 35
+\BOOKMARK [2][]{subsection.4.1.1}{4.1.1 特性表の確認}{section.4.1}% 26
+\BOOKMARK [2][]{subsection.4.1.2}{4.1.2 特性グラフの確認}{section.4.1}% 27
+\BOOKMARK [1][]{section.4.2}{4.2 ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}{chapter.4}% 28
+\BOOKMARK [0][]{chapter.5}{5 考察}{}% 29
+\BOOKMARK [1][]{section.5.1}{5.1 評価}{chapter.5}% 30
+\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 評価方法}{section.5.1}% 31
+\BOOKMARK [2][]{subsection.5.1.2}{5.1.2 結果}{section.5.1}% 32
+\BOOKMARK [1][]{section.5.2}{5.2 関連研究}{chapter.5}% 33
+\BOOKMARK [1][]{section.5.3}{5.3 ツールの問題点}{chapter.5}% 34
+\BOOKMARK [0][]{chapter.6}{6 おわりに}{}% 35
+\BOOKMARK [0][]{chapter.6}{謝辞}{}% 36
+\BOOKMARK [0][]{chapter*.36}{参考文献}{}% 37
