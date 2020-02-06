@@ -226,8 +226,8 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 始動電流とは、モータの起動時に流れる大きな電流である。モータの起動直後は逆起電力が発生するため、モータ・コイル部分にかかる電圧が下がり、電流値も下がる。
 したがって、配列currentの要素の最大値を始動電流とする。
 
-\subsubsection{停動トルク}\label{sub:sub:teidoutoruku}
-停動トルクとは、モータが出しうる最大の負荷トルク値である。したがって、配列torqueの要素の最大値を停動トルクとする。
+\subsubsection{始動トルク}\label{sub:sub:teidoutoruku}
+始動トルクとは、モータが出しうる最大の負荷トルク値である。したがって、配列torqueの要素の最大値を始動トルクとする。
 
 \subsubsection{最大効率}\label{sub:sub:saidaikouritu}
 配列efficiencyの要素の最大値を最大効率とする。
@@ -280,8 +280,10 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 	\begin{tabular}{|c|c|} \hline
 	  要素 & データ \\ \hline \hline
 	  定格電圧$(\mathrm{V})$ & \ref{sub:youso_mortoku}節で求めた定格電圧の値 \\ \hline
-	  始動電流 $(\mathrm{mA})$&  \ref{sub:youso_mortoku}節で求めた始動電流の値 \\ \hline
-	  停動トルク $(\mathrm{mN \cdot m})$& \ref{sub:youso_mortoku}節で求めた停動トルクの値  \\ \hline
+      始動電流 $(\mathrm{mA})$&  \ref{sub:youso_mortoku}節で求めた始動電流の値 \\ \hline
+      無負荷電流 $(\mathrm{mA})$&  \ref{sub:youso_mortoku}節で求めた無負荷電流の値\\ \hline
+      無負荷回転数$(\mathrm{rpm})$& \ref{sub:youso_mortoku}節で求めた無負荷回転数の値  \\ \hline
+	  始動トルク $(\mathrm{mN \cdot m})$& \ref{sub:youso_mortoku}節で求めた始動トルクの値  \\ \hline
       最大効率 $(\mathrm{\%})$& \ref{sub:youso_mortoku}節で求めた最大効率の値  \\ \hline
       定格トルク $(\mathrm{mN \cdot m})$& \ref{sub:youso_mortoku}節で求めた定格トルクの値 \\ \hline
 	  定格回転数 $(\mathrm{rpm})$& \ref{sub:youso_mortoku}節で求めた定格回転数の値  \\ \hline
