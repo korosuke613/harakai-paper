@@ -1,16 +1,16 @@
 # Fdb version 3
-["bibtex GraduateThesis"] 1580980877 "GraduateThesis.aux" "GraduateThesis.bbl" "GraduateThesis" 1580980879
-  "GraduateThesis.aux" 1580980878 9803 8c711f0d7aeadb8904c1f9cf0edb89e5 ""
+["bibtex GraduateThesis"] 1580998467 "GraduateThesis.aux" "GraduateThesis.bbl" "GraduateThesis" 1580998469
+  "GraduateThesis.aux" 1580998468 9803 8c711f0d7aeadb8904c1f9cf0edb89e5 ""
   "GraduateThesis.bcf" 0 -1 0 ""
   "bibtex.bib" 1580975442 5919 110e27a5b68a45b481ca8fb673fd7b85 ""
   "junsrt.bst" 0 -1 0 ""
   (generated)
   "GraduateThesis.bbl"
-["dvipdf"] 1580980878 "GraduateThesis.dvi" "GraduateThesis.pdf" "GraduateThesis" 1580980879
-  "GraduateThesis.dvi" 1580980878 68476 a4924f8b8dccbc08b265cce168052801 "latex"
+["dvipdf"] 1580998469 "GraduateThesis.dvi" "GraduateThesis.pdf" "GraduateThesis" 1580998470
+  "GraduateThesis.dvi" 1580998469 68352 9b2f5502d82802f8e628176cac2d0215 "latex"
   (generated)
   "GraduateThesis.pdf"
-["latex"] 1580980877 "/workdir/GraduateThesis.tex" "GraduateThesis.dvi" "GraduateThesis" 1580980879
+["latex"] 1580998468 "/workdir/GraduateThesis.tex" "GraduateThesis.dvi" "GraduateThesis" 1580998469
   "/etc/texmf/web2c/texmf.cnf" 1560379919 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1480098701 1292 21c1c5bfeaebccffdb478fd231a0997d ""
@@ -88,11 +88,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/web2c/euptex/uplatex.fmt" 1560427123 1104240 af0878d8b885395689f87f1c0842ef2a ""
   "/workdir/GraduateThesis.tex" 1580976329 5624 d7f79fefd12b3b1ae560053ad642d107 ""
-  "GraduateThesis.aux" 1580980878 9803 8c711f0d7aeadb8904c1f9cf0edb89e5 ""
-  "GraduateThesis.bbl" 1580980877 4069 5c6be8cefcd52c61fb34b64e4ec86d47 "bibtex GraduateThesis"
-  "GraduateThesis.out" 1580980878 1444 8c9b7266fb226194830b33ad70da348e ""
+  "GraduateThesis.aux" 1580998468 9803 8c711f0d7aeadb8904c1f9cf0edb89e5 ""
+  "GraduateThesis.bbl" 1580998467 4069 5c6be8cefcd52c61fb34b64e4ec86d47 "bibtex GraduateThesis"
+  "GraduateThesis.out" 1580998469 1444 8c9b7266fb226194830b33ad70da348e ""
   "GraduateThesis.tex" 1580976329 5624 d7f79fefd12b3b1ae560053ad642d107 ""
-  "GraduateThesis.toc" 1580980878 2579 f3c9a4eb8316252535f2b2ef6a6c9e04 ""
+  "GraduateThesis.toc" 1580998469 2579 f3c9a4eb8316252535f2b2ef6a6c9e04 ""
   "Image/OM_GUI.png" 1580975442 100424 26f3b158a54976cef003c9444606cd50 ""
   "Image/name_ob.png" 1580975442 4866 4060b1fd74247ac60f003ef81f71704e ""
   "Image/rei_mortoku.png" 1580975442 181571 5b1e65ce14d43cec530c2e12cafda137 ""
@@ -102,7 +102,7 @@
   "Image/touka.png" 1580975442 31297 89df67b2958470a5164dfa5bc04eba34 ""
   "chapters/Conclusion.tex" 1580975442 99 47949752f58aab95db6b327fc5e44207 ""
   "chapters/Discussion.tex" 1580975442 5243 1b2190ce1ea37e7e15c38361de81b664 ""
-  "chapters/Introduction.tex" 1580980867 2123 9e383ec4b425d66b2a6f5b824735c8b0 ""
+  "chapters/Introduction.tex" 1580998466 2479 7b82d51bd6b42552807d3a750a60fe79 ""
   "chapters/Preparation.tex" 1580975442 22648 f940a7f7e3a9ec8e5611ef3be164cb56 ""
   "extractbb -B cropbox -O ./Image/OM_GUI.png" 0 -1 0 ""
   "extractbb -B cropbox -O ./Image/name_ob.png" 0 -1 0 ""
@@ -120,8 +120,8 @@
   "miyazaki-u-paper.sty" 1580975442 18508 66066f99a85f541bf6f0695fdbeb33e8 ""
   "pxjahyper.sty" 1580975442 36203 1084cf32e051af640fc83197b037ed98 ""
   (generated)
-  "GraduateThesis.dvi"
-  "GraduateThesis.toc"
-  "GraduateThesis.log"
   "GraduateThesis.aux"
+  "GraduateThesis.log"
+  "GraduateThesis.toc"
+  "GraduateThesis.dvi"
   "GraduateThesis.out"
