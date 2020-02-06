@@ -86,11 +86,17 @@
 \subsubsection{定格電流}
 図\ref{fig:tekiyou_mortoku}の特性表にある定格電流と、図\ref{fig:tekiyou_csv}のsignalVoltage1.n.iが持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
 \subsubsection{定格出力}
-図\ref{fig:tekiyou_mortoku}の特性表にある定格出力と、図\ref{fig:tekiyou_csv}の
-出力が持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
+% 出力は、\mbox{ トルク $(\mathrm{N \cdot m})$} $\times$ \mbox{角速度 $(\mathrm{rad/s})$} で算出することが可能である。
+% 図\ref{fig:tekiyou_mortoku}の特性表にある定格出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を乗算した結果は、
+% が同値である。よって、正しく出力していることが確認できる。
+図\ref{fig:tekiyou_mortoku}の特性表にある出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を(\ref{siki:speed})式に適用した結果が同値である。
+よって、正しく出力していることが確認できる。
 \subsubsection{最大回転数}
 図\ref{fig:tekiyou_mortoku}の特性表にある最大回転数と、図\ref{fig:tekiyou_csv}の回転数が持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
 \subsection{特性グラフの確認}
 以下に、特性グラフが正しく生成できているか確認する。
+
+\subsubsection{「負荷トルク $\times$ 電流」グラフ}
+
 
 \section{ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}
