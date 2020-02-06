@@ -222,6 +222,8 @@ INPUT ./Image/tantai_model.png
 INPUT extractbb -B cropbox -O ./Image/tantai_model.png
 INPUT ./Image/submodel_pack.png
 INPUT extractbb -B cropbox -O ./Image/submodel_pack.png
+INPUT ./Image/rei_mortoku.png
+INPUT extractbb -B cropbox -O ./Image/rei_mortoku.png
 INPUT chapters/Tool.tex
 INPUT chapters/Tool.tex
 INPUT ./Image/kouzou.png
@@ -237,8 +239,6 @@ INPUT ./Image/error_file.png
 INPUT extractbb -B cropbox -O ./Image/error_file.png
 INPUT ./Image/error_comand.png
 INPUT extractbb -B cropbox -O ./Image/error_comand.png
-INPUT Image/name.txt
-INPUT Image/name.txt
 INPUT ./Image/characteristicTable.png
 INPUT extractbb -B cropbox -O ./Image/characteristicTable.png
 INPUT ./Image/current.png
@@ -255,10 +255,10 @@ INPUT chapters/Indication.tex
 INPUT chapters/Indication.tex
 INPUT ./Image/tekiyou_tanntai.png
 INPUT extractbb -B cropbox -O ./Image/tekiyou_tanntai.png
-INPUT ./Image/tekiyou_csv.png
-INPUT extractbb -B cropbox -O ./Image/tekiyou_csv.png
-INPUT ./Image/tekiyou_mortoku.png
-INPUT extractbb -B cropbox -O ./Image/tekiyou_mortoku.png
+INPUT ./Image/kakunin_mark.png
+INPUT extractbb -B cropbox -O ./Image/kakunin_mark.png
+INPUT Image/characteristicTable_kakunin.pdf
+INPUT extractbb -B cropbox -O Image/characteristicTable_kakunin.pdf
 INPUT chapters/Discussion.tex
 INPUT chapters/Discussion.tex
 INPUT chapters/Conclusion.tex

@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  4 FEB 2020 21:25
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  6 FEB 2020 03:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -595,7 +595,7 @@ File: ot1txtt.fd 2000/12/15 v3.1
 第 \lower 0.01ex\hbox {1} 章
 ) (./chapters/Preparation.tex [1
 
-]
+] [2]
 第 \lower 0.01ex\hbox {2} 章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 13.31541pt on input line 8.
@@ -613,54 +613,53 @@ File: ./Image/OM_GUI.png Graphic file (type bmp)
 <./Image/OM_GUI.png>
 File: ./Image/name_ob.png Graphic file (type bmp)
 <./Image/name_ob.png>
-[2
+[3
 
 ]
 File: ./Image/simyu_csv.png Graphic file (type bmp)
 <./Image/simyu_csv.png>
- [3]
+ [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
+ [5]
 File: ./Image/touka.png Graphic file (type bmp)
 <./Image/touka.png>
- [5]
+ [6]
 File: ./Image/tantai_model.png Graphic file (type bmp)
 <./Image/tantai_model.png>
- [6]
+ [7]
 File: ./Image/submodel_pack.png Graphic file (type bmp)
 <./Image/submodel_pack.png>
+File: ./Image/rei_mortoku.png Graphic file (type bmp)
+<./Image/rei_mortoku.png>
+ [8
 
-Overfull \hbox (45.64896pt too wide) in paragraph at lines 184--195
- [][][][] 
- []
+] [9]
+Underfull \vbox (badness 2529) has occurred while \output is active []
 
-[7
-
-] [8] [9] [10]) (./chapters/Tool.tex [11]
+ [10] [11] [12]) (./chapters/Tool.tex [13]
 第 \lower 0.01ex\hbox {3} 章
 File: ./Image/kouzou.png Graphic file (type bmp)
 <./Image/kouzou.png>
-[12
+[14
 
 ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 47.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 49.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 47.
+(Font)              scaled to size 7.39746pt on input line 49.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 47.
- [13]
+(Font)              scaled to size 7.39746pt on input line 49.
+ [15] [16] [17] [18]
 File: ./Image/error_tarinai.png Graphic file (type bmp)
 <./Image/error_tarinai.png>
 File: ./Image/error_file.png Graphic file (type bmp)
 <./Image/error_file.png>
- [14] [15] [16]
 File: ./Image/error_comand.png Graphic file (type bmp)
 <./Image/error_comand.png>
- [17] [18] [19]
+ [19] [20] [21]
 File: ./Image/characteristicTable.png Graphic file (type bmp)
 <./Image/characteristicTable.png>
- [20] [21]
+ [22]
 File: ./Image/current.png Graphic file (type bmp)
 <./Image/current.png>
 File: ./Image/speed.png Graphic file (type bmp)
@@ -671,32 +670,35 @@ File: ./Image/output.png Graphic file (type bmp)
 <./Image/output.png>
 File: Image/characteristicTable.pdf Graphic file (type pdf)
 <Image/characteristicTable.pdf>
-) (./chapters/Indication.tex [22] [23] [24] [25]
+) (./chapters/Indication.tex [23] [24] [25] [26]
 第 \lower 0.01ex\hbox {4} 章
 File: ./Image/tekiyou_tanntai.png Graphic file (type bmp)
 <./Image/tekiyou_tanntai.png>
-File: ./Image/tekiyou_csv.png Graphic file (type bmp)
-<./Image/tekiyou_csv.png>
-File: ./Image/tekiyou_mortoku.png Graphic file (type bmp)
-<./Image/tekiyou_mortoku.png>
-[26
+File: ./Image/kakunin_mark.png Graphic file (type bmp)
+<./Image/kakunin_mark.png>
 
-] [27] [28] [29] [30
+LaTeX Warning: Float too large for page by 0.81248pt on input line 44.
 
-]) (./chapters/Discussion.tex [31]
+File: Image/characteristicTable_kakunin.pdf Graphic file (type pdf)
+<Image/characteristicTable_kakunin.pdf>
+[27
+
+] [28] [29] [30] [31
+
+]) (./chapters/Discussion.tex [32]
 第 \lower 0.01ex\hbox {5} 章
-) (./chapters/Conclusion.tex [32
+) (./chapters/Conclusion.tex [33
 
 ]
 第 \lower 0.01ex\hbox {6} 章
-) (./listings-modelica.cfg) [33
+) (./listings-modelica.cfg) [34
 
 ]
 謝辞
 
 Package hyperref Warning: bookmark level for unknown countChapter defaults to 0.
 
-(./GraduateThesis.bbl [34
+(./GraduateThesis.bbl [35
 
 ]
 参考文献
@@ -713,7 +715,7 @@ Underfull \hbox (badness 7362) in paragraph at lines 43--48
 []\OT1/txr/m/n/12 MekatoroNet.  \JY2/mc/m/n/12 仕様の見方\OT1/txr/m/n/12 .  [][]$\OT1/txtt/m/n/12 http : / / www . mekatoro . net / digianaecatalog /
  []
 
-[35
+[36
 
 ]
 Underfull \hbox (badness 3492) in paragraph at lines 76--81
@@ -732,13 +734,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--109
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
- [36]
+ [37]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (./GraduateThesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `GraduateThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2B79A2CDD1BC62D94A09DB7DEFD0A5BF;2766.
+(rerunfilecheck)             Checksum: 903460BC589BD8CCD87D31AA954FA949;2790.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -746,12 +748,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 9670 strings out of 494731
- 139030 string characters out of 6176320
- 275800 words of memory out of 5000000
- 12999 multiletter control sequences out of 15000+600000
+ 9678 strings out of 494731
+ 139212 string characters out of 6176320
+ 260800 words of memory out of 5000000
+ 13007 multiletter control sequences out of 15000+600000
  27003 words of font info for 102 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 29i,11n,40p,1019b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,13n,40p,1019b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (39 pages, 126980 bytes).
+Output written on GraduateThesis.dvi (40 pages, 126892 bytes).
