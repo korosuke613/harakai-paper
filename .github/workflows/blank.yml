@@ -1,0 +1,18 @@
+name: Build PDF
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: korosuke613/ubuntu-texlive-ja:latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build PDF
+      run: latexmk GraduateThesis.tex
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Generated PDF
+        path: GraduateThesis.pdf
