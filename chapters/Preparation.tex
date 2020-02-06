@@ -57,8 +57,8 @@ OpenModelicaから出力されるcsvファイルのファイル名は、「(シ�
 \section{ブラシ付きDCモータ}\label{bDCmotor}
 % ブラシ付きDCモータだけかけばいいのか？モータ全体の話も必要か？
 DCモータとは、磁場の中にあるコイルに電流を流す事で発生するローレンツ力を回転方向に利用することで回すモータである\cite{モータ原理}。
-また、ブラシ付きDCモータとは、モータ内部に「ブラシ」と呼ばれる電極と、「コミュテータ」と呼ばれる整流子を設け、その二つを接触させ機械的に電流の切り替えを行い、回転させるDCモータである。
-ブラシ付きDCモータは、シンプルな構造で、制御しやすく、汎用性が高く、模型用モータや自動車補機用モータなど世界で一番多く使われているモータである\cite{モータ使う}。
+また、ブラシ付きDCモータとは、モータ内部に「ブラシ」と呼ばれる電極と、「コミュテータ」と呼ばれる整流子を設け、その二つを接触させ機械的に電流の切り替えを行い、回すDCモータである。
+ブラシ付きDCモータは、シンプルな構造で、制御が容易で汎用性が高く、模型用モータや自動車補機用モータなど、世界で一番多く使われているモータである\cite{モータ使う}。
 % 3章へ
 %   今回試作するモータ特性表自動生成ツールでは、ブラシ付きモータのシミュレーション結果にのみ対応する。
 \section{対象とするモデル}\label{taioumodel}
@@ -276,8 +276,8 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 \subsubsection{停動トルク}\label{sub:sub:teidoutoruku}
 % \subsection{停動トルク}\label{sub:teidoutoruku}
 % 停動トルクとは、モータが出しうる最大トルクで、このトルク以上の負荷がかかれば、モータが停止する値を表す。
-停動トルクとは、モータが停止する負荷トルクの値である。
-単位は、$\mathrm{mN \cdot m}$である。
+停動トルクとは、モータが停止する負荷トルクの値を表す。
+単位は、$(\mathrm{mN \cdot m})$である。
 % https://www.orientalmotor.co.jp/tech/glossary/ta11/
 \subsubsection{最大効率}\label{sub:sub:saidaikouritu}
 % \subsection{最大効率}\label{sub:saidaikouritu}
@@ -289,7 +289,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % \subsection{定格トルク}\label{sub:teikakutoruku}
 定格トルクとは、最大効率時のトルク値を表す。
 
-単位は、$\mathrm{mN \cdot m}$である。
+単位は、$(\mathrm{mN \cdot m})$である。
 % http://www.sagamimicro.co.jp/product/aboutusage.html
 \subsubsection{定格回転数}\label{sub:sub:teikakukaiten}
 % \subsection{定格回転数}\label{sub:teikakukaiten}
@@ -326,19 +326,19 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % \end{itemize}
 % 以下に各グラフについて述べる。
 \subsubsection{「負荷トルク $\times$ 電流」グラフ}\label{sub:sub:torden}
-「負荷トルク $\times$ 電流」グラフとは、横軸が「負荷トルク$\mathrm{mN \cdot m}$」、縦軸が「電流 $\mathrm{mA}$」のグラフである。
+「負荷トルク $\times$ 電流」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「電流 $(\mathrm{mA})$」のグラフである。
 
 このグラフでは、トルクに対する電流の変化量を表している。
 \subsubsection{「負荷トルク $\times$ 回転数」グラフ}\label{sub:sub:torkaiten}
-「負荷トルク $\times$ 回転数」グラフとは、横軸が「負荷トルク $\mathrm{mN \cdot m}$」、縦軸が「回転数 $\mathrm{rpm}$」のグラフである。
+「負荷トルク $\times$ 回転数」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「回転数 $(\mathrm{rpm})$」のグラフである。
 
 このグラフでは、トルクに対する回転数の変化量を表している。
 \subsubsection{「負荷トルク $\times$ 効率」グラフ}\label{sub:sub:torkouritu}
-「負荷トルク $\times$ 効率」グラフとは、横軸が「負荷トルク $\mathrm{mN \cdot m}$」、縦軸が「効率 $\mathrm{\%}$」のグラフである。
+「負荷トルク $\times$ 効率」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「効率 $(\mathrm{\%})$」のグラフである。
 
 このグラフでは、トルクに対する効率の変化量を表している。
 \subsubsection{「負荷トルク $\times$ 出力」グラフ}\label{sub:sub:torsyutu}
-「負荷トルク $\times$ 出力」グラフとは、横軸が「負荷トルク $\mathrm{mN \cdot m}$」、縦軸が「出力 $\mathrm{W}$」のグラフである。
+「負荷トルク $\times$ 出力」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「出力 $(\mathrm{W})$」のグラフである。
 
 このグラフでは、トルクに対する出力の変化量を表している。
   \section{Python}\label{python}
@@ -362,8 +362,8 @@ Pythonのプログラミング言語としての主な特徴は、少ないコ�
 	  reportlab & PDFファイル作成 \\ \hline
 	  PIL &  画像処理\\ \hline
 	  pdf2image &  PDFファイルの画像化\\ \hline
-	  sys & スクリプトの起動パラメータを取得\\ \hline
-	  os &  不要なファイルを削除\\ \hline
+	  sys & スクリプトの起動パラメータの取得\\ \hline
+	  os &  不要なファイルの削除\\ \hline
 	\end{tabular}
 	\label{tab:libr}
   \end{table}
