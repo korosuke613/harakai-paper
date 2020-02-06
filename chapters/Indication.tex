@@ -1,255 +1,143 @@
 \chapter{適用例}\label{cha:Indication}
-本章では、本研究で作成したテスト支援ツールが正しく動作することを検証する。テスト支援ツールは次に示す10個の機能を持つ。
+% 本章では、本研究で作成したモータ特性表自動生成ツールが正しく動作することを検証するため、以下の同じ能力である2種類のModelicaモデルのシミュレーション結果のcsvファイルを適用する。
+本章では、本研究で作成したモータ特性表自動生成ツールが正しく動作することを確認する。
+適用例として、ブラシ付きDCモータのModelicaモデルと、ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル、の2つが出力するcsvファイルを適用例として用いる。
+また、2つのモータの性能は同じである。
+正しく動作しているか確認するために、以下の2つの点に着目する。
+% 以下に示す2種類のModelicaモデルのシミュレーション結果のcsvファイルを適用例として用いる。
+% 以下のモータは、性能は同じである。
+% \begin{itemize}
+%     \item ブラシ付きDCモータのModelicaモデル
+%     \item ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル
+% \end{itemize}
 
-\begin{itemize}
-	\item キャラクター情報入力機能
-	\item オブジェクト増減機能
-	\item オブジェクト情報入力機能
-	\item オブジェクト位置確認機能
-	\item ゲームスタートボタン機能
-	\item リプレイボタン機能
-	\item Warning判定出力機能
-	\item 入力キーとタイミングの記録機能
-	\item リプレイ機能
-	\item エラーメッセージ出力機能
-\end{itemize}
+% 2つのモデルのパラメータ設定を以下に示す。
+% \begin{itemize}
+%     \item 電源部品 ・・・ 9 V
+%     \item 抵抗部品 ・・・ 1.78 $\Omega$
+%     \item インダクタ部品 ・・・ 0.0000735 H
+%     \item 起電力部品 ・・・ 0.010400000000000001 $mN \cdot m$
+%     \item 慣性部品 ・・・ 0.00371135959 $\mathrm{kg\cdot m^2}$
+% \end{itemize}
+% 具体的には、以下の2つの項目を確認する。
 
-この中の、「キャラクター情報入力機能」、「オブジェクト増減機能」、「オブジェクト情報入力機能」、「オブジェクト位置確認機能」、「Warning判定出力機能」、「入力キーとタイミングの記録機能」、
-「リプレイ機能」、「エラーメッセージの出力機能」の8個の機能について検証を行う。
-
-なお、「ゲームスタートボタン機能」については、「Warning判定出力機能」と「入力キーとタイミングの記録機能」を実行する前に押下するボタンの機能のため、これらが機能することで、正しく動作したとする。
-また、「リプレイボタン機能」については、「リプレイ機能」を実行する前に押下するボタンの機能のため、「リプレイ機能」が機能することで、正しく動作したとする。
-
-\section{モータ単体のモデル}
-テスト支援ツールにおいて「キャラクター情報入力機能」が機能することを検証するために、「キャラクター情報を入力する前のキャラクター情報入力ウィンドウ」と、「キャラクター情報を入力した後のキャラクター情報入力ウィンドウ」のキャラクター情報入力ウィンドウを比較する。
-キャラクター情報を入力する前のキャラクター情報入力ウィンドウを図5.1に、キャラクター情報を入力した後のキャラクター情報入力ウィンドウを図5.2に、それぞれ示す。
-また、入力したキャラクター名とキャラクターのファイルパスを保存しているcsvファイルを、図5.3に示す。
-
-% % \begin{figure}
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.8\columnwidth]{./Image/5.1.eps}
-% % 		\end{center}
-% % 		\caption{キャラクター情報を入力する前の \protect\newline キャラクター情報入力ウィンドウ}
-% % 		\label{fig:left}
-% % 	\end{minipage}%
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.8\columnwidth]{./Image/5.2.eps}
-% % 		\end{center}
-% % 		\caption{キャラクター情報を入力した後の \protect\newline キャラクター情報入力ウィンドウ}
-% % 		\label{fig:right}
-% % 	\end{minipage}
-% % \end{figure}
-
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=10cm]{./Image/5.3.eps}
-% %   \caption{入力したキャラクター名とキャラクターのファイルパスを保存しているcsvファイル}
-% % \end{figure}
-
-% キャラクター情報を入力する前のキャラクター情報入力ウィンドウと、キャラクター情報を入力した後のキャラクター情報入力ウィンドウを比較すると、キャラクター画像(ball.jpg)とキャラクター名(Player)を
-% 入力できている。また、csvファイルの1行目に、キャラクター名(Player)とキャラクター画像(ball.jpg)のファイルパスが記述していることが
-% わかる。よって、「キャラクター情報入力機能」が正しく動作していることを確認できる。
-
-\section{パッケージ化されたモデル}
-% テスト支援ツールにおいて、「オブジェクト増減機能」が機能することを検証するために、「オブジェクトを追加する前」と、「オブジェクトを追加した後」、「オブジェクトが減少した後」のテスト支援ツールのウィンドウを比較する。
-% オブジェクトを追加する前のテスト支援ツールのウィンドウを図5.4に、オブジェクトを追加した後のテスト支援ツールのウィンドウを図5.5に、それぞれ示す。また、オブジェクトが減少した後のテスト支援ツールのウィンドウを、図5.6に示す。
-
-% % \begin{figure}
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.4.eps}
-% % 		\end{center}
-% % 		\caption{オブジェクトを追加する前の \protect\newline テスト支援ツールのウィンドウ}
-% % 		\label{fig:left}
-% % 	\end{minipage}%
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.5.eps}
-% % 		\end{center}
-% % 		\caption{オブジェクトを追加した後の \protect\newline テスト支援ツールのウィンドウ}
-% % 		\label{fig:right}
-% % 	\end{minipage}
-% % \end{figure}
-
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=6cm]{./Image/5.6.eps}
-% %   \caption{オブジェクトが減少した後のテスト支援ツールのウィンドウ}
-% % \end{figure}
-
-% オブジェクトを追加する前と、オブジェクトを追加した後を比較すると、オブジェクトが増加していることがわかる。
-% また、オブジェクトを追加した後とオブジェクトが減少した後を比較すると、オブジェクトが減少していることがわかる。
-% よって、「キャラクター情報入力機能」が正しく動作していることを確認できる。
+\begin{enumerate}
+    \item 生成したモータ特性表の各要素の値が、正しい値になっていること
+    \item 2つのモデルから生成したモータ特性表の各要素が、同値になっていること
+\end{enumerate}
 
 
-% \section{オブジェクト情報入力機能}
-% テスト支援ツールにおいて、「オブジェクト情報入力機能」が機能することを検証するために、「オブジェクト情報を入力する前」と、「オブジェクト情報を入力した後」のオブジェクト情報入力ウィンドウを比較する。
-% オブジェクト情報を入力する前のオブジェクト情報入力ウィンドウを図5.7に、オブジェクト情報を入力した後のオブジェクト情報入力ウィンドウを図5.8に、それぞれ示す。
+\section{ブラシ付きDCモータのModelicaモデル}
+ブラシ付きDCモータのModelicaモデルをOpenModelicaで実行し、生成されたcsvファイルを、モータ特性表自動生成ツールに適用する。適用例に用いるモデルを、図\ref{fig:tekiyou_tanntai}に、
+図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルからモータ特性表を作成する際に使用する要素を、図\ref{fig:tekiyou_csv}にそれぞれ示す。図\ref{fig:tekiyou_csv}の赤丸は最大値を、青い四角形は最大効率時の行を表す。
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=10cm]{./Image/tekiyou_tanntai.png}
+	\caption{適用するブラシ付きDCモータのModelicaモデル}
+	\label{fig:tekiyou_tanntai}
+\end{figure}
+% \begin{figure}[t]
+% 	\centering
+% 	\fbox{
+%     \includegraphics[width=9cm]{./Image/tekiyou_csv.png}
+%     }
+%     \caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部}
+% 	\label{fig:tekiyou_csv}
+% \end{figure}
+\begin{figure}[t]
+	\centering
+	\fbox{
+    \includegraphics[width=13cm]{./Image/kakunin_saidai_mark.png}
+    }
+	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部と効率と回転数}
+	\label{fig:tekiyou_csv}
+\end{figure}
+図\ref{fig:tekiyou_csv}のcsvファイルをモータ特性表自動生成ツールに適用した結果、出力するモータ特性表を図\ref{fig:tekiyou_mortoku}に示す。
+% \begin{figure}[t]
+% 	\centering
+% 	\fbox{
+%     \includegraphics[width=14cm]{./Image/tekiyou_mortoku.png}
+%     }
+%     \caption{適用例で生成したモータ特性表}
+% 	\label{fig:tekiyou_mortoku}
+% \end{figure}
+\begin{figure}[t]
+	\centering
+	\fbox{
+	\includegraphics[width=16cm,pagebox=cropbox]{Image/characteristicTable_kakunin.pdf} 
+	}
+	\caption{適用例で生成したモータ特性表}
+	\label{fig:tekiyou_mortoku}
+\end{figure}
+\clearpage
+\subsection{特性表の確認}
+以下に、特性表で出力した各要素が正しく算出できているか確認する。%図\ref{fig:kakunin_csv}には、図\ref{fig:tekiyou_csv}から効率と回転数を算出したデータを示す。図中の赤丸は最大値を、青い四角形は最大効率時の行を表す。
+% \begin{figure}[t]
+% 	\centering
+% 	\fbox{
+%     \includegraphics[width=3cm]{./Image/tekiyou_csv_kakunin.png}
+%     }
+%     \caption{図\ref{fig:tekiyou_csv}から効率と回転数を算出}
+% 	\label{fig:kakunin_csv}
+% \end{figure}
 
-% % \begin{figure}
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.7.eps}
-% % 		\end{center}
-% % 		\caption{オブジェクト情報を入力する前の \protect\newline オブジェクト情報入力ウィンドウ}
-% % 		\label{fig:left}
-% % 	\end{minipage}%
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.8.eps}
-% % 		\end{center}
-% % 		\caption{オブジェクト情報を入力した後の \protect\newline オブジェクト情報入力ウィンドウ}
-% % 		\label{fig:right}
-% % 	\end{minipage}
-% % \end{figure}
+\subsubsection{定格電圧}
+図\ref{fig:tekiyou_mortoku}の特性表にある定格電圧の値と、図\ref{fig:tekiyou_csv}のsignalVoltage1.p.vが持つ値の中で、先頭にある値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{始動電流}
+図\ref{fig:tekiyou_mortoku}の特性表にある始動電流の値と、図\ref{fig:tekiyou_csv}のsignalVoltage1.n.iが持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{停動トルク}
+図\ref{fig:tekiyou_mortoku}の特性表にある停動トルクの値と、図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauが持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{最大効率}
+図\ref{fig:tekiyou_mortoku}の特性表にある最大効率の値と、図\ref{fig:tekiyou_csv}の効率が持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{定格トルク}
+図\ref{fig:tekiyou_mortoku}の特性表にある定格トルクの値と、図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauが持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{定格回転数}
+図\ref{fig:tekiyou_mortoku}の特性表にある定格回転数の値と、図\ref{fig:tekiyou_csv}の回転数が持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{定格電流}
+図\ref{fig:tekiyou_mortoku}の特性表にある定格電流と、図\ref{fig:tekiyou_csv}のsignalVoltage1.n.iが持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
+\subsubsection{定格出力}
+% 出力は、\mbox{ トルク $(\mathrm{N \cdot m})$} $\times$ \mbox{角速度 $(\mathrm{rad/s})$} で算出することが可能である。
+図\ref{fig:tekiyou_mortoku}の特性表にある定格出力と、図\ref{fig:tekiyou_csv}の出力が持つ値の中の、最大効率を出した時の値が同地である。よって、正しく出力していることが確認できる。
+が同値である。よって、正しく出力していることが確認できる。
+% 図\ref{fig:tekiyou_mortoku}の特性表にある出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を(\ref{siki:speed})式に適用した結果が同値である。
+% よって、正しく出力していることが確認できる。
+\subsubsection{最大回転数}
+図\ref{fig:tekiyou_mortoku}の特性表にある最大回転数と、図\ref{fig:tekiyou_csv}の回転数が持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
+\subsection{特性グラフの確認}
+以下に、特性グラフが正しく生成できているか確認する。
 
+\subsubsection{「負荷トルク $\times$ 電流」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、signalVoltage1.n.iが持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 回転数」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、回転数が持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 効率」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、効率が持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 出力」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、出力が持つ値を確認できるので、正しく生成していることが確認できる。
 
-% オブジェクト情報を入力する前と、オブジェクト情報を入力した後のオブジェクト情報入力ウィンドウを比較すると、オブジェクト情報が入力していることがわかる。
-% よって、「オブジェクト情報入力機能」が正しく動作していることを確認できる。
+したがって、生成したモータ特性表の各要素の値が、正しい値になっていることを確認できる。
 
-% \section{オブジェクト位置確認機能}
-% テスト支援ツールにおいて、「オブジェクト位置確認機能」が機能することを検証するために、4.7節で説明した「ゲーム実行時のゲーム画面リアルタイム取得」
-% で取得した画像に、実際のオブジェクトの位置を表示し、それとゲーム背景画像が等しいかどうかを比較する。
-% 実際のオブジェクトの位置を図5.9に、ゲーム背景画像を図5.10に、それぞれ示す。
-% なお、これらの図は、オブジェクトの位置がわかりやすいように、オブジェクトの位置の線を強調している。
+\section{ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}
+今回適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデルは、図\ref{fig:tekiyou_tanntai}のモデルと同じ性能になるよう設計しており、どちらのモータ特性表も同じ内容になっていることを確認する。
 
-% % \begin{figure}
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.9.eps}
-% % 		\end{center}
-% % 		\caption{実際のオブジェクトの位置}
-% % 		\label{fig:left}
-% % 	\end{minipage}%
-% % 	\begin{minipage}[t]{0.5\columnwidth}
-% % 		\begin{center}
-% % 			\includegraphics[clip, width=0.9\columnwidth]{./Image/5.10.eps}
-% % 		\end{center}
-% % 		\caption{ゲーム背景画像}
-% % 		\label{fig:right}
-% % 	\end{minipage}
-% % \end{figure}
+今回適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデルを図\ref{fig:tekiyou_sub}に、生成したモータ特性表を図\ref{fig:sub_mortoku}にそれぞれ示す。
 
-% 実際のオブジェクトの範囲とゲーム背景画像を比較すると、オブジェクトの位置が同じことがわかる。
-% よって、「オブジェクト位置確認機能」が正しく動作していることを確認できる。
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=10cm]{./Image/tekiyou_sub.png}
+	\caption{適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}
+	\label{fig:tekiyou_sub}
+\end{figure}
 
-% \section{Warning判定出力機能}
-% テスト支援ツールにおいて、「Warning判定出力機能」が機能することを検証する。
-% オブジェクトの位置を指定した場所に、キャラクターが重なった場合、出力するファイルに、重なったオブジェクト名が表示しているかを確認する。
-% 今回は、5.4節のオブジェクト位置確認機能を使い、オブジェクトの位置が設定できたことを確認する。
-% オブジェクト位置確認ウィンドウを図5.11に、オブジェクトと報告者が設定しているツールの概観を図5.12に、それぞれ示す。
-% 図5.11には、今回設定したオブジェクト名をオブジェクトの位置に記述している。
-% 図5.11のゲーム背景の左からオブジェクトの名前を"Object1", "Object2", "Object3"とする。オブジェクトのそれぞれの座標を、表5.1に示す。
+\begin{figure}[t]
+	\centering
+	\fbox{
+	\includegraphics[width=16cm,pagebox=cropbox]{Image/characteristicTable_kakunin.pdf} 
+	}
+	\caption{図\ref{fig:tekiyou_sub}のモータ特性表}
+	\label{fig:sub_mortoku}
+\end{figure}
 
+図\ref{fig:tekiyou_mortoku}と図\ref{fig:sub_mortoku}の内容が同じであるため、2つのモデルから生成したモータ特性表の各要素が、同値になっていることが確認できる。
 
-% % \begin{figure}[t]
-% %   \centering
-% %   \includegraphics[width=8cm]{./Image/5.11.eps}
-% %   \caption{オブジェクト位置確認ウィンドウ}
-% % \end{figure}
-
-% % \begin{figure}[t]
-% %   \centering
-% %   \includegraphics[width=6cm]{./Image/5.12.eps}
-% %   \caption{オブジェクトと報告者とキャラクターを設定してるツールの概観}
-% % \end{figure}
-
-% \begin{table}[t]
-%   \centering
-%   \caption{オブジェクトの座標}
-%   \begin{tabular}{|l|l|l|l|l|} \hline
-%     オブジェクト名 & 左上の座標x & 左上の座標y & 右下の座標x & 右下の座標y  \\ \hline \hline
-% %        Object1 & 0 & 0 & 200 & 800\\ \hline
-% %        Object2 & 600 & 0 & 800 & 800 \\ \hline
-% % 	   Object3 & 1000 & 0 & 1400 & 800 \\ \hline
-% %   \end{tabular}
-% % \end{table}
-
-% % キャラクターを操作して"Object1→Object2→Object3"の順番にオブジェクトと重ねていく。
-% % この時、出力する報告書の例を、図5.13に示す。
-
-% % % \begin{figure}[t]
-% % %   \centering
-% % %   \includegraphics[width=6cm]{./Image/5.13.eps}
-% %   \caption{報告書の例}
-% % \end{figure}
-
-% 図5.13より、報告者、キャラクターと重なったオブジェクト名、および、重なった時の時刻を、報告書に正しく記述していることがわかる。
-% よって、「Warning判定出力機能」が正しく動作することを確認できる。
-
-% \section{入力キーとタイミングの記録機能}
-% テスト支援ツールにおいて、「入力キーとタイミングの記録機能」が機能することを検証するために、
-% ゲームを開始した後に、入力するキーを「左矢印キー、上矢印キー、右矢印キー、下矢印キー、Aキー、Sキー、Dキー、Wキー」の順にキーを押下して、出力するリプレイファイルを確認する。
-% 出力したリプレイファイルを、図5.14に示す。
-
-% % \begin{figure}[t]
-% %   \centering
-% %   \includegraphics[width=5cm]{./Image/5.14.eps}
-% %   \caption{リプレイファイルの例}
-% % \end{figure}
-
-% 図5.14のリプレイファイルを確認すると、入力した通りにキーの種類と、その押下した時刻を正しく記録していることがわかる。
-% よって、「入力キーとタイミングの記録機能」が正しく動作することを確認できる。
-
-% \section{リプレイ機能}
-% テスト支援ツールにおいて、「リプレイ機能」が機能することを検証するために、ゲームをスタートして自分で動かしたキャラクターと、
-% リプレイ機能を使って自動で移動するキャラクターの動きを比較する。
-% 今回は入力するキーを「右矢印キー、右矢印キー」とする。
-% ゲームをスタートして自分で動かしたキャラクターの動きを図5.15に、リプレイ機能を使って自動で移動するキャラクターの動きを図5.16に、それぞれ示す。
-
-
-% 図5.15と図5.16を比べると、キャラクターの動きは最初に指定した、「右矢印キー、右矢印キー」となっている。
-% しかし、最後のゲーム画面のキャラクターの位置を確認すると、誤差が生じていることがわかる。
-% この結果について、考えられる原因と解決策を、6章の考察で述べる。
-
-
-% \section{エラーメッセージ出力機能}
-% テスト支援ツールにおいて、「エラーメッセージ出力機能」が機能することを検証するために、以下の状態の場合に、
-% エラーメッセージが表示することを確認する。
-% \begin{enumerate}
-%   \item ゲームスタートボタンを押下した際に、実行するゲームファイル、報告者、キャラクターを設定していない。
-%   \item リプレイボタンを押下した際に実行するゲームファイルや入力したキーとタイミングが記録しているファイルを設定していない。
-%   \item 5つ以上のオブジェクトを追加する。
-% \end{enumerate}
-
-% % \begin{figure}[t]
-% %   \centering
-% %   \includegraphics[width=15cm]{./Image/5.15.eps}
-% %   \caption{自分で動かしたキャラクターの動き}
-% % \end{figure}
-
-% % \begin{figure}[t]
-% %   \centering
-% %   \includegraphics[width=15cm]{./Image/5.16.eps}
-% %   \caption{リプレイ機能を使って自動で移動するキャラクターの動き}
-% % \end{figure}
-
-% 図5.17に1.の状態の時、図5.18に2.の状態の時、図5.19に3.の状態の時の、それぞれのエラーメッセージの表示を示す。
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=17cm]{./Image/5.17.eps}
-% %   \caption{1.の状態の時のエラーメッセージ}
-% % \end{figure}
-
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=13cm]{./Image/5.18.eps}
-% %   \caption{2.の状態の時のエラーメッセージ}
-% % \end{figure}
-
-% % \begin{figure}
-% %   \centering
-% %   \includegraphics[width=13cm]{./Image/5.19.eps}
-% %   \caption{3.の状態の時のエラーメッセージ}
-% % \end{figure}
-
-% 図5.17、図5.18、図5.19の初期状態のウィンドウと、エラーメッセージを表示しているウィンドウを比較すると、
-% 状態に応じて、エラーメッセージを正しく表示していることが確認できる。よって、「エラーメッセージ出力機能」が正しく動作していることを確認できる。
-
-% %\input{CommonTexs/Items_Area}
-% %以降、それぞれの処理部について説明する。
-
-
-
+よって、モータ特性表自動生成ツールは、「ブラシ付きDCモータのModelicaモデル」と「ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル」に対応していることが確認できる。

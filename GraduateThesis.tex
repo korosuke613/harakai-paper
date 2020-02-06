@@ -10,16 +10,100 @@
 %
 \usepackage{miyazaki-u-paper}   % 宮崎大学工学部の卒論の基本（片山先生作）を、僕がちょっと書き換えちゃった（テヘッ
 \usepackage{enumitem}           % enumerate？古い古い
-\usepackage[dvipdfmx]{graphicx} % 当然dvipdfmなんて使ってないよね
+\usepackage[dvipdfmx]{graphicx,hyperref} % 当然dvipdfmなんて使ってないよね
+\usepackage{graphicx}
 \usepackage[dvipdfmx]{color}    % listingsを使うときにはこれも必須、dvipdfmxを変えちゃうとgraphicxのdvipdfmxも変わるよ
+\usepackage{pxjahyper}
 \usepackage{listings, jlisting} % コードを埋め込むなら必須
 \usepackage{txfonts}            % フォントといえばやっぱりtxfonts、今はnewtxってのもあるらしい
 \usepackage{verbatim}           % コメントアウトしてくれる便利なプリアンブルが使える \begin{comment} ... \end{comment}
 \usepackage{url}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+% \setlistdepth{6}
+% \renewlist{itemize}{itemize}{10}
+\hypersetup{
+setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=black,
+ citecolor=black,
+}
 % \usepackage{easy-todo}
 \usepackage[hdivide={21mm, , 21mm}, vdivide={30mm, , 25mm}]{geometry} % スタイルを少し変えたくても\hoffset, \voffsetは使わないでね
 
+% todoコマンドを追加
+\newcommand\todo[1]{\PackageWarning{Todo}{Detection TODO:#1}\textcolor{red}{(TODO:#1)}}
 
+
+\renewcommand{\lstlistingname}{コード}
+\lstset{
+  language={Java},
+  frame=tlBR,%フレーム線の指定，上右下左の順，大文字は二重線
+%  frameround=tttt,%角の指定，右上|右下|左下|左上の順，tは丸角，fは四角
+  framesep=5pt,%本文からframeまでの間隔
+  framerule=.2pt,%線の太さ
+%  rulecolor={\color[gray]},%線の色
+%  backgroundcolor={\color[gray]{.9}},%背景色の指定
+  basicstyle={\scriptsize\ttfamily \color[gray]{.15}},%書体の指定，この場合は7ptのタイプライタ体
+  identifierstyle={\ttfamily},%識別子の書体
+  keywordstyle={\ttfamily \color[cmyk]{0,1,0,0}},%言語ワードの書体
+  stringstyle={\scriptsize\ttfamily \color[rgb]{0,0,1}},%文字列リテラルの書体
+  commentstyle={\itshape \color[cmyk]{1,0,1,0}},%コメントの書体
+  numberstyle={\scriptsize},%行番号の書式
+  stepnumber=1,%行番号のステップ間隔
+  numbers=left,%行番号の位置
+  numbersep=1em,%本文との間隔
+  breaklines=true,%改行の設定
+  xleftmargin=0zw,
+  xrightmargin=0zw,
+  columns=[l]{fullflexible},
+  lineskip=-0.5zw,
+  morecomment={[s][{\color[cmyk]{1,0,0,0}}]{/**}{*/}},
+  floatplacement=t,
+  classoffset=1,
+  showstringspaces=false,%空行の表示
+%  breakatwhitespace=true,
+%  tabsize=5,
+}
+
+\lstdefinestyle{g4}{
+  language={C},
+  frame=tlBR,%フレーム線の指定，上右下左の順，大文字は二重線
+%  frameround=tttt,%角の指定，右上|右下|左下|左上の順，tは丸角，fは四角
+  framesep=5pt,%本文からframeまでの間隔
+  framerule=.2pt,%線の太さ
+%  rulecolor={\color[gray]},%線の色
+%  backgroundcolor={\color[gray]{.9}},%背景色の指定
+  basicstyle={\scriptsize\ttfamily \color[gray]{.15}},%書体の指定，この場合は7ptのタイプライタ体
+  identifierstyle={\ttfamily},%識別子の書体
+  keywordstyle={\ttfamily \color[cmyk]{0,1,0,0}},%言語ワードの書体
+  stringstyle={\scriptsize\ttfamily \color[rgb]{0,0,1}},%文字列リテラルの書体
+  commentstyle={\itshape \color[cmyk]{1,0,1,0}},%コメントの書体
+  numberstyle={\scriptsize},%行番号の書式
+  stepnumber=1,%行番号のステップ間隔
+  numbers=left,%行番号の位置
+  numbersep=1em,%本文との間隔
+  breaklines=true,%改行の設定
+  xleftmargin=0zw,
+  xrightmargin=0zw,
+  columns=[l]{fullflexible},
+  lineskip=-0.5zw,
+  morecomment={[s][{\color[cmyk]{1,0,0,0}}]{/**}{*/}},
+  floatplacement=t,
+  classoffset=1,
+  showstringspaces=false,%空行の表示
+%  breakatwhitespace=true,
+%  tabsize=5,
+}
+
+
+% \lstset{language = modelica,
+%         basicstyle=\fontsize{9pt}{10.5pt}\ttfamily,
+%         backgroundcolor={\color[gray]{.90}},
+%         breakindent = 10pt
+%         }
 %%
 % miyazaki-u-paper.sty用設定値
 %
@@ -44,12 +128,13 @@
 % 
 \input{chapters/Introduction.tex}
 \input{chapters/Preparation.tex}
-\input{chapters/Function.tex}
-\input{chapters/Implementation.tex}
+\input{chapters/Tool.tex}
+% \input{chapters/Function.tex}
+% \input{chapters/Implementation.tex}
 \input{chapters/Indication.tex}
 \input{chapters/Discussion.tex}
 \input{chapters/Conclusion.tex}
-
+\input{listings-modelica.cfg}
 %%
 % 謝辞
 %
@@ -59,13 +144,9 @@
 %%
 % 参考文献
 %
-\begin{thebibliography}{0}
-	\bibitem{リファクタリングの本}Martin Fowler(訳:児玉 公信, 友野 昌夫, 平澤 章, 梅沢 真史):"新装版 リファクタリング 既存のコードを安全に改善する", オーム社(2014).
-	\bibitem{アジャイル}Craig Larman(訳:児高 慎治郎, 松田 直樹, 越智 典子):"初めてのアジャイル開発 スクラム、XP、UP、Evoで学ぶ反復型開発の進め方",日経BP社(2004).
-	\bibitem{IntelliJ IDEA}IntelliJ IDEA - Wikipedia: \url{https://ja.wikipedia.org/wiki/IntelliJ_IDEA}, アクセス日:2020/01/05.
-	\bibitem{PSI}プログラム構造インターフェース (PSI) / IntelliJ プラットフォーム SDK プラグイン開発ガイド: \url{https://pleiades.io/intellij/sdk/docs/basics/architectural_overview/psi.html}, アクセス日:2020/01/05.
-\end{thebibliography}
 
+\bibliography{bibtex} %bibファイルの.bibの前の部分
+\bibliographystyle{junsrt} %引用された順番に出力
 % \newpage
 % \listoftodos
 \end{document}

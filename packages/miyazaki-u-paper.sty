@@ -11,6 +11,8 @@
 %
 % Keisuke Mori version up on 30-Dec-16 for Miyazaki Univ.
 %
+% Keisuke Mori version up on 2019-01-25 for Miyazaki Univ.
+%
 % 現在は、α版。
 %
 % 卒論、修論に対応。
@@ -18,7 +20,7 @@
 %
 %
 
-\typeout{Document Style `Miyazaki-u Paper' <13 Dec. 01> by mori@earth.cs.miyazaki-u.ac.jp.}
+\typeout{Document Style `Miyazaki-u Paper' <2019-01-25> by mori@earth.cs.miyazaki-u.ac.jp.}
 
 %
 % 卒論/修論用スタイルファイルの使用法
@@ -53,7 +55,7 @@
 %
 % なお修論の場合、年度と指導教員は記入しなくて良い。
 %
-%%%%%% 講座名は入れれない
+%%%%%% 講座名は入れられない
 %
 % 続いて講座名
 %
@@ -66,6 +68,9 @@
 %
 % \begin{document}
 % \maketitle
+%
+% \preface{概要}
+% 概要 (修士のみ)
 % 
 % 本文
 % 
@@ -105,6 +110,9 @@
 % 2016-12-30
 % 改変しました。 森 敬介 (mori@earch.cs.miyazaki-u.ac.jp)
 %
+% 2019-01-25
+% 改変しました。 森 敬介 (mori@earch.cs.miyazaki-u.ac.jp)
+%
 %
 
 \def\@ptsize{2} \@namedef{ds@10pt}{\def\@ptsize{0}}
@@ -112,7 +120,7 @@
 \def\ds@twoside{\@twosidetrue \@mparswitchtrue}
 \def\ds@draft{\overfullrule 5pt} 
 \@options
-\input j-rep1\@ptsize.sty\relax
+\input packages/j-rep1\@ptsize.sty\relax
 
 
 \def\degree{\def\@degree}  % ここに卒論か修論か判断するための文字を入れる。そのうち博士論文も判断できるかも？
@@ -203,7 +211,7 @@
  \typeout{表紙}
 \thispagestyle{empty}
 \begin{center}
-{\LARGE 令和 \@nendo 年度 卒業論文 \par}\vskip 2em minus 1em
+{\LARGE 平成 \@nendo 年度 卒業論文 \par}\vskip 2em minus 1em
 {\huge\textbf{\@title}\par}\vskip 20em minus 4em
 {\Large 指導教員 \hskip 1em \@advisor\par}\vskip 3em minus 2em
 %
@@ -262,7 +270,7 @@
 }
 
 \def\@makechapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright 
- \ifnum \c@secnumdepth >\m@ne \font@c {\bf \@chapapp{{\bf \thechapter}}} \par 
+ \ifnum \c@secnumdepth >\m@ne \font@c \@chapapp{\thechapter} \par 
  \vskip 20pt plus 10pt minus 10pt \fi \font@c \textbf{#1}\par 
  \nobreak \vskip 40pt plus 10pt minus 10pt }
 }
@@ -271,27 +279,23 @@
  \font@c \textbf{#1}\par 
  \nobreak \vskip 40pt plus 10pt minus 10pt } }
 
-%\def\preface#1{\clearpage\typeout{#1}
-% \thispagestyle{plain}
-% \global\@topnum\z@ \@afterindenttrue
-% \addcontentsline{toc}{chapter}{#1}
-% \@chaptermark{\textbf{#1}}
-% \@makeschapterhead{\textbf{#1}}
-% \@afterheading}
-%
+\def\preface#1{\clearpage\typeout{#1}
+ \thispagestyle{plain}
+ \global\@topnum\z@ \@afterindenttrue
+ \addcontentsline{toc}{chapter}{#1}
+ \@chaptermark{\textbf{#1}}
+ \@makeschapterhead{\textbf{#1}}
+ \@afterheading}
+
 % 前書きを入れた方が良いのかな？ 
-%
+
 
 \def\chapter{\clearpage \thispagestyle{plain} \global\@topnum\z@
 \@afterindenttrue \secdef\@chapter\@schapter} 
 
-\def\acknowledgment{\clearpage\typeout{\@acknowledgmentname}
- \thispagestyle{plain}
- \global\@topnum\z@ \@afterindenttrue
- \addcontentsline{toc}{countChapter}{\@acknowledgmentname}
- \refstepcounter{countChapter}
+\def\acknowledgment{\chapter*{\@acknowledgmentname}
+\typeout{\@acknowledgmentname}\addcontentsline{toc}{chapter}{\@acknowledgmentname}
  \@chaptermark{\@acknowledgmentname}
- \@makeschapterhead{\@acknowledgmentname}
  \@afterheading}
 
 \def\appendix{\par
@@ -545,7 +549,7 @@ to\hsize{\hfil\box\@tempboxa\hfil}
 \def\indexname{さくいん}
 \def\refname{参考文献} 
 \def\contentsname{目次}
-\def\@chapapp#1{第 \lower0.01ex\hbox{#1} 章}
+\def\@chapapp#1{第 #1 章}
 \def\@partapp#1{第 #1 部}
 
 \def\today{\the\year 年 \the\month 月}
