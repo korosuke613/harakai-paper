@@ -39,19 +39,10 @@
 \begin{figure}[t]
 	\centering
 	\fbox{
-    %\includegraphics[width=13cm]{./Image/aaaaaa.png}
+    \includegraphics[width=13cm]{./Image/kakunin_csv.png}
     }
-	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部\todo{csvファイルのみの画像を張る}}
+	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部}
 	\label{fig:tekiyou_csv}
-\end{figure}
-
-\begin{figure}[t]
-	\centering
-	\fbox{
-	\includegraphics[width=16cm,pagebox=cropbox]{Image/characteristicTable_kakunin.pdf} 
-	}
-	\caption{適用例で生成したモータ特性表}
-	\label{fig:tekiyou_mortoku}
 \end{figure}
 
 ブラシ付きDCモータのModelicaモデルをOpenModelicaで実行し、生成されたcsvファイルを、モータ特性表自動生成ツールに適用する。
@@ -59,20 +50,20 @@
 また、図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルを、図\ref{fig:tekiyou_csv}に示す。
 図\ref{fig:tekiyou_csv}のcsvファイルをモータ特性表自動生成ツールに適用した結果、出力するモータ特性表を図\ref{fig:tekiyou_mortoku}に示す。
 
-% \begin{figure}[t]
-% 	\centering
-% 	\fbox{
-%     \includegraphics[width=14cm]{./Image/tekiyou_mortoku.png}
-%     }
-%     \caption{適用例で生成したモータ特性表}
-% 	\label{fig:tekiyou_mortoku}
-% \end{figure}
+\begin{figure}[t]
+	\centering
+	\fbox{
+    \includegraphics[width=14cm]{./Image/tekiyou_mortoku.png}
+    }
+    \caption{適用例で生成したモータ特性表}
+	\label{fig:tekiyou_mortoku}
+\end{figure}
 \begin{figure}[t]
 	\centering
 	\fbox{
     \includegraphics[width=13cm]{./Image/kakunin_saidai_mark.png}
     }
-	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部と効率と回転数}
+	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部と効率と回転数と出力}
 	\label{fig:tekiyou_csv_wakariyasui}
 \end{figure}
 
@@ -194,32 +185,3 @@ signalVoltage1.n.iが持つ値が存在するので、正しく生成してい�
 図\ref{fig:tekiyou_mortoku}と図\ref{fig:sub_mortoku}の内容が同じであるため、2つのモデルから生成したモータ特性表の各要素が、同値になっていることが確認できる。
 
 \todo{おわりにで書く:『よって、モータ特性表自動生成ツールは、「ブラシ付きDCモータのModelicaモデル」と「ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル」に対応していることが確認できる。』}
-
-
-      \begin{table}[tp]
-        \begin{center}
-          \caption{ケースXの実験結果}
-          \label{resultX}
-          \begin{tabular}{c|c|c|c|c|}
-          \cline{2-5}
-                                    & \multicolumn{2}{c|}{ツール未使用} & \multicolumn{2}{c|}{ツール使用} \\ \hline
-          \multicolumn{1}{|c||}{被験者} & 回答時間           & 正答率          & 回答時間           & 正答率         \\ \hline\hline
-          \multicolumn{1}{|c||}{1}   & 13分5秒           & 56\%         & 57秒           & 100\%         \\ \hline
-          \multicolumn{1}{|c||}{2}   & 14分50秒          & 67\%          & 1分20秒          & 100\%         \\ \hline
-          \end{tabular}
-        \end{center}
-      \end{table}
-
-      \begin{table}[tp]
-        \begin{center}
-          \caption{ケースYの実験結果}
-          \label{resultY}
-          \begin{tabular}{c|c|c|c|c|}
-          \cline{2-5}
-                                    & \multicolumn{2}{c|}{ツール未使用} & \multicolumn{2}{c|}{ツール使用} \\ \hline
-          \multicolumn{1}{|c||}{被験者} & 回答時間           & 正答率          & 回答時間           & 正答率         \\ \hline\hline
-          \multicolumn{1}{|c||}{3}   & 21分35秒           & 67\%         & 1分10秒           & 100\%         \\ \hline
-          \multicolumn{1}{|c||}{4}   & 18分6秒          & 100\%          & 1分58秒          & 89\%         \\ \hline
-          \end{tabular}
-        \end{center}
-      \end{table}
