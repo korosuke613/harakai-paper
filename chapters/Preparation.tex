@@ -193,12 +193,12 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 	\begin{tabular}{|c|c||c|c|} \hline
 		要素名 & 出現回数 & 要素名 & 出現回数 \\ \hline\hline
 		定格トルク & 10 & 定格出力 & 5 \\ \hline
-		定格電流 & 9 & 「負荷トルク $\times$ 効率」グラフ & 5 \\ \hline
-		定格回転数 & 9 & 「負荷トルク $\times$ 出力」グラフ & 5 \\ \hline
+		定格電流 & 9 & 「トルク $\times$ 効率」グラフ & 5 \\ \hline
+		定格回転数 & 9 & 「トルク $\times$ 出力」グラフ & 5 \\ \hline
 		無負荷電流 & 8 & 停動トルク & 4 \\ \hline
 		無負荷回転数 & 8  & 始動電流 & 3 \\ \hline
-		「負荷トルク $\times$ 電流」グラフ & 7 &  最大回転数 & 2 \\ \hline
-		「負荷トルク $\times$ 回転数」グラフ & 7 & 始動トルク & 2\\ \hline
+		「トルク $\times$ 電流」グラフ & 7 &  最大回転数 & 2 \\ \hline
+		「トルク $\times$ 回転数」グラフ & 7 & 始動トルク & 2\\ \hline
 		定格電圧 & 5 & 最大効率 & 1 \\ \hline
 		
 		
@@ -343,23 +343,23 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % 	\item トルク $mN \cdot m$ $\times$ 出力 W
 % \end{itemize}
 % 以下に各グラフについて述べる。
-\subsubsection{「負荷トルク $\times$ 電流」グラフ}\label{sub:sub:torden}
-「負荷トルク $\times$ 電流」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「電流 $(\mathrm{mA})$」のグラフである。
+\subsubsection{「トルク $\times$ 電流」グラフ}\label{sub:sub:torden}
+「トルク $\times$ 電流」グラフとは、横軸が「トルク $(\mathrm{mN \cdot m})$」、縦軸が「電流 $(\mathrm{mA})$」のグラフである。
 
 このグラフでは、トルクに対する電流の変化量を表している。
-\subsubsection{「負荷トルク $\times$ 回転数」グラフ}\label{sub:sub:torkaiten}
-「負荷トルク $\times$ 回転数」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「回転数 $(\mathrm{rpm})$」のグラフである。
+\subsubsection{「トルク $\times$ 回転数」グラフ}\label{sub:sub:torkaiten}
+「トルク $\times$ 回転数」グラフとは、横軸が「トルク $(\mathrm{mN \cdot m})$」、縦軸が「回転数 $(\mathrm{rpm})$」のグラフである。
 
 このグラフでは、トルクに対する回転数の変化量を表している。
-\subsubsection{「負荷トルク $\times$ 効率」グラフ}\label{sub:sub:torkouritu}
-「負荷トルク $\times$ 効率」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「効率 $(\mathrm{\%})$」のグラフである。
+\subsubsection{「トルク $\times$ 効率」グラフ}\label{sub:sub:torkouritu}
+「トルク $\times$ 効率」グラフとは、横軸が「トルク $(\mathrm{mN \cdot m})$」、縦軸が「効率 $(\mathrm{\%})$」のグラフである。
 
 このグラフでは、トルクに対する効率の変化量を表している。
-\subsubsection{「負荷トルク $\times$ 出力」グラフ}\label{sub:sub:torsyutu}
-「負荷トルク $\times$ 出力」グラフとは、横軸が「負荷トルク $(\mathrm{mN \cdot m})$」、縦軸が「出力 $(\mathrm{W})$」のグラフである。
+\subsubsection{「トルク $\times$ 出力」グラフ}\label{sub:sub:torsyutu}
+「トルク $\times$ 出力」グラフとは、横軸が「トルク $(\mathrm{mN \cdot m})$」、縦軸が「出力 $(\mathrm{W})$」のグラフである。
 
 このグラフでは、トルクに対する出力の変化量を表している。
-  \section{Python}\label{python}
+\section{Python}\label{python}
 Pythonは、1991年にオランダ人のグイド・ヴァンロッサムによって開発され、オープンソースで運営されている動的プログラミング言語である\cite{pythonoya}。
 Pythonの用途は様々で、組込み開発や、Webアプリケーション、デスクトップアプリケーション、さらには人工知能開発、ビッグデータ解析などと多岐に渡る\cite{pythonsamu}。
 Pythonのプログラミング言語としての主な特徴は、少ないコードで簡潔にプログラムを書けること、専門的なライブラリが豊富にあることが挙げられる。

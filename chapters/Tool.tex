@@ -83,7 +83,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
     \end{eqnarray}
     \item 出力 
     \begin{eqnarray}
-        \mbox{出力 $(\mathrm{W})$} = \mbox{ 負荷トルク $(\mathrm{N \cdot m})$} \times \mbox{角速度 $(\mathrm{rad/s})$} \label{siki:out}
+        \mbox{出力 $(\mathrm{W})$} = \mbox{ トルク $(\mathrm{N \cdot m})$} \times \mbox{角速度 $(\mathrm{rad/s})$} \label{siki:out}
     \end{eqnarray}
     \item 効率
     \begin{eqnarray}
@@ -101,14 +101,14 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
      
 \end{itemize}
 
-上記の式より、モータ特性表の要素を算出するために必要なデータは、負荷トルク、角速度、電圧、電流である。
-また、負荷トルク、角速度、電圧、電流の値を持つcsvファイル内の変数名の拡張子を、表\ref{tab:hensuu}に示す。　
+上記の式より、モータ特性表の要素を算出するために必要なデータは、トルク、角速度、電圧、電流である。
+また、トルク、角速度、電圧、電流の値を持つcsvファイル内の変数名の拡張子を、表\ref{tab:hensuu}に示す。　
 \begin{table}[t]
 	\centering
 	\caption{各データを持つ拡張子}
 	\begin{tabular}{|c|c|} \hline
 	  必要なデータ & 変数名 \\ \hline \hline
-	  負荷トルク値 & (慣性部品のモジュール名).flange\_a.tau \\ \hline
+	  トルク値 & (慣性部品のモジュール名).flange\_a.tau \\ \hline
 	  角速度値 &  (慣性部品のモジュール名).w \\ \hline
 	  電圧値 &  (電源部品のモジュール名).p.v \\ \hline
 	  電流値 &  (電源部品のモジュール名).n.i \\ \hline
@@ -332,27 +332,27 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
         \begin{minipage}{0.45\hsize}
             \centering
             \includegraphics[width=.8\columnwidth]{./Image/current.png}
-            \caption{「負荷トルク $\times$ 電流」グラフ}
+            \caption{「トルク $\times$ 電流」グラフ}
             \label{fig:current}
         \end{minipage}
         \hfill
         \begin{minipage}{0.45\hsize}
             \centering
             \includegraphics[width=.82\columnwidth]{./Image/speed.png}
-            \caption{「負荷トルク $\times$ 回転数」グラフ}
+            \caption{「トルク $\times$ 回転数」グラフ}
             \label{fig:speed}
         \end{minipage}\\\\
         \begin{minipage}{0.45\hsize}
             \centering
             \includegraphics[width=.84\columnwidth]{./Image/efficiency.png}
-            \caption{「負荷トルク $\times$ 効率」グラフ}
+            \caption{「トルク $\times$ 効率」グラフ}
             \label{fig:effi}
         \end{minipage}
         \hfill
         \begin{minipage}{0.45\hsize}
             \centering
             \includegraphics[width=.8\columnwidth]{./Image/output.png}
-            \caption{「負荷トルク $\times$ 出力」グラフ}
+            \caption{「トルク $\times$ 出力」グラフ}
             \label{fig:output}
         \end{minipage}
     \end{tabular}
@@ -360,25 +360,25 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 % \begin{figure}[t]
 % 	\centering
 % 	\includegraphics[width=7cm]{./Image/current.png}
-% 	\caption{「負荷トルク $\times$ 電流」グラフ}
+% 	\caption{「トルク $\times$ 電流」グラフ}
 % 	\label{fig:current}
 % \end{figure}
 % \begin{figure}[t]
 % 	\centering
 % 	\includegraphics[width=7cm]{./Image/speed.png}
-% 	\caption{「負荷トルク $\times$ 回転数」グラフ}
+% 	\caption{「トルク $\times$ 回転数」グラフ}
 % 	\label{fig:speed}
 % \end{figure}
 % \begin{figure}[t]
 % 	\centering
 % 	\includegraphics[width=7cm]{./Image/efficiency.png}
-% 	\caption{「負荷トルク $\times$ 効率」グラフ}
+% 	\caption{「トルク $\times$ 効率」グラフ}
 % 	\label{fig:effi}
 % \end{figure}
 % \begin{figure}[t]
 % 	\centering
 % 	\includegraphics[width=7cm]{./Image/output.png}
-% 	\caption{「負荷トルク $\times$ 出力」グラフ}
+% 	\caption{「トルク $\times$ 出力」グラフ}
 % 	\label{fig:output}
 % \end{figure}
 \subsection{モータ特性表生成}\label{sub:}
