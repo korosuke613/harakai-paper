@@ -95,7 +95,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
     \end{eqnarray}
     \item 定格出力
     \begin{eqnarray}
-        \mbox{定格出力 $(\mathrm{W})$} = \mbox{定格トルク $(\mathrm{N \cdot m)}$} \times \mbox{定格回転数  $(\mathrm{rad/s})$} \times \frac{2\pi}{60}　
+        \mbox{定格出力 $(\mathrm{W})$} = \mbox{最大効率時のトルク $(\mathrm{N \cdot m)}$} \times \mbox{最大効率時の回転数  $(\mathrm{rad/s})$} \times \frac{2\pi}{60}　
         \label{siki:teikaku}
     \end{eqnarray}
      
@@ -188,7 +188,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 
 \subsection{基礎データの算出}\label{sub:youso_kiso}
 基礎データの算出処理では、回転数、出力、効率の値を持つ配列を、それぞれの値に対して生成する。
-各配列の生成方法を以下に示す。
+各配列の生成方法を以下に示す。以下の式で
 
 \subsubsection{回転数}\label{sub:sub:kaiten}
 % 回転数を算出する式は、\ref{sub:csv_scan}節の箇条書き中にある、回転数にて示した式を用いる。
@@ -198,21 +198,26 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 
 \subsubsection{出力}\label{sub:sub:syutu}
 % 出力を算出する式は、\ref{sub:csv_scan}節の箇条書き中にある、出力にて示した式を用いる。%\ref{sub:csv_scan}節の
-(\ref{siki:out})式を用いて、出力を算出する。
-配列torqueと、配列angularvelocityの同じインデックスの要素を、(\ref{siki:out})式にあてはめ、出力を算出する。
-配列torqueと、配列angularvelocityの最後のインデックスの要素までの出力を計算し、配列outputを生成する。
+% (\ref{siki:out})式を用いて、出力を算出する。
+% 配列torqueと、配列angularvelocityの同じインデックスの要素を、(\ref{siki:out})式にあてはめ、出力を算出する。
+% 配列torqueと、配列angularvelocityの最後のインデックスの要素までの出力を計算し、配列outputを生成する。
+出力を算出する式は、%\ref{sub:csv_scan}節の
+(\ref{siki:out})式を用いる。
+配列torqueと、配列angularvelocitの各要素を、それぞれ(\ref{siki:out})式に適用し、出力の値を持つ配列outputを生成する。
+% 配列torqueと、配列angularvelocityの最後のインデックスの要素までの出力を計算し、回転数の値を持つ配列speedを生成する。
 \subsubsection{効率}\label{sub:sub:kouritu}
 % 効率を算出する式は、\ref{sub:csv_scan}節の箇条書き中にある、効率にて示した式と入力にて示した式を用いる。
 % 効率を算出する式は、%\ref{sub:csv_scan}節の
-(\ref{siki:effi})式を用いて、効率を求める。
-配列voltageと配列currentと配列outputそれぞれの最初のインデックスの要素を、(\ref{siki:in})式にあてはめ、効率を求める。
-この処理を各配列の最後まで繰り返し、配列efficiencyを生成する。
-また、配列voltageと配列currentのどちらか一方でも「0」だった場合、効率値を「0」とする。これは、0除算を防ぐために行う。
-% そして、配列outputと、求めた入力値から、配列の要素数分、繰り返し処理で、効率の値を持つ配列efficiencyを生成する。
+% (\ref{siki:effi})式を用いて、効率を求める。
+% 配列voltageと配列currentと配列outputそれぞれの最初のインデックスの要素を、(\ref{siki:in})式にあてはめ、効率を求める。
+% この処理を各配列の最後まで繰り返し、配列efficiencyを生成する。
+% また、配列voltageと配列currentのどちらか一方でも「0」だった場合、効率値を「0」とする。これは、0除算を防ぐために行う。
+効率を算出する式は、%\ref{sub:csv_scan}節の
+(\ref{siki:effi})式を用いる。
+配列voltageと配列currentを(\ref{siki:in})式に適用し、入力の値を算出する。算出した入力の値と、配列outputの要素を、(\ref{siki:effi})式に適用し、効率の値を持つ配列efficiencyを生成する。
+
 \subsection{特性表の各要素の算出}\label{sub:youso_mortoku}
 特性表の各要素の算出処理では、\ref{sub:tokuseihyou}節で述べた9つの要素を算出する。
-
-
 
 \subsubsection{定格電圧}\label{sub:sub:dennatu}
 モータ特性表自動生成ツールが対応するモデルでは、電圧値が一定のため、配列voltageの要素はすべて同じ値になる。今回は、0番目の値を定格電圧とする。
@@ -244,7 +249,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 % の中で、取得した最大効率のインデックスと、同じ位置にある値を定格電流とする。
 
 \subsubsection{定格出力}\label{sub:sub:teikakusyutu}
-定格出力とは、定格動作点における出力の値である。\ref{siki:teikaku}式を用いて、定格出力を求める。上記で求めた定格トルクと定格回転数を、\ref{siki:teikaku}式に代入し、
+定格出力とは、定格動作点における出力の値である。(\ref{siki:teikaku})式を用いて、定格出力を求める。上記で求めた定格トルクと定格回転数を、(\ref{siki:teikaku})式に代入し、
 求めた解が定格出力である。
 % 定格出力を算出する式は、%\ref{sub:csv_scan}節の
 % \ref{siki:teikaku}式を用いる。
@@ -318,7 +323,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
     %     \end{enumerate}
     % \item 配列outputに、torque\_defaultと、angularvelocity\_defaultを\ref{siki:out}式に適用した値を格納する
     % \end{enumerate}
-    \item x軸に配列torqueを、y軸に配列currentを指定し、表\ref{tab:libr}に示したライブラリの中の、matplotlibを用いてグラフを生成し、画像として保存する
+    \item x軸に配列torqueを、y軸に配列currentを指定し、ライブラリmatplotlib(表\ref{tab:libr}参照)を用いてグラフを生成し、画像として保存する
     \item 1.の処理に対して、y軸に配列speedを指定した場合、y軸に配列efficiencyを指定した場合、y軸に配列outputを指定した場合を適用し、それぞれグラフを画像として保存する
 \end{enumerate}
 上記の処理で生成した4つのグラフを、それぞれ図\ref{fig:current}、図\ref{fig:speed}、図\ref{fig:effi}、図\ref{fig:output}に示す。
@@ -378,7 +383,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 % 	\label{fig:output}
 % \end{figure}
 \subsection{モータ特性表生成}\label{sub:}
-\ref{sub:mortortoku}節と、\ref{sub:toku_gurahu}節で生成した合計5つの画像を、表\ref{tab:libr}に示したライブラリの中の、reportlabを用いて、PDFファイルに書き込み、モータ特性表を生成する。
+\ref{sub:mortortoku}節と、\ref{sub:toku_gurahu}節で生成した合計5つの画像を、ライブラリreportlab(表\ref{tab:libr}参照)を用いて、PDFファイルに書き込み、モータ特性表を生成する。
 モータ特性表のPDFファイルのファイル名は、「characteristicTable.pdf」で生成する。同じファイル名がある場合、上書き保存する。
 この処理で生成するモータ特性表を、図\ref{fig:tokuseihyou}に示す。
 \begin{figure}[t]
