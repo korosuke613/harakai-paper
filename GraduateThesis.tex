@@ -33,6 +33,8 @@ setpagesize=false,
 % \usepackage{easy-todo}
 \usepackage[hdivide={21mm, , 21mm}, vdivide={30mm, , 25mm}]{geometry} % スタイルを少し変えたくても\hoffset, \voffsetは使わないでね
 
+% todoコマンドを追加
+\newcommand\todo[1]{\PackageWarning{Todo}{Detection TODO:#1}\textcolor{red}{(TODO:#1)}}
 
 
 \renewcommand{\lstlistingname}{コード}

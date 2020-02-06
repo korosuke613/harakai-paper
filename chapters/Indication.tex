@@ -37,7 +37,7 @@
 \begin{figure}[t]
 	\centering
 	\fbox{
-    \includegraphics[width=13cm]{./Image/kakunin_mark.png}
+    \includegraphics[width=13cm]{./Image/kakunin_saidai_mark.png}
     }
 	\caption{図\ref{fig:tekiyou_tanntai}のシミュレーション結果であるcsvファイルの一部と効率と回転数}
 	\label{fig:tekiyou_csv}
@@ -87,16 +87,47 @@
 図\ref{fig:tekiyou_mortoku}の特性表にある定格電流と、図\ref{fig:tekiyou_csv}のsignalVoltage1.n.iが持つ値の中の、最大効率を出した時の値が同値である。よって、正しく出力していることが確認できる。
 \subsubsection{定格出力}
 % 出力は、\mbox{ トルク $(\mathrm{N \cdot m})$} $\times$ \mbox{角速度 $(\mathrm{rad/s})$} で算出することが可能である。
-% 図\ref{fig:tekiyou_mortoku}の特性表にある定格出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を乗算した結果は、
-% が同値である。よって、正しく出力していることが確認できる。
-図\ref{fig:tekiyou_mortoku}の特性表にある出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を(\ref{siki:speed})式に適用した結果が同値である。
-よって、正しく出力していることが確認できる。
+図\ref{fig:tekiyou_mortoku}の特性表にある定格出力と、図\ref{fig:tekiyou_csv}の出力が持つ値の中の、最大効率を出した時の値が同地である。よって、正しく出力していることが確認できる。
+が同値である。よって、正しく出力していることが確認できる。
+% 図\ref{fig:tekiyou_mortoku}の特性表にある出力と、図\ref{fig:tekiyou_csv}の最大効率時のinertia1.flange\_a.tauが持つ値と、inertia1.flange\_a.wが持つ値を(\ref{siki:speed})式に適用した結果が同値である。
+% よって、正しく出力していることが確認できる。
 \subsubsection{最大回転数}
 図\ref{fig:tekiyou_mortoku}の特性表にある最大回転数と、図\ref{fig:tekiyou_csv}の回転数が持つ値の中の最大値が同値である。よって、正しく出力していることが確認できる。
 \subsection{特性グラフの確認}
 以下に、特性グラフが正しく生成できているか確認する。
 
 \subsubsection{「負荷トルク $\times$ 電流」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、signalVoltage1.n.iが持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 回転数」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、回転数が持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 効率」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、効率が持つ値を確認できるので、正しく生成していることが確認できる。
+\subsubsection{「負荷トルク $\times$ 出力」グラフ}
+図\ref{fig:tekiyou_csv}のinertia1.flange\_a.tauの持つ値と、出力が持つ値を確認できるので、正しく生成していることが確認できる。
 
+したがって、生成したモータ特性表の各要素の値が、正しい値になっていることを確認できる。
 
 \section{ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}
+今回適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデルは、図\ref{fig:tekiyou_tanntai}のモデルと同じ性能になるよう設計しており、どちらのモータ特性表も同じ内容になっていることを確認する。
+
+今回適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデルを図\ref{fig:tekiyou_sub}に、生成したモータ特性表を図\ref{fig:sub_mortoku}にそれぞれ示す。
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=10cm]{./Image/tekiyou_sub.png}
+	\caption{適用するブラシ付きDCモータのModelicaモデルをサブシステムとするモデル}
+	\label{fig:tekiyou_sub}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\fbox{
+	\includegraphics[width=16cm,pagebox=cropbox]{Image/characteristicTable_kakunin.pdf} 
+	}
+	\caption{図\ref{fig:tekiyou_sub}のモータ特性表}
+	\label{fig:sub_mortoku}
+\end{figure}
+
+図\ref{fig:tekiyou_mortoku}と図\ref{fig:sub_mortoku}の内容が同じであるため、2つのモデルから生成したモータ特性表の各要素が、同値になっていることが確認できる。
+
+よって、モータ特性表自動生成ツールは、「ブラシ付きDCモータのModelicaモデル」と「ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル」に対応していることが確認できる。
