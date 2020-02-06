@@ -9,6 +9,7 @@
 *.synctex(busy)
 *.bbl
 *.blg
+*.pdf
 
 .DS_Store
 
