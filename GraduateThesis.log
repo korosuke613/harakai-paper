@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  6 FEB 2020 07:18
+This is e-upTeX, Version 3.14159265-p3.7.1-u1.22-161114-2.6 (utf8.uptex) (TeX Live 2017/Debian) (preloaded format=uplatex 2019.6.13)  6 FEB 2020 09:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -371,35 +371,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@dimlist=\toks23
 ) (./lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
-) (./GraduateThesis.aux
-
-LaTeX Warning: Label `sub:sub:dennatu' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:sidouden' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:teidoutoruku' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:saidaikouritu' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:teikakutoruku' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:teikakukaiten' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:teikakuden' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:teikakusyutu' multiply defined.
-
-
-LaTeX Warning: Label `sub:sub:saidaikai' multiply defined.
-
-)
+) (./GraduateThesis.aux)
 \openout1 = `GraduateThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 122.
@@ -573,25 +545,25 @@ File: utxsyb.fd 2000/12/15 v3.1
 LaTeX Font Info:    Try loading font information for U+txsyc on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) [1
-
-]
+)
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 74.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
+(Font)              scaled to size 11.09619pt on input line 33.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 74.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
-LaTeX Font Info:    Try loading font information for OT1+txtt on input line 74.
+(Font)              scaled to size 11.09619pt on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 33.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ))
 \tf@toc=\write4
 \openout4 = `GraduateThesis.toc'.
 
- [2] (./chapters/Introduction.tex
+ [1
+
+] (./chapters/Introduction.tex
 第 \lower 0.01ex\hbox {1} 章
 ) (./chapters/Preparation.tex [1
 
@@ -637,66 +609,16 @@ File: ./Image/rei_mortoku.png Graphic file (type bmp)
 ] [9]
 Underfull \vbox (badness 2529) has occurred while \output is active []
 
- [10] [11] [12]) (./chapters/Tool.tex [13]
+ [10] [11] [12]) (./chapters/Discussion.tex [13]
 第 \lower 0.01ex\hbox {3} 章
-File: ./Image/kouzou.png Graphic file (type bmp)
-<./Image/kouzou.png>
-[14
-
-]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 49.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 49.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 7.39746pt on input line 49.
- [15] [16] [17] [18]
-File: ./Image/error_tarinai.png Graphic file (type bmp)
-<./Image/error_tarinai.png>
-File: ./Image/error_file.png Graphic file (type bmp)
-<./Image/error_file.png>
-File: ./Image/error_comand.png Graphic file (type bmp)
-<./Image/error_comand.png>
- [19] [20] [21]
-File: ./Image/characteristicTable.png Graphic file (type bmp)
-<./Image/characteristicTable.png>
- [22]
-File: ./Image/current.png Graphic file (type bmp)
-<./Image/current.png>
-File: ./Image/speed.png Graphic file (type bmp)
-<./Image/speed.png>
-File: ./Image/efficiency.png Graphic file (type bmp)
-<./Image/efficiency.png>
-File: ./Image/output.png Graphic file (type bmp)
-<./Image/output.png>
-File: Image/characteristicTable.pdf Graphic file (type pdf)
-<Image/characteristicTable.pdf>
-) (./chapters/Indication.tex [23] [24] [25] [26]
-第 \lower 0.01ex\hbox {4} 章
-File: ./Image/tekiyou_tanntai.png Graphic file (type bmp)
-<./Image/tekiyou_tanntai.png>
-File: ./Image/kakunin_saidai_mark.png Graphic file (type bmp)
-<./Image/kakunin_saidai_mark.png>
-File: Image/characteristicTable_kakunin.pdf Graphic file (type pdf)
-<Image/characteristicTable_kakunin.pdf>
-[27
-
-] [28] [29] [30] [31
-
-] [32]
-File: ./Image/tekiyou_sub.png Graphic file (type bmp)
-<./Image/tekiyou_sub.png>
-File: Image/characteristicTable_kakunin.pdf Graphic file (type pdf)
-<Image/characteristicTable_kakunin.pdf>
-) (./chapters/Discussion.tex [33] [34]
-第 \lower 0.01ex\hbox {5} 章
 
 Package Todo Warning: Detection TODO:下記のコマンドを書き換える！ on input line 7.
 
 
-LaTeX Warning: Reference `cha:domain' on page 35 undefined on input line 16.
+LaTeX Warning: Reference `cha:domain' on page 14 undefined on input line 16.
 
 
-LaTeX Warning: Reference `fig:vdm_park' on page 35 undefined on input line 16.
+LaTeX Warning: Reference `fig:vdm_park' on page 14 undefined on input line 16.
 
 
 Package Todo Warning: Detection TODO:なにをもって完成かを書く！ on input line 18.
@@ -707,11 +629,11 @@ Package Todo Warning: Detection TODO:X on input line 26.
 
 Package Todo Warning: Detection TODO:Y on input line 26.
 
-[35
+[14
 
 ]
 
-LaTeX Warning: Reference `fig:vdm_park' on page 36 undefined on input line 33.
+LaTeX Warning: Reference `fig:vdm_park' on page 15 undefined on input line 33.
 
 
 Package Todo Warning: Detection TODO:なんか on input line 36.
@@ -726,7 +648,7 @@ Package Todo Warning: Detection TODO:計測はじめから終わりの条件と�
 Package Todo Warning: Detection TODO:純粋な、実行時間を書く on input line 45.
 
 
-LaTeX Warning: Citation `nanotime' on page 36 undefined on input line 46.
+LaTeX Warning: Citation `nanotime' on page 15 undefined on input line 46.
 
 
 Package Todo Warning: Detection TODO:A on input line 48.
@@ -744,81 +666,78 @@ Package Todo Warning: Detection TODO:なにか on input line 52.
 Package Todo Warning: Detection TODO:ヒューマンエラーがあったら、具体例を書く on input line 54.
 
 
-LaTeX Warning: Reference `fig:vdm_park' on page 36 undefined on input line 62.
+LaTeX Warning: Reference `fig:vdm_park' on page 15 undefined on input line 62.
 
 
 Overfull \hbox (24.0pt too wide) in paragraph at lines 64--88
  [][][][] 
  []
 
-[36]) (./chapters/Conclusion.tex [37]
-第 \lower 0.01ex\hbox {6} 章
-) (./listings-modelica.cfg) [38
+[15]) (./chapters/Conclusion.tex [16]
+第 \lower 0.01ex\hbox {4} 章
+) (./listings-modelica.cfg) [17
 
 ]
 謝辞
 
 Package hyperref Warning: bookmark level for unknown countChapter defaults to 0.
 
-(./GraduateThesis.bbl [39
+(./GraduateThesis.bbl [18
 
 ]
 参考文献
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 19.
+(Font)              scaled to size 11.09619pt on input line 13.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 19.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 19.
+(Font)              scaled to size 11.09619pt on input line 13.
 
-Underfull \hbox (badness 7362) in paragraph at lines 43--48
+Underfull \hbox (badness 7362) in paragraph at lines 37--42
 []\OT1/txr/m/n/12 MekatoroNet.  \JY2/mc/m/n/12 仕様の見方\OT1/txr/m/n/12 .  [][]$\OT1/txtt/m/n/12 http : / / www . mekatoro . net / digianaecatalog /
  []
 
-[40
+[19
 
 ]
-Underfull \hbox (badness 3492) in paragraph at lines 76--81
+Underfull \hbox (badness 3492) in paragraph at lines 70--75
 []\OT1/txr/m/n/12 MekatoroNet.  \JY2/mc/m/n/12 モ ータ特性表\OT1/txr/m/n/12 .  [][]$\OT1/txtt/m/n/12 http : / / www . mekatoro . net / digianaecatalog /
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 90--95
+Underfull \hbox (badness 1087) in paragraph at lines 84--89
 []\JY2/mc/m/n/12 相模マイクロ株式会社\OT1/txr/m/n/12 .  \JY2/mc/m/n/12 直流モ ータ特性表 \OT1/txr/m/n/12 dc mo-tor char-ac-ter-is-tics.  [][]$\OT1/txtt/m/n/12 http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--109
+Underfull \hbox (badness 10000) in paragraph at lines 98--103
 \OT1/txtt/m/n/12 files / %E5 % AF % 8C % E5 % A3 % ABIE3 % E9 % AB % 98 % E6 % 95 % 88 % E8 % 83 % BD % E9 % A6 % AC % E9 % 81 %
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
- [41]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (./GraduateThesis.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `GraduateThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8F3381E170B8641A62942E2A37BDCA1B;2790.
+(rerunfilecheck)             Checksum: 8C9B7266FB226194830B33AD70DA348E;1444.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 9692 strings out of 494731
- 139417 string characters out of 6176320
- 260844 words of memory out of 5000000
- 13020 multiletter control sequences out of 15000+600000
- 27003 words of font info for 102 fonts, out of 8000000 for 9000
+ 9522 strings out of 494731
+ 136769 string characters out of 6176320
+ 254844 words of memory out of 5000000
+ 12873 multiletter control sequences out of 15000+600000
+ 26454 words of font info for 99 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 29i,18n,40p,1019b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,18n,40p,1164b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on GraduateThesis.dvi (44 pages, 140496 bytes).
+Output written on GraduateThesis.dvi (22 pages, 68476 bytes).
