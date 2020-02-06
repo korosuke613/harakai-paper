@@ -177,7 +177,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 \section{モータ特性表}\label{mortoku}
 モータ特性表とは、モータを選定する際に、参考にする資料である\cite{仕様の見方}。例えば、図\ref{fig:rei_mortoku}に示すモータ特性表がある。一般的に決まった形式はなく、企業によって掲載する要素は異なるため、
 10社のブラシ付きDCモータのモータ特性表\cite{特性表1,特性表2,特性表3,特性表4,特性表5,特性表6,特性表7,特性表8,特性表9,特性表10}に含まれる要素を集計した。集計結果を表\ref{tab:syuukei}に示す。
-表\ref{tab:syuukei}で示した要素の中で、対象とするモデルの性質により、「無負荷電流」、「無負荷回転数」、「起動トルク」を除く9個の要素と4つのグラフを、今回自動生成するモータ特性表の要素とした。
+表\ref{tab:syuukei}で示した12個の値と4種類のグラフを、今回自動生成するモータ特性表の要素とする。
 % 「無負荷電流」、「無負荷回転数」、「起動トルク」を除く理由は、\ref{sub:mortortoku}節にて述べる。
 % \scalebox{0.8}{
 	\begin{figure}[t]
@@ -198,7 +198,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 		無負荷電流 & 8 & 停動トルク & 4 \\ \hline
 		無負荷回転数 & 8  & 始動電流 & 3 \\ \hline
 		「負荷トルク $\times$ 電流」グラフ & 7 &  最大回転数 & 2 \\ \hline
-		「負荷トルク $\times$ 回転数」グラフ & 7 & 起動トルク & 2\\ \hline
+		「負荷トルク $\times$ 回転数」グラフ & 7 & 始動トルク & 2\\ \hline
 		定格電圧 & 5 & 最大効率 & 1 \\ \hline
 		
 		
@@ -249,7 +249,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 \end{itemize}
 以下にて、本研究で対象とするモータ特性表の、特性表と特性グラフの内容について述べる。
 \subsection{特性表}\label{sub:tokuseihyou}
-特性表とは、以下の9つの要素で構成する。
+特性表とは、以下の12個の値で構成する。
 % \begin{itemize}
 % 	\item 電圧 V
 % 	\item 始動電流 mA
@@ -262,62 +262,80 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % 	\item 最大回転数 rpm 
 % \end{itemize}
 % 以下に各要素が表す内容について述べる。
-\subsubsection{定格電圧}\label{sub:sub:dennatu}
+\subsubsection{定格電圧（Rated Voltage）}\label{sub:sub:dennatu}
 % \subsection{電圧}\label{sub:dennatu}
-定格電圧とは、シミュレーション時に、回路に印加された電圧値を表す。
+定格電圧とは、モータが回転する電圧の基準値を表す。本研究では、シミュレーション時に回路に印加した電圧値を定格電圧とする。
 
 単位は、$\mathrm{V}$である。
-\subsubsection{始動電流}\label{sub:sub:sidouden}
+\subsubsection{始動電流（Starting Current）}\label{sub:sub:sidouden}
 % \subsection{始動電流}\label{sub:sidouden}
-始動電流とは、モータの起動時に流れる電流値を表す。
+始動電流とは、モータを始動する際、回路に流れる電流の最大値を表す。
 
 単位は、$\mathrm{mA}$である。
 % https://www.tsugawa.co.jp/glossary/　
-\subsubsection{停動トルク}\label{sub:sub:teidoutoruku}
+
+\subsubsection{無負荷電流（No-Load Current）}
+無負荷電流とは、モータに負荷がかかっていないときの電流値を表す。
+
+単位は、$\mathrm{mA}$である。
+
+\subsubsection{無負荷回転数（No-Load Speed）}
+無負荷回転数とは、モータに負荷がかかっていないときの回転数を表す。
+
+単位は、$\mathrm{rpm}$である。
+
+\subsubsection{始動トルク（Starting Torque）}
+始動トルクとは、モータが始動する際に発生するトルクの値を表す。
+
+単位は、$\mathrm{mN \cdot m}$である。
+
+
+\subsubsection{停動トルク（Stalling Torque）}\label{sub:sub:teidoutoruku}
 % \subsection{停動トルク}\label{sub:teidoutoruku}
 % 停動トルクとは、モータが出しうる最大トルクで、このトルク以上の負荷がかかれば、モータが停止する値を表す。
-停動トルクとは、モータが停止する負荷トルクの値を表す。
-単位は、$(\mathrm{mN \cdot m})$である。
+停動トルクとは、モータが停止する負荷トルクの値を表す。負荷トルクとは、モータの回転を停止させようとする力のことである。
+
+単位は、$\mathrm{mN \cdot m}$である。
 % https://www.orientalmotor.co.jp/tech/glossary/ta11/
-\subsubsection{最大効率}\label{sub:sub:saidaikouritu}
+\subsubsection{最大効率（Maximum Efficiency）}\label{sub:sub:saidaikouritu}
 % \subsection{最大効率}\label{sub:saidaikouritu}
-効率とは、入力電力に対する機械出力の比を百分率［\%］で表したものである。最大効率とは、効率の最大値を表す。
+効率とは、モータに与える入力エネルギーとモータを回転させるために要した機械エネルギーの比を百分率[\%]で表した値である。そして最大効率とは、効率の最大値を表す値である。入力エネルギーは電流と電圧の積で計算でき、出力エネルギーはモータの回転に加わるトルクと角速度で計算できる。
 
 単位は、$\mathrm{\%}$である。
 % https://www.jp-igarashi.com/product/product_motors/curve.html
-\subsubsection{定格トルク}\label{sub:sub:teikakutoruku}
+\subsubsection{定格トルク（Rated Torque）}\label{sub:sub:teikakutoruku}
 % \subsection{定格トルク}\label{sub:teikakutoruku}
 定格トルクとは、最大効率時のトルク値を表す。
 
-単位は、$(\mathrm{mN \cdot m})$である。
+単位は、$\mathrm{mN \cdot m}$である。
 % http://www.sagamimicro.co.jp/product/aboutusage.html
-\subsubsection{定格回転数}\label{sub:sub:teikakukaiten}
+\subsubsection{定格回転数（Rated Speed）}\label{sub:sub:teikakukaiten}
 % \subsection{定格回転数}\label{sub:teikakukaiten}
-定格回転数とは、最大効率時の回転数値を表す。
+定格回転数とは、最大効率時の回転数の値を表す。
 
 単位は、$\mathrm{rpm}$である。
 
 % https://mathwords.net/kaitensu
-\subsubsection{定格電流}\label{sub:sub:teikakuden}
+\subsubsection{定格電流（Rated Current）}\label{sub:sub:teikakuden}
 % \subsection{定格電流}\label{sub:teikakuden}
 定格電流とは、最大効率時の電流値を表す。
 
 単位は、$\mathrm{mA}$である。
 % http://fa-faq.mitsubishielectric.co.jp/faq/show/18504?category_id=1937&site_domain=default
-\subsubsection{定格出力}\label{sub:sub:teikakusyutu}
+\subsubsection{定格出力（Rated Power）}\label{sub:sub:teikakusyutu}
 % \subsection{定格出力}\label{sub:teikakusyutu}
 定格出力とは、最大効率時の出力値を表す。
 
 単位は、$\mathrm{W}$である。
 % \ref{sub:sub:teikakukaiten}章で求めた定格回転数と\ref{sub:sub:teidoutoruku}章で求めた定格トルクを
 % http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
-\subsubsection{最大回転数}\label{sub:sub:saidaikai}
+\subsubsection{最大回転数（Maximum Speed）}\label{sub:sub:saidaikai}
 % \subsection{最大回転数}\label{sub:saidaikai}
 最大回転数とは、回転数値の中で最大値を表す。
 
 単位は、$\mathrm{rpm}$である。
 \subsection{特性グラフ}\label{sub:tokuseigurahu}
-特性グラフは、以下4つのグラフで構成する。
+特性グラフは、以下の4つのグラフで構成する。
 % \begin{itemize}
 % 	\item トルク $mN \cdot m$ $\times$ 電流 mA
 % 	\item トルク $mN \cdot m$ $\times$ 回転数 rpm
