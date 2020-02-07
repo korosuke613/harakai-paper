@@ -11,6 +11,8 @@
 *.blg
 *.pdf
 
+!実験方法の説明.pdf
+
 .DS_Store
 
 ~$*
