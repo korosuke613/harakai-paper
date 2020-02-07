@@ -7,7 +7,8 @@
   \vspace{-1zh}
 \section{Modelica言語}\label{modelica}
 Modelica言語とは、微分代数方程式を用いた、複合領域のマルチドメインモデリングのために開発されたオブジェクト指向言語である\cite{modelicaモデルベース本}。
-その言語仕様は、非営利団体のModelica Association\cite{modelica_association}が策定している。
+
+Modelica言語仕様は、非営利団体のModelica Associationが策定している。
 Modelica Associationでは、Modelica言語による様々な物理領域のモデルライブラリを開発しており、
 数学、機械、電気、熱、流体、制御系、状態遷移機械などを含んだオープンソースソフトウェアとして、Modelica標準ライブラリ(Modelica Standard Library : MSL)をリリースしている
 \cite{modelicaモデルベース本}。
@@ -26,7 +27,7 @@ OpenModelicaでは、グラフィカルにモデリングすることが可能�
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=12cm]{./Image/name_ob.png}
-	\caption{オブジェクト名の確認のポップアップウィンドウの例}
+	\caption{オブジェクト名を確認するポップアップウィンドウの例}
 	\label{fig:name_ob}
 \end{figure}
 % 本論文では、OpenModelica上でグラフィカルにモデリングしたモデルを「Modelicaモデル」、Modelicaモデルのソースコードを「Modelicaコード」と呼称する。
@@ -41,16 +42,18 @@ OpenModelicaは、シミュレーション結果をグラフとして画面上�
 
 OpenModelicaから出力されるcsvファイルの一部を、図\ref{fig:simyu_csv}に示す。
 
-図\ref{fig:simyu_csv}に示すcsvファイルの1列目には、「0.0秒」から始まる時刻を表すデータが必ず入る。
-そして1行目には、1列目の「time」を除いて、オブジェクト名を含んだ変数名が必ず入る。また以降には、1列目の「time」における各変数の値が2列目以降にそれぞれ入る。
+OpenModelicaから出力されるcsvファイルの1行目の各列には、オブジェクト名が入る。
+1列目には、シミュレーションにおける経過時間を示すデータを格納し、2列目以降には、シミュレーションにおける経過時間ごとの各オブジェクトの値を格納する。
+% 図\ref{fig:simyu_csv}に示すcsvファイルの1列目には、「0.0秒」から始まる時刻を表すデータが必ず入る。
+% そして1行目には、1列目の「time」を除いて、オブジェクト名を含んだ変数名が必ず入る。また以降には、1列目の「time」における各変数の値が2列目以降にそれぞれ入る。
 % また、2行目には、時刻が「0.0秒」の時の各変数の値が必ず入る。
 
 OpenModelicaから出力されるcsvファイルのファイル名は、「(シミュレーションしたモデルの名前)\_res.csv」で生成される。
-例えば、シミュレーションしたモデルの名前が「hoge」だった場合、csvファイルのファイル名は「hoge\_res.csv」となる。
+例えば、シミュレーションに用いたモデルの名前が「hoge」だった場合、csvファイルのファイル名は「hoge\_res.csv」となる。
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=16.5cm,height=10cm]{./Image/simyu_csv.png}
-	\caption{シミュレーション結果のcsvファイルの一部}
+	\caption{シミュレーション結果であるcsvファイルの一部}
 	\label{fig:simyu_csv}
 \end{figure}
 % 試作するモータ特性表自動生成ツールでは、OpenModelica 1.9.1 Beta1を使用する。
@@ -68,7 +71,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 	\item ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル
 \end{itemize}
 
-以下にて、それぞれについて説明する。
+以下で、それぞれ説明する。
 % \begin{itemize}
 % 	\item ブラシ付きDCモータのModelicaモデル
 % 	\item ブラシ付きDCモータのModelicaモデルをサブシステムとするモデル
@@ -247,7 +250,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % 		\end{itemize}
 	\end{itemize}
 \end{itemize}
-以下にて、本研究で対象とするモータ特性表の、特性表と特性グラフの内容について述べる。
+以下で、本研究で対象とするモータ特性表の、特性表と特性グラフの内容について述べる。
 \subsection{特性表}\label{sub:tokuseihyou}
 特性表とは、以下の12個の値で構成する。
 % \begin{itemize}
@@ -331,7 +334,7 @@ DCモータとは、磁場の中にあるコイルに電流を流す事で発生
 % http://www.nidec-servo.com/jp/digital/pdf/A_technique.pdf
 \subsubsection{最大回転数（Maximum Speed）}\label{sub:sub:saidaikai}
 % \subsection{最大回転数}\label{sub:saidaikai}
-最大回転数とは、回転数値の中で最大値を表す。
+最大回転数とは、回転数値の中での最大値を表す。
 
 単位は、$\mathrm{rpm}$である。
 \subsection{特性グラフ}\label{sub:tokuseigurahu}
