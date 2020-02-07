@@ -12,7 +12,7 @@
 モータ特性表自動生成ツールの入力は、モータに関してシミュレーションしたOpenModelicaから出力されるcsvファイルである。ここで、現時点のツールは、入力となるcsvファイルは
 次の3つの制約をすべて満たす必要がある。
 \begin{itemize}
-    \item \ref{taioumodel}節で述べたモデルを対象とする
+    \item \ref{taioumodel}節で述べた2つのモデルを対象とする
     \item モータの回路に印加する電圧値は一定とする
     \item 0秒からモータに入力を与える
 \end{itemize}
@@ -39,16 +39,16 @@
 \end{itemize}
 以下に、それぞれの処理部について説明する。
 \section{csvファイル解析部}\label{csv_sec}
-csvファイル解析部では、モータ特性表自動生成ツールを実行する際のコマンドから、読み込むcsvファイルを決定する。
+csvファイル解析部では、モータ特性表自動生成ツールを実行する際の実行コマンドから、読み込むcsvファイルを決定する。
 そして、指定したcsvファイルを読み込み、モータ特性表を生成するために必要なデータを取得する。
 以下に、各処理について説明する。
 \subsection{モータ特性表自動生成ツールの実行}\label{sub:zikkou_tool}
-読み込むcsvファイルを決定するために、モータ特性表自動生成ツールを実行するコマンドの引数に、ファイル名を指定する。
+読み込むcsvファイルを決定するために、モータ特性表自動生成ツールを実行するコマンドの引数に、csvファイル名を指定する。
 モータ特性表自動生成ツールを実行するためのコマンドを、コード\ref{code:zikkou}に示す。
 \begin{figure*}[t]
 	\lstinputlisting[label={code:zikkou}, caption={実行コマンド}]{Image/comand.txt}
 \end{figure*}
-なお、このコマンドは、ツールの実行ファイルが存在するディレクトリで実行する必要がある。
+なお、この実行コマンドは、ツールの実行ファイルが存在するディレクトリで実行する必要がある。
 
 第1引数には、入力とするcsvファイルのパスを含めたファイル名を指定する。
 
@@ -63,7 +63,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 
 \begin{enumerate}
     \item argvの要素数を取得する
-    \item 要素数が4以外であれば、図\ref{fig:error_hikisuu}のエラーを表示し、全体の処理を終了する
+    \item argvの要素数が4以外であれば、図\ref{fig:error_hikisuu}のエラーを表示し、全体の処理を終了する
     \item argvの1番目の要素からcsvファイル名を取得する
     % \item 取得したファイル名の拡張子がcsvでない場合、図\ref{fig:error_file}のエラーを表示し、全体の処理を終了する
     \item argvの2番目の要素から慣性部品のオブジェクト名を取得する
@@ -76,11 +76,11 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 今回、モータ特性表の自動生成に必要となるデータの導出計算式は、以下の通りである。
 % \vspace{3zh}
 \begin{itemize}
-
-    \item 入力
+    \item 回転数
     \begin{eqnarray}
-        \mbox{入力 $(\mathrm{W})$} = \mbox{電圧値 $(\mathrm{V})$} \times \mbox{電流値 $(\mathrm{A})$} 　\label{siki:in}
+        \mbox{回転数 $(\mathrm{rpm})$} = \frac{60 \times \mbox{角速度 $(\mathrm{rad/s})$}}{2\pi}   \label{siki:speed}
     \end{eqnarray}
+
     \item 出力 
     \begin{eqnarray}
         \mbox{出力 $(\mathrm{W})$} = \mbox{ トルク $(\mathrm{N \cdot m})$} \times \mbox{角速度 $(\mathrm{rad/s})$} \label{siki:out}
@@ -89,9 +89,9 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
     \begin{eqnarray}
         \mbox{効率 (\%)} = \frac{\mbox{出力 $(\mathrm{W})$}}{\mbox{入力 $(\mathrm{W})$}}  \times 100 \label{siki:effi}
     \end{eqnarray}
-    \item 回転数
+    \item 入力
     \begin{eqnarray}
-        \mbox{回転数 $(\mathrm{rpm})$} = \frac{60 \times \mbox{角速度 $(\mathrm{rad/s})$}}{2\pi}   \label{siki:speed}
+        \mbox{入力 $(\mathrm{W})$} = \mbox{電圧値 $(\mathrm{V})$} \times \mbox{電流値 $(\mathrm{A})$} 　\label{siki:in}
     \end{eqnarray}
     \item 定格出力
     \begin{eqnarray}
@@ -219,10 +219,10 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 特性表の各要素の算出処理では、\ref{sub:tokuseihyou}節で述べた9つの要素を算出する。
 
 \subsubsection{定格電圧}\label{sub:sub:dennatu}
-モータ特性表自動生成ツールが対応するモデルでは、電圧値が一定のため、配列voltageの要素はすべて同じ値になる。今回は、0番目の値を定格電圧とする。
+モータ特性表自動生成ツールが対応するモデルでは、電圧値が一定のため、配列voltageの要素はすべて同じ値になる。今回は、配列voltageの先頭の値を定格電圧とする。
 
 \subsubsection{始動電流}\label{sub:sub:sidouden}
-始動電流とは、モータの起動時に流れる大きな電流である。モータの起動直後は逆起電力が発生するため、モータ・コイル部分にかかる電圧が下がり、電流値も下がる。
+始動電流とは、モータの起動時に流れる大きな電流である。モータの起動直後は逆起電力が発生するため、モータ・コイル部分にかかる電圧値が下がり、電流値も下がる。
 したがって、配列currentの要素の最大値を始動電流とする。
 
 \subsubsection{始動トルク}\label{sub:sub:teidoutoruku}
@@ -385,7 +385,7 @@ csvファイル解析部では、モータ特性表自動生成ツールを実�
 % \end{figure}
 \subsection{モータ特性表生成}\label{sub:}
 \ref{sub:mortortoku}節と、\ref{sub:toku_gurahu}節で生成した合計5つの画像を、ライブラリreportlab(表\ref{tab:libr}参照)を用いて、PDFファイルに書き込み、モータ特性表を生成する。
-モータ特性表のPDFファイルのファイル名は、「characteristicTable.pdf」で生成する。同じファイル名がある場合、上書き保存する。
+モータ特性表のPDFファイルのファイル名は、「characteristicTable.pdf」で生成する。同じファイル名のPDFファイルがある場合、上書き保存する。
 この処理で生成するモータ特性表を、図\ref{fig:tokuseihyou}に示す。
 % \begin{figure}[t]
 % 	\centering
